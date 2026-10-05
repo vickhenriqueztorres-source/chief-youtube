@@ -1,0 +1,102 @@
+{
+  "squad": "Squad Brecha V2 (Cinematic Investigative Noir)",
+  "episode_id": "EP10",
+  "canal": "brecha",
+  "data_emissao": "2026-09-29 00:26",
+  "prazo_entrega": "2026-10-06",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Browse/Home > 8.5%, Retenção 0:30 > 70% e Retenção nos Shorts em Loop > 125%",
+  "tema": "Os 180 Segundos Antes de R$ 5.000 Sumirem",
+  "unidade_investigada": "180 segundos entre a confirmação e a pulverização em 4 destinos",
+  "tese_central": "Dissecação forense da assimetria temporal: enquanto a reação humana leva 45 minutos, a automação pulveriza o saldo em 180 segundos.",
+  "publico_alvo": "Brasileiros de 18 a 44 anos que assistem documentários investigativos, finanças e engenharia reversa.",
+  "desejo_dominante": "Compreender a arquitetura oculta do sistema financeiro e proteger seu patrimônio.",
+  "angulo_editorial": "Guilhotina Temporal (Efeito Zeigarnik): os três minutos invisíveis entre o clique na tela e o esvaziamento das camadas.",
+  "promessa_principal": "Mostrar na mesa de evidências (#E9E4DA) e no diagrama A->B->C exatamente o que ocorre nesses 180 segundos e como ativar a contenção.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "A voz no telefone era idêntica à do gerente da minha agência. Até a música de espera do banco era a mesma.",
+      "Recebi um Pix de R$ 1.500 do nada, a pessoa ligou chorando pedindo pra estornar. Devolvi e depois minha conta foi bloqueada por fraude.",
+      "O aplicativo disse 'Transferência Realizada com Sucesso'. Quando abri o extrato 5 minutos depois, tinham zerado meu limite do cheque especial."
+    ],
+    "unresolved_competitor_doubts": [
+      "Se a pessoa me mandou um Pix errado, qual o perigo real de só fazer um Pix de volta pra ela?",
+      "O MED do Banco Central realmente devolve o dinheiro ou é só protocolo burocrático?",
+      "Como o golpista consegue fazer o telefone tocar aparecendo exatamente o 0800 do meu banco no visor?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achar que mandar o Pix de volta resolve o problema em vez de usar o botão oficial de estorno do app.",
+      "Achar que comprovante em PDF com horário e autenticação bancária é garantia de pagamento recebido."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Identificar o Os 180 Segundos Antes de R$ 5.000 Sumirem: O Guia Forense de Defesa Contra a Fraude",
+    "longo_para_home": "A Ligação Que Clonou Os 180 Segundos Antes de R$ 5.000 Sumirem em 3 Minutos: A Falha Que Ninguém Avisa",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que Os 180 Segundos Antes de R$ 5.000 S Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar Os 180 Segundos Antes de R$ 5.",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de Os 180 Segundos Antes de R$ 5., o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre Os 180 Segundos Antes de R$ 5.000 Sumirem. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "Banco Central do Brasil - Resolução BCB nº 103 (Regulamento MED)",
+    "FEBRABAN - Relatório de Prevenção e Combate a Fraudes Eletrônicas",
+    "DEIC/SP - Inquéritos sobre Contas de Passagem em Cascata"
+  ],
+  "riscos_e_mitigacao": "Evitar tom policial sensacionalista ou termos bloqueados no título. Manter estética Cinematic Investigative Noir.",
+  "entregaveis_obrigatorios": [
+    "Master Documentário (8 a 11 min) em Cinematic Investigative Noir (#0A0A0A, #171717, #E9E4DA, #EF2B1D) com os 3 Mundos + Picos Límbicos a cada 7-10s",
+    "4 Shorts 9:16 em Topologia de Laço Perfeito (Infinite Loop)",
+    "Thumbnail V2 (Lei de Weber 0.2s): Hero Object + Fissura Vermelha (#EF2B1D) + Consequência em 2-4 palavras ('TARDE DEMAIS')",
+    "Arquivo .SRT com Envenenamento Semântico de alto CPM + Sequestro de Sessão nos últimos 15s"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15 (Abertura Eriksoniana): 'Às 14h12, R$ 5.000 entraram nesta conta. Às 14h15, o dinheiro já estava dividido entre quatro destinos. Quando o sistema tentou bloquear a primeira transferência, praticamente não havia mais nada para bloquear. [Corte + CRACK] Esses três minutos são o verdadeiro centro desta história.'",
+    "o_que_nao_fazer": [
+      "NÃO usar 'golpe/roubo/quadrilha' ou ALL CAPS no título.",
+      "NÃO usar estética sci-fi, ciano ou neon.",
+      "NÃO encerrar o vídeo sem abrir o loop imediato para o próximo episódio (Sequestro de Sessão)."
+    ],
+    "o_que_evitar": [
+      "Evitar repetir palavras do título na thumbnail.",
+      "Evitar fontes monoespaçadas fora de timestamps, números e IDs de documentos."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "BRECHA_TOPIC_GREENLIGHT_V2",
+    "status_decisao": "AD_HOC",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

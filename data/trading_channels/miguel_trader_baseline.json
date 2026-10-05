@@ -1,0 +1,129 @@
+{
+  "channel_id": "UC_MIGUEL_TRADER_QUANT_02",
+  "channel_slug": "miguel_trader",
+  "channel_name": "Miguel Trader",
+  "handle": "@migueltraderquant",
+  "url": "https://www.youtube.com/@migueltraderquant",
+  "language": "es-419",
+  "subscribers": 1580,
+  "total_videos": 14,
+  "last_synced_at": "2026-09-29 17:28:00",
+  "dominant_traffic_sources": [
+    "Recursos de Navegação (Home/Browse)",
+    "Pesquisa do YouTube (Search)",
+    "Vídeos Sugeridos (Suggested)"
+  ],
+  "genre": "Trading de Curto Prazo / Extensão Filtro Signals / B2 Trading",
+  "archetype": "El Mentor Descomplicado (Hermano Mayor)",
+  "host": {
+    "name": "Miguel Ángel Restrepo",
+    "apparent_age": "32 anos",
+    "origin": "Medellín, Colômbia (El Poblado)",
+    "brand": "Mentor B2 Trading & Filtro Signals",
+    "visual_identity": "Óculos de armação retangular, jaqueta preta / camiseta escura, notebook, iluminação quente e escura (#0D0F12 com acentos em Âmbar #E0A526)."
+  },
+  "ecosystem": {
+    "broker": "B2 Trading",
+    "broker_tagline": "De iniciante a trader / De principiante a trader",
+    "core_lead_magnet": "Filtro Signals (Extensão Google Chrome)",
+    "funnel_flow": "YouTube / Shorts ➔ Cadastro Extensão Filtro Signals / B2 Trading ➔ Primeiro Depósito de $5 ➔ Trade em 1 minuto",
+    "conversion_ladder": {
+      "B0_Curioso": "Nunca abriu conta. Consome vídeos no YouTube/TikTok. Medo de perder e ser enganado. Tem $20-$100.",
+      "B1_Aprendiz": "Abriu conta na B2 Trading / Baixou a extensão Filtro Signals. Opera em conta de testes, entende velas e OTC.",
+      "B2_Trader": "Fez o primeiro depósito e primeiro trade real de $5. Opera com disciplina e gestão de risco."
+    },
+    "five_pillars_of_proof": [
+      "1. Barreira mínima: entrada de 5 USD (menos que um lanche)",
+      "2. Resultado imediato: expiração em 1 minuto",
+      "3. Previsibilidade: payout fixo de 92% em todos os ativos",
+      "4. Seu horário, seu idioma: OTC 24/7 + suporte nativo + pares locais",
+      "5. Não está sozinho: Análise de mercado diária + Extensão Filtro Signals + Comunidade"
+    ]
+  },
+  "videos": [
+    {
+      "id": "MT-L01",
+      "youtube_id": "mt_clone_expert",
+      "title": "Cloné a un Trader Élite en Deriv (Gané $52 USD en 20 Minutos) 🤖",
+      "format": "long",
+      "views": 476,
+      "ctr": 4.8,
+      "avd_pct": 39.5,
+      "retention_30s": 52.0,
+      "duration_seconds": 310,
+      "pillar": "Automação e Copy Trading",
+      "thumbnail_elements": "COPIÉ A UN EXPERTO +$52.00 USD, badge 93.3%, Miguel com boné Million Bots sorrindo",
+      "notes": "Excelente gancho de curiosidade com prova de resultado, mas duração (5:10) limita watch time para empurrar em sessões longas."
+    },
+    {
+      "id": "MT-L02",
+      "youtube_id": "mt_20_ia_bots",
+      "title": "Conecté 20 Inteligencias Artificiales a una Cuenta de $33 USD (120% de Lucro)",
+      "format": "long",
+      "views": 527,
+      "ctr": 5.2,
+      "avd_pct": 43.1,
+      "retention_30s": 56.5,
+      "duration_seconds": 443,
+      "pillar": "Inteligência Artificial & Deriv Bot",
+      "thumbnail_elements": "+20x I.A. ACTIVADAS, +120% LUCRO, $33 -> $73 USD, Miguel apontando com expressão de choque",
+      "notes": "Título de alto apelo tecnológico (20 I.A.) combinando banca pequena ($33) com retorno. Boa tração relativa."
+    },
+    {
+      "id": "MT-L03",
+      "youtube_id": "mt_anomalia_sin_martingale",
+      "title": "De $40 a $100 USD: La Configuración de 'Anomalía' en Deriv (Sin Martingale)",
+      "format": "long",
+      "views": 852,
+      "ctr": 7.4,
+      "avd_pct": 48.0,
+      "retention_30s": 62.0,
+      "duration_seconds": 373,
+      "pillar": "Gestão de Risco & Mecanismo Específico",
+      "thumbnail_elements": "MIEDO = LOSS, EL PODER DETECTOR DE ANOMALÍAS 94-5, SIN MARTINGALE, Miguel segurando a cabeça, raio e gráfico verde",
+      "notes": "OUTLIER DO CANAL (1.8x a média das views recentes). Prova que 'Sin Martingale' e 'Detector de Anomalía' têm fit visceral com a dor de perda da audiência."
+    },
+    {
+      "id": "MT-L04",
+      "youtube_id": "mt_107_ganadas_8_perdidas",
+      "title": "+$50.00 USD con Bot de Deriv: 107 Ganadas y 8 Perdidas (Prueba Gratis)",
+      "format": "long",
+      "views": 410,
+      "ctr": 4.1,
+      "avd_pct": 37.0,
+      "retention_30s": 49.0,
+      "duration_seconds": 437,
+      "pillar": "Automação & Prova de Assertividade",
+      "thumbnail_elements": "+$50.00 USD, 107 GANADAS 8 PERDIDAS, selo dourado PRUEBA GRATIS, Miguel sério",
+      "notes": "Forte CTA de reciprocidade com 'Prueba Gratis' para funil do Telegram. Ancoragem direta no download do XML."
+    },
+    {
+      "id": "MT-L05",
+      "youtube_id": "mt_bullex_hacbot_ruso",
+      "title": "Bullex: Cómo Usar el Hacbot Ruso en Deriv y Opciones Binarias",
+      "format": "long",
+      "views": 380,
+      "ctr": 3.9,
+      "avd_pct": 34.0,
+      "retention_30s": 46.0,
+      "duration_seconds": 258,
+      "pillar": "Automação & Ferramentas Externas",
+      "thumbnail_elements": "Interface Bullex + ACCESS RESTRICT HACBOT RUSO com chuva Matrix verde",
+      "notes": "Atrai público de hacks/atalhos. Retenção sofre pela percepção de ferramenta complexa/arriscada."
+    },
+    {
+      "id": "MT-L06",
+      "youtube_id": "mt_iqoption_retroceso",
+      "title": "Operando en IQ Option: Estrategia de Retroceso y Continuación",
+      "format": "long",
+      "views": 290,
+      "ctr": 3.2,
+      "avd_pct": 31.0,
+      "retention_30s": 41.0,
+      "duration_seconds": 240,
+      "pillar": "Leitura Técnica de Gráfico",
+      "thumbnail_elements": "Interface IQ Option com gráfico verde e taxa de payout 89%",
+      "notes": "Título descritivo/acadêmico. Falta gancho causal de mecanismo específico para reter a audiência."
+    }
+  ]
+}

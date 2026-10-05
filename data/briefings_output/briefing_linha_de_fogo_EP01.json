@@ -1,0 +1,102 @@
+{
+  "squad": "Squad Linha de Fogo (Espionage Thriller 60s/70s)",
+  "episode_id": "EP01",
+  "canal": "linha_de_fogo",
+  "data_emissao": "2026-10-02 13:15",
+  "prazo_entrega": "2026-10-09",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Browse/Home > 8.0%, Retenção 0:30 > 65% e AVD > 52%",
+  "tema": "A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética",
+  "unidade_investigada": "1 frota de 17 submarinos e 3 navios de guerra russos trocados por concentrado de xarope",
+  "tese_central": "Como a Pepsi explorou a Guerra Fria para se tornar a sexta maior marinha militar do planeta e erguer um monopólio na URSS contra a Coca-Cola.",
+  "publico_alvo": "22 a 55 anos (foco 25-45): empreendedores, investidores, executivos e entusiastas de história corporativa e estratégia de bastidores.",
+  "desejo_dominante": "Ver o que aconteceu a portas fechadas nas salas de reunião onde magnatas decidiram destruir seus concorrentes.",
+  "angulo_editorial": "Ataque Clandestino ➔ Retaliação do Rival ➔ Consequência Bilionária (Lado A | CORTE DIAGONAL | Lado B).",
+  "promessa_principal": "Revelar os documentos secretos, a sabotagem interna e as decisões impiedosas que construíram e derrubaram impérios bilionários.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "O rastreador marcava que o carro estava na rodovia, mas quando a polícia chegou só tinha a carcaça vazia num matagal.",
+      "Coloquei 50 litros no posto e o marcador do tanque nem subiu. Chamei o gerente e ele disse que era problema da boia.",
+      "Se passar a 80 km/h na balança o caminhão é multado por 200 kg a mais, mas com o rodoar desligado não pesa nada."
+    ],
+    "unresolved_competitor_doubts": [
+      "Como um aparelhinho de R$ 50 bloqueia um satélite que custou milhões de dólares?",
+      "Se o GPS não funciona dentro do túnel, o que o carro faz pra não se perder no mapa?",
+      "Tem como a polícia saber se o caminhão está com o jammer ligado antes de mandar parar?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achava que se o carro tivesse rastreador de satélite era impossível roubar.",
+      "Dizem que o lacre da ANP na bomba garante que o combustível não foi adulterado."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Identificar o A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética: O Guia Forense de Defesa Contra a Fraude",
+    "longo_para_home": "A Ligação Que Clonou A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética em 3 Minutos: A Falha Que Ninguém Avisa",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que A Guerra Secreta de Espiões entre C Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar A Guerra Secreta de Espiões en",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de A Guerra Secreta de Espiões en, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "Wall Street Journal / Financial Times / Forbes - Arquivos e Reportagens de Época",
+    "Processos Judiciais Públicos, Quebras de Contrato e Registros Antitruste (FTC/DOJ)",
+    "Biografias Autorizadas e Dossiês Documentais de Guerras Corporativas"
+  ],
+  "riscos_e_mitigacao": "Evitar tom escolar ou biografia Wikipedia. Manter estética Thriller de Espionagem Anos 60/70 (Saul Bass) e tensão de guerra fria corporativa.",
+  "entregaveis_obrigatorios": [
+    "Master do Documentário (11:00 a 14:30 min, 1080p/4K 24fps) com 5 Atos Canônicos, silhuetas posterizadas, colagem de papel e jazz de espionagem (sax, contrabaixo, teletipo)",
+    "2 Shorts de Gancho Verticais 9:16 (30-50s) com corte diagonal dividindo Lado A e Lado B + botão oficial apontando para o Longo",
+    "3 Thumbnails 4K (Blueprint Saul Bass): Rosto de Magnata em meia-luz ou 2 Logos em colisão + Corte Diagonal Vermelho (#C62D1F) + Texto de Choque de 2-3 palavras (ex: 'FROTA SECRETA')",
+    "Arquivo de Legenda (.srt) em texto puro + End Screen de vídeo único apontando para o próximo dossiê do canal"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15 (Gancho Hipnótico Zeigarnik): Fato mais absurdo e inacreditável revelado de imediato + Corte diagonal na tela dividindo os dois rivais + som de teletipo/clique mecânico. Zero saudações.",
+    "o_que_nao_fazer": [
+      "NÃO usar estética neon, gradientes digitais, glow sci-fi ou visual dark cinematográfico genérico.",
+      "NÃO usar fotografia colorida crua sem tratamento em duotone (Preto x Papel, Preto x Vermelho ou Preto x Mostarda).",
+      "NÃO fazer títulos escolares/descritivos ('A história da rivalidade...'); usar títulos de conflito causal extremo."
+    ],
+    "o_que_evitar": [
+      "Evitar clichês motivacionais ou celebração corporativa higienizada.",
+      "Evitar mostarda (#D4A537) em excesso (máximo 10% do frame, reservada exclusivamente para dinheiro ou selos de valor)."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "BRECHA_TOPIC_GREENLIGHT_V1",
+    "status_decisao": "AD_HOC",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

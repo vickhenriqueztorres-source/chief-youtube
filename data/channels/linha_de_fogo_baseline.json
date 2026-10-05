@@ -1,0 +1,19 @@
+{
+  "channel_id": "UC-LinhaDeFogoDocs",
+  "channel_slug": "linha_de_fogo",
+  "channel_name": "Linha de Fogo",
+  "handle": "@linhadefogodocs",
+  "subscribers": 0,
+  "last_synced_at": "2026-10-02 13:00:00",
+  "dominant_traffic_sources": [
+    "Pesquisa do YouTube",
+    "Recursos de Navegação",
+    "Vídeos Sugeridos"
+  ],
+  "target_benchmarks": {
+    "long_ctr_target": 8.0,
+    "long_avd_pct_target": 52.0,
+    "retention_30s_target": 65.0
+  },
+  "videos": []
+}

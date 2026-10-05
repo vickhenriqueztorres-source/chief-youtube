@@ -1,0 +1,40 @@
+{
+  "squad": "Squad Brecha",
+  "episode_id": "EP_007",
+  "canal": "brecha",
+  "data_emissao": "2026-09-22 12:03",
+  "prazo_entrega": "2026-09-29",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Busca > 8.0% e Retenção no Ato 3 (A Defesa) > 55%",
+  "tema": "A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar",
+  "unidade_investigada": "R$ 5.000,00 transferidos às 14h30",
+  "tese_central": "Toda fraude começa por uma brecha: Enquanto a vítima leva 45 minutos para entender o golpe, a quadrilha precisa de 180 segundos para pulverizar o saldo no SPI.",
+  "publico_alvo": "Brasileiros de 25 a 55 anos que utilizam bancos digitais e Pix diariamente.",
+  "desejo_dominante": "Proteger as economias e entender por que a polícia e o Banco Central quase nunca conseguem recuperar o valor pelo MED tradicional.",
+  "angulo_editorial": "A disparidade de tempo: O cronômetro forense do crime contra a burocracia do sistema de antifraude bancário.",
+  "promessa_principal": "Desmontar o funil de contas laranjas de aluguel e mostrar os 3 passos defensivos que blindam sua conta.",
+  "referencias_documentais": [
+    "Banco Central do Brasil - Resolução BCB nº 103 (Regulamento MED)",
+    "FEBRABAN - Relatório de Prevenção e Combate a Fraudes Eletrônicas",
+    "Polícia Civil de SP - Inquérito Policial sobre Fábricas de Contas Laranjas"
+  ],
+  "riscos_e_mitigacao": "Culpar a vítima ou soar alarmista sensacionalista. O tom DEVE ser digno, forense e protetor.",
+  "entregaveis_obrigatorios": [
+    "Master Documentário (8 a 11 minutos) estruturado estritamente nos 4 Atos do Brecha",
+    "2 Shorts autocontidos de 45 segundos com legendas karaoke em amarelo",
+    "Thumbnail Forense (Documento bancário com carimbo de estorno recusado + Carvão #0D0D0F)",
+    "Packaging JSON completo com pinned comment defensivo"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15: O som do comprovante Pix saindo na tela do celular. Paradoxo: O aplicativo disse 'Transferência Realizada com Sucesso'. Às 14h33, o dinheiro já passou por 4 bancos e virou criptomoeda.",
+    "o_que_nao_fazer": [
+      "NÃO usar títulos em ALL CAPS gritado.",
+      "NÃO usar clichê de 'hacker com capuz em quarto escuro'. Use imagens de cozinhas, portarias e celulares com película trincada.",
+      "NÃO dividir o Short em 'Parte 1 / Parte 2 / Parte 3'; criar shorts autocontidos."
+    ],
+    "o_que_evitar": [
+      "Evitar termos puramente jurídicos sem tradução imediata para o dia a dia.",
+      "Evitar enrolação no Cold Open; ir direto ao momento da perda e à fenda."
+    ]
+  }
+}

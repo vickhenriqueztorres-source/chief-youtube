@@ -1,0 +1,102 @@
+{
+  "squad": "Squad HSL Global",
+  "episode_id": "HSL_028",
+  "canal": "hidden_systems_lab",
+  "data_emissao": "2026-09-28 23:42",
+  "prazo_entrega": "2026-10-05",
+  "prioridade": "P0",
+  "metrica_alvo": "Average View Duration > 50% and > 1.000 views in first 72h.",
+  "tema": "Behind Every Clean AI Prompt Is a Subterranean Bunker With Enough Diesel to Power a Naval Destroyer",
+  "unidade_investigada": "1,000,000 gallons of military-spec fuel (72-hour survival buffer)",
+  "tese_central": "Why artificial intelligence clusters maintain military-grade fuel reserves underground to survive 72 hours of complete civilian grid collapse.",
+  "publico_alvo": "Senior systems engineers, AI infrastructure architects, electrical engineers, industrial enthusiasts (USA, UK, EU).",
+  "desejo_dominante": "Discovering the extreme physical and mechanical reality supporting invisible digital cloud and AI infrastructure.",
+  "angulo_editorial": "The physical paradox that 21st-century neural networks are physically tethered to 20th-century heavy mechanical diesel compression engines.",
+  "promessa_principal": "Reveal the hidden subterranean architecture of high-density data centers: the 10-second UPS flywheel cascade, the underground fuel delivery grid, and the protocol for surviving a total continental blackout.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "The entire continent was 10 seconds away from a cascading total blackout.",
+      "When high pressure water hits a closed valve at 1,000 m/s, steel pipes shatter like thin glass.",
+      "They had 4 redundant diesel generators and every single one failed to spin up simultaneously."
+    ],
+    "unresolved_competitor_doubts": [
+      "Why can't you just flip a giant circuit breaker to turn an entire country's power back on?",
+      "What actually happens to the frequency when a 500MW generator suddenly trips off the grid?",
+      "How do subsea cables survive thousands of tons of hydrostatic pressure without leaking?"
+    ],
+    "popular_myths_to_debunk": [
+      "Believing renewable grids can self-restart without synchronous thermal or hydro inertia.",
+      "Thinking modern skyscrapers are held rigid rather than designed to sway several meters in typhoons."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "How Behind Every Clean AI Prompt Is a Subterranean Bunker With Enough Diesel to Power a Naval Destroyer Actually Works: Extreme Engineering Behind the System",
+    "longo_para_home": "The 400 Millisecond Shockwave That Could Collapse Behind Every Clean AI Prompt Is a Subterranean Bunker With Enough Diesel to Power a Naval Destroyer",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que Behind Every Clean AI Prompt Is a S Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar Behind Every Clean AI Prompt I",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de Behind Every Clean AI Prompt I, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre Behind Every Clean AI Prompt Is a Subterranean Bunker With Enough Diesel to Power a Naval Destroyer. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "Uptime Institute - Tier IV Data Center Backup Power & Fuel Storage Standards",
+    "IEEE Standard 446 - Recommended Practice for Emergency and Standby Power Systems for Industrial and Commercial Applications",
+    "NFPA 110 - Standard for Emergency and Standby Power Systems (Fuel Maintenance & Polishing Protocols)"
+  ],
+  "riscos_e_mitigacao": "Balance mathematical equations with dramatic industrial visuals (underground fuel halls, massive Cat/Cummins V16 generators, switchgear arc flash zones).",
+  "entregaveis_obrigatorios": [
+    "Master Episode 1080p 30fps (9 to 13 minutes) normalized to -16 LUFS",
+    "3 Standalone Shorts 9:16 (Each containing a 45s self-contained paradox)",
+    "3 A/B/C 4K Thumbnail Packages (Hero Object + Vector HUD telemetry)",
+    "Clean .packaging.json with search-optimized title variants"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15: Behind every clean AI prompt is a subterranean bunker with enough military-spec diesel fuel to power a naval destroyer for 72 hours. Here's why artificial intelligence cannot exist without a buried fuel reserve that would make a Cold War general nod.",
+    "o_que_nao_fazer": [
+      "DO NOT publish Shorts titled with just hashtags (#Shorts #Engineering). Every Short MUST have a 40-character paradox hook.",
+      "DO NOT use fictional cyberpunk interfaces. Use only engineering telemetry and CAD/X-Ray orthographic diagrams.",
+      "DO NOT re-upload duplicate video files under any circumstance."
+    ],
+    "o_que_evitar": [
+      "Avoid cartoonish 3D figures or generic stock video of people turning lights on in houses.",
+      "Avoid speeding up narration; maintain Chris's cold, surgical, 146 wpm delivery."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "HSL_HYPNOTIC_MATRIX_V1",
+    "status_decisao": "GREENLIT",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

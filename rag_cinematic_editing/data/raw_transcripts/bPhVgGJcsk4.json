@@ -1,0 +1,619 @@
+{
+  "video_id": "bPhVgGJcsk4",
+  "metadata": {
+    "creator": "Jefe Vilanova",
+    "title": "Vídeo CINEMATOGRÁFICO com o CELULAR | Tutorial CapCut",
+    "views": "457k",
+    "focus": "Taxa de 24fps, regra dos 180 graus (shutter speed), estabilização e pós-produção mobile."
+  },
+  "duration": 796.00325,
+  "language": "pt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.8,
+      "duration": 4.8,
+      "text": "Você é com certeza já ouviu aquela expressão, uma câmera na mão, uma ideia na cabeça."
+    },
+    {
+      "start": 4.8,
+      "end": 8.1,
+      "duration": 3.3,
+      "text": "E esse dictado nunca fez tanto sentido nos dias de hoje."
+    },
+    {
+      "start": 8.1,
+      "end": 13.4,
+      "duration": 5.300000000000001,
+      "text": "Se a gente parar para pensar aqui, a gente tem uma câmera na mão e uma ideia na cabeça."
+    },
+    {
+      "start": 13.4,
+      "end": 21.900000000000002,
+      "duration": 8.500000000000002,
+      "text": "Então, bora aprender a transformar um vídeo comum, num verdadeiro filme de cinema, aplicando as principais técnicas usadas na sete marate."
+    },
+    {
+      "start": 21.900000000000002,
+      "end": 28.900000000000002,
+      "duration": 7.0,
+      "text": "E tudo isso, usando só o celular, desde a gravação, até a edição e finalização do nosso curto."
+    },
+    {
+      "start": 30.0,
+      "end": 41.5,
+      "duration": 11.5,
+      "text": "A maioria das pessoas produsos conteúdo aqui nas interwebs, a 30 ou 60 quadros por segundo, mas a cinema é feito em 24 quadros por segundo."
+    },
+    {
+      "start": 41.5,
+      "end": 43.9,
+      "duration": 2.3999999999999986,
+      "text": "E essa técnica se deu por dois fatores."
+    },
+    {
+      "start": 43.9,
+      "end": 53.3,
+      "duration": 9.399999999999999,
+      "text": "A metragem da película onde eram gravados dos filmes era muito caro e 24 quadros foi o valor mínimos de pulado para dar a sensação de movimento."
+    },
+    {
+      "start": 53.3,
+      "end": 58.5,
+      "duration": 5.200000000000003,
+      "text": "Então dá para dizer que a sextética do cinema nasceu porque o pessoal queria economizar."
+    },
+    {
+      "start": 58.5,
+      "end": 63.3,
+      "duration": 4.799999999999997,
+      "text": "Dito isso, temos que dar a estarte na nossa produção gravando em 24 quadros."
+    },
+    {
+      "start": 63.3,
+      "end": 66.0,
+      "duration": 2.700000000000003,
+      "text": "Alguns aplicativos trazem essa opção."
+    },
+    {
+      "start": 66.0,
+      "end": 71.1,
+      "duration": 5.099999999999994,
+      "text": "Mas na maioria dos apepes que vem de fábrica com o celular só é possível gravar em 30 ou 60."
+    },
+    {
+      "start": 71.1,
+      "end": 76.6,
+      "duration": 5.5,
+      "text": "E é aí que entra o ProShot, uma aplicativa de gravação que permite controle total da câmera."
+    },
+    {
+      "start": 76.6,
+      "end": 84.3,
+      "duration": 7.700000000000003,
+      "text": "Atualmente ele custa 30 reais, então economiza em um hambúrguer e no refrigerante, em investe na qualidade do seu conteúdo."
+    },
+    {
+      "start": 84.3,
+      "end": 91.89999999999999,
+      "duration": 7.599999999999994,
+      "text": "E quando eu falo aqui da qualidade do conteúdo, eu não estou falando só de cinema, eu estou falando também do conteúdo que você produz como um todo."
+    },
+    {
+      "start": 91.89999999999999,
+      "end": 103.1,
+      "duration": 11.200000000000003,
+      "text": "Com o apep ProShot aberto, clicamos nesse retângulo no cantinho, selecionamos a câmera e ajustamos a qualidade e o número de quadros por segundo, no caso aqui 24."
+    },
+    {
+      "start": 103.1,
+      "end": 113.9,
+      "duration": 10.800000000000011,
+      "text": "A segunda coisa que precisamos entender é que nenhum cineasta usa as configurações da câmera no automático e isso faz com que uma série de coisas aconteçam no nosso vídeo."
+    },
+    {
+      "start": 113.9,
+      "end": 119.10000000000001,
+      "duration": 5.200000000000003,
+      "text": "Como variação de cor, variação da luz e mudanças no foco, a todo momento."
+    },
+    {
+      "start": 119.10000000000001,
+      "end": 123.10000000000001,
+      "duration": 4.0,
+      "text": "Para ajustar isso dentro do ProShot, precisamos fixar o balanço de branco."
+    },
+    {
+      "start": 123.10000000000001,
+      "end": 129.1,
+      "duration": 5.999999999999986,
+      "text": "Aqui a gente pode escolher alguma pre definição existente de acordo com a nossa condição de luz atual,"
+    },
+    {
+      "start": 129.1,
+      "end": 132.9,
+      "duration": 3.8000000000000114,
+      "text": "ou deixamos no automático com um pouco e clicamos no lock."
+    },
+    {
+      "start": 132.9,
+      "end": 135.1,
+      "duration": 2.1999999999999886,
+      "text": "Depois é hora de ajustar um shutter."
+    },
+    {
+      "start": 135.1,
+      "end": 142.29999999999998,
+      "duration": 7.199999999999989,
+      "text": "Vias de regra se estamos gravando em 24 quadros, a configuração ideal é 1 para 48, ou 1 para 50."
+    },
+    {
+      "start": 142.29999999999998,
+      "end": 147.1,
+      "duration": 4.800000000000011,
+      "text": "Isso vai garantir um desfoque de movimento menos agressivo, tal qual é no cinema?"
+    },
+    {
+      "start": 147.1,
+      "end": 157.1,
+      "duration": 10.0,
+      "text": "Agora ajustamos o ISO de acordo com a nossa cena, ele vai ser responsável pela claridade da nossa imagem, cuidando para não ficar muito claro nem muito escuro."
+    },
+    {
+      "start": 157.1,
+      "end": 163.1,
+      "duration": 6.0,
+      "text": "A última configuração é o foco, que tem que estar sempre no manual, aqui vai depender muito de cada cena,"
+    },
+    {
+      "start": 163.1,
+      "end": 167.1,
+      "duration": 4.0,
+      "text": "sendo necessário ajustar o foco sempre no objeto principal da cena."
+    },
+    {
+      "start": 167.1,
+      "end": 170.1,
+      "duration": 3.0,
+      "text": "Agora é só a partir para a gravação, aqui é a história simples."
+    },
+    {
+      "start": 170.1,
+      "end": 178.1,
+      "duration": 8.0,
+      "text": "Nosso editor chega em casa a flito, com medo de que alguém tem seguido ele, por momento mais importante do dia, que é o lanche da tarde."
+    },
+    {
+      "start": 178.1,
+      "end": 189.1,
+      "duration": 11.0,
+      "text": "Varei entre cena, aberta e fechada para dar mais tensão na história, e cuidem o enquadramento, porque vamos adicionar barras pretas para simular a proporção do cinema no Cap Cut."
+    },
+    {
+      "start": 189.1,
+      "end": 195.1,
+      "duration": 6.0,
+      "text": "Importante ter essas imagens de segurança, para evitar que a gente corte algo importante, na hora de editar."
+    },
+    {
+      "start": 195.1,
+      "end": 204.1,
+      "duration": 9.0,
+      "text": "Agora de possa de todas as cenas, vamos lá porque a cut para terminar de adicionar todos os elementos que compõem o aspecto de cinema no nosso curta metragem."
+    },
+    {
+      "start": 204.1,
+      "end": 208.1,
+      "duration": 4.0,
+      "text": "Então, eu já selecionei aqui os vídeos que a gente gravou do Jacks nessa curta metragem."
+    },
+    {
+      "start": 208.1,
+      "end": 212.1,
+      "duration": 4.0,
+      "text": "Estão na hora, eu vou jogar lá dentro do Cap Cut."
+    },
+    {
+      "start": 212.1,
+      "end": 216.1,
+      "duration": 4.0,
+      "text": "E aqui você pode ver que eu tenho todos os vídeos aqui, praticamente sem nenhum corte."
+    },
+    {
+      "start": 216.1,
+      "end": 221.1,
+      "duration": 5.0,
+      "text": "Eu vou fazer aquilo que eu chamo de tirar os ratinhos, por exemplo, o Jackson demora para caminhar aqui."
+    },
+    {
+      "start": 221.1,
+      "end": 223.1,
+      "duration": 2.0,
+      "text": "Então, eu já vou cortar esse início."
+    },
+    {
+      "start": 223.1,
+      "end": 228.1,
+      "duration": 5.0,
+      "text": "Eu já vou cortar aqui para me mandar no próximo também, antes de colocar a mão na porta aqui."
+    },
+    {
+      "start": 228.1,
+      "end": 238.1,
+      "duration": 10.0,
+      "text": "Eu já vou cortar por próximo vídeo, que quando ele vai com a mão ali na fechadura, tá ficando dessa forma aqui."
+    },
+    {
+      "start": 240.1,
+      "end": 244.1,
+      "duration": 4.0,
+      "text": "E eu vou acelerar aqui para você não ficar esperando. Mas é mais menos isso que a gente tem que fazer."
+    },
+    {
+      "start": 244.1,
+      "end": 249.1,
+      "duration": 5.0,
+      "text": "A gente tem que primeiro cortar aqui os excessos para o nosso curta começar a fazer sentido."
+    },
+    {
+      "start": 249.1,
+      "end": 260.1,
+      "duration": 11.000000000000028,
+      "text": "Ok, terminê de cortar aqui e a nossa edição até o momento, tá desse jeito aqui."
+    },
+    {
+      "start": 260.1,
+      "end": 265.1,
+      "duration": 5.0,
+      "text": "Tá sem música, sem correção de cor, sem as marras, tudo a gente vai fazer."
+    },
+    {
+      "start": 265.1,
+      "end": 271.1,
+      "duration": 6.0,
+      "text": "Agora só, Jackson tá meio pavorado ali, ele entra e depois ele acaba chegando ali no estúdio."
+    },
+    {
+      "start": 271.1,
+      "end": 280.1,
+      "duration": 9.0,
+      "text": "Celerê um pouco aqui, vai fechar a curtina da molhada. Pra ver se não ninguém espirre ele, vai para a cadeira onde desenrola o resto da ação."
+    },
+    {
+      "start": 280.1,
+      "end": 287.1,
+      "duration": 7.0,
+      "text": "E a primeríssima coisa que a gente vai fazer é a correção de cor para deixar ali com uma cor mais parecida do cinema."
+    },
+    {
+      "start": 287.1,
+      "end": 293.1,
+      "duration": 6.0,
+      "text": "E ele tem uma característica. E para começar a juste, a gente vai procurar aqui embaixo o ajustar."
+    },
+    {
+      "start": 293.1,
+      "end": 307.1,
+      "duration": 14.0,
+      "text": "Ele vai criar uma camada em cima de todos os vídeos que estão aqui. E não é assim uma regra fechada. Mas se a gente analisar algumas imagens e alguns filmes, a primeira coisa que a gente vai notar é que o cinema tem uma saturação mais fraca."
+    },
+    {
+      "start": 307.1,
+      "end": 318.1,
+      "duration": 11.0,
+      "text": "Ele tem menos intensidade de cor. E a gente vai fazer primeiro. Eu clico aqui em saturação e vou puxar essa barra aqui, mais ou menos para menos 15. E já vai estar ok."
+    },
+    {
+      "start": 318.1,
+      "end": 331.1,
+      "duration": 13.0,
+      "text": "Você está vendo aqui que criou uma camada de ajuste. Eu vou ampliar essa camada de ajuste para ficar em cima de todo o vídeo. Fazendo essa forma, eu consigo alterar aqui as configurações de cor, somente na camada de ajuste e ele é feito o vídeo inteiro."
+    },
+    {
+      "start": 331.1,
+      "end": 346.1,
+      "duration": 15.0,
+      "text": "Com a camada ajustada, eu clico aqui em arro mar para fazer mais alterações aqui na nossa camada de ajuste. A próxima característica do cinema tem o alcance de nâmico bem alto. O que significa que os tomos mais claros tem bastante detalhes e os escuros também."
+    },
+    {
+      "start": 346.1,
+      "end": 354.1,
+      "duration": 8.0,
+      "text": "Para ajustar a simular isso, a gente procura aqui embaixo de stacks. Tudo que está muito claro, vou diminuir um pouco a intensidade."
+    },
+    {
+      "start": 354.1,
+      "end": 362.1,
+      "duration": 8.0,
+      "text": "E aonde tivesse sombra muito excessiva. Eu vou clicar aqui em sombra. Eu vou dar um pouco de força, não muito."
+    },
+    {
+      "start": 362.1,
+      "end": 371.1,
+      "duration": 9.0,
+      "text": "Aqui já está ok. E falando aqui na sombra nos tomos escuros, se você reparar aí nos filmes que a gente assiste, a cor preta."
+    },
+    {
+      "start": 371.1,
+      "end": 379.1,
+      "duration": 8.0,
+      "text": "Nunca é um preto solido, um preto puro. É sempre meio semzinha meio opaco. E a gente vai fazer isso aqui dentro do que a petita também."
+    },
+    {
+      "start": 379.1,
+      "end": 389.1,
+      "duration": 10.0,
+      "text": "Como a gente procura essa opção aqui. Fade. Se a gente começar a puxar o lado, você vai ver que os tomos escuros vão ficando mais semzinha."
+    },
+    {
+      "start": 389.1,
+      "end": 395.1,
+      "duration": 6.0,
+      "text": "E a gente pode procurar uma cena um pouco mais escura aqui para ajustar essa opção. Essa aqui está ok."
+    },
+    {
+      "start": 395.1,
+      "end": 409.1,
+      "duration": 14.0,
+      "text": "O que nós temos também no cinema é granulado o próprio grão do filme. A gente vai simular isso aqui dentro do que a petita clicando em granulado."
+    },
+    {
+      "start": 409.1,
+      "end": 415.1,
+      "duration": 6.0,
+      "text": "E vamos colocar aqui 30 pouquinhos. Pronto. Agora o nosso filme também tem grão."
+    },
+    {
+      "start": 415.1,
+      "end": 424.1,
+      "duration": 9.0,
+      "text": "O outro recurso também que a gente pode utilizar dentro do áudio visual na área do cinema é a vinheta para chamar a tensão para o nosso personagem."
+    },
+    {
+      "start": 424.1,
+      "end": 432.1,
+      "duration": 8.0,
+      "text": "E para o centro da cena, a gente clique em vinheta aqui. Eu vou exagerar um pouco na vinheta aqui porque a gente vai cropar essa imagem e vai perder um pouco da força dela."
+    },
+    {
+      "start": 432.1,
+      "end": 441.1,
+      "duration": 9.0,
+      "text": "Então aqui está ok. Já está pegando forma aqui a nossa cor de cinema já está bem diferente do original que a gente viu."
+    },
+    {
+      "start": 441.1,
+      "end": 449.1,
+      "duration": 8.0,
+      "text": "E agora depois que eu corrigei a imagem que para ficar parecido com cinema existe uma coisa também chamada Color Grading, que quando a gente repara nos filmes,"
+    },
+    {
+      "start": 449.1,
+      "end": 460.1,
+      "duration": 11.0,
+      "text": "os tomos médios e escuros, eles nunca são com uma cor natural. Vamos dizer assim, o cineasta escolhe entre um verdinho ou geralmente um azul ciano."
+    },
+    {
+      "start": 460.1,
+      "end": 468.1,
+      "duration": 8.0,
+      "text": "Aí vai muito do gosto. E a gente faz isso aqui nos gráficos. Eu entra aqui dentro. E eu tenho aqui o branco vermelho verde e azul."
+    },
+    {
+      "start": 468.1,
+      "end": 474.1,
+      "duration": 6.0,
+      "text": "Eu vou querer deixar a minha imagem ali um pouquinho os verdead, um pouquinho azul, de repente então a gente vai tirar o vermelho."
+    },
+    {
+      "start": 474.1,
+      "end": 480.1,
+      "duration": 6.0,
+      "text": "Eu clique aqui nessa bolinha vermelha. Eu clique no centro aqui para criar um ponto de ancoragem para curva não se mexer."
+    },
+    {
+      "start": 480.1,
+      "end": 488.1,
+      "duration": 8.0,
+      "text": "Deixa eu não sempre aqui. E se eu mexer nesse pontinho aqui a esquerda, eu começo a tirar o vermelho da sombra."
+    },
+    {
+      "start": 488.1,
+      "end": 496.1,
+      "duration": 8.0,
+      "text": "Olha só, a imagem está ficando bem verde. Eu coloquei em outra parte aqui da cena para a gente conseguir ver a imagem mudando aqui é como ela era."
+    },
+    {
+      "start": 496.1,
+      "end": 507.1,
+      "duration": 11.0,
+      "text": "E se eu começar a puxar para aquela, vai ficando verde. Então, carácterística do cinema. Só que eu não quero totalmente verde. Eu quero um pouquinho azul. Então vou clicar aqui no verde. Vou criar meu ponto de ancoragem. Vou deixar no centro."
+    },
+    {
+      "start": 507.1,
+      "end": 517.1,
+      "duration": 10.0,
+      "text": "E vou puxar também. Ele começa a ficar meio azul, meio siano, que é uma cor legal aí para cinema. Lembrando que todas essas alterações a gente não pode fazer com exagê."
+    },
+    {
+      "start": 517.1,
+      "end": 525.1,
+      "duration": 8.0,
+      "text": "Eu acho que eu já tenho uma cor bem legal dentro do coloquei. E já ficou bacana, olha só."
+    },
+    {
+      "start": 525.1,
+      "end": 531.1,
+      "duration": 6.0,
+      "text": "Bom, mas o que está faltando agora depois que a gente fez a cor e o coloquei aqui está faltando a proporção de cinema."
+    },
+    {
+      "start": 531.1,
+      "end": 537.1,
+      "duration": 6.0,
+      "text": "Então a gente vai simular isso insirindo aqui umas barras pretas para fazer o crop. E como que a gente vai fazer isso?"
+    },
+    {
+      "start": 537.1,
+      "end": 550.1,
+      "duration": 13.0,
+      "text": "Bem simples. Eu vou clicar aqui fora. Vou voltar e vou adicionar uma camada. E vou clicar aqui em biblioteca local. E vou adicionar essa tela preta aqui, adicionei."
+    },
+    {
+      "start": 550.1,
+      "end": 558.1,
+      "duration": 8.0,
+      "text": "Ficou um pouco menor. Então a gente amplia até comer todo o vídeo. Aí aqui embaixo eu vou procurar o mascarar."
+    },
+    {
+      "start": 558.1,
+      "end": 568.1,
+      "duration": 10.0,
+      "text": "Está aqui. É muito conveniente. Tem aqui a opção película. Então eu clico aqui ficou dessa forma. Tem um botão inverteiro aqui embaixo."
+    },
+    {
+      "start": 568.1,
+      "end": 577.1,
+      "duration": 9.0,
+      "text": "Pronto. Agora eu faço uma justi aqui pensando para não deixar uma barra muito grande. Eu acho que aqui está o que idou um vezinho."
+    },
+    {
+      "start": 577.1,
+      "end": 585.1,
+      "duration": 8.0,
+      "text": "Ela ainda não está em cima de todo o projeto. Então vou clicar aqui na pontinha e vou rastar para ficar em cima de todo o vídeo."
+    },
+    {
+      "start": 585.1,
+      "end": 592.1,
+      "duration": 7.0,
+      "text": "Aqui a gente pode conferir como que está ficando o resultado aqui do nosso vídeo que está virando um filme de cinema."
+    },
+    {
+      "start": 592.1,
+      "end": 601.1,
+      "duration": 9.0,
+      "text": "Olha só, a barra já dá um outro aspecto centraliza mais a imagem. A cor já está aqui com o color gray de correção de cor. Também correspondente aos filmes que a gente assiste."
+    },
+    {
+      "start": 601.1,
+      "end": 606.1,
+      "duration": 5.0,
+      "text": "E os cortes mais dinâmicos também aí contribuem bastante para contar a nossa história."
+    },
+    {
+      "start": 606.1,
+      "end": 614.1,
+      "duration": 8.0,
+      "text": "Mas olha só, tem uma cena super curiosa aqui que será que o Jackson vai tirar ali dentro. Então para dar mais emoção que está faltando a música."
+    },
+    {
+      "start": 614.1,
+      "end": 619.1,
+      "duration": 5.0,
+      "text": "E eu já separei uma música aqui direto do YouTube para a gente não tem nenhum problema aí com o direito autoral."
+    },
+    {
+      "start": 619.1,
+      "end": 627.1,
+      "duration": 8.0,
+      "text": "Inclusive eu estou deixando o link aqui embaixo da biblioteca de áudio do YouTube que eu utilizando as músicas dessa biblioteca você não corre risco nenhum aí."
+    },
+    {
+      "start": 627.1,
+      "end": 630.1,
+      "duration": 3.0,
+      "text": "Tem problema, especialmente dentro do YouTube."
+    },
+    {
+      "start": 630.1,
+      "end": 639.1,
+      "duration": 9.0,
+      "text": "O pessoal na música é bem simples. Eu clico aqui em áudio, venho aqui em soms. Vou clicar aqui nessa pastinha porque a música está no meu celular."
+    },
+    {
+      "start": 639.1,
+      "end": 642.1,
+      "duration": 3.0,
+      "text": "Eu clico aqui do dispositivo."
+    },
+    {
+      "start": 642.1,
+      "end": 645.1,
+      "duration": 3.0,
+      "text": "E eu sei que o nome dela é Depfuse."
+    },
+    {
+      "start": 645.1,
+      "end": 655.1,
+      "duration": 10.0,
+      "text": "Alguma coisa que eu vou como escrever aqui, já está aqui. Depfuse, clico no mais e pronto a música já caiu aqui para dentro."
+    },
+    {
+      "start": 655.1,
+      "end": 663.1,
+      "duration": 8.0,
+      "text": "Gente assim, pesquisinho bem a música por seu vídeo porque dependendo da música muda completamente o contexto."
+    },
+    {
+      "start": 663.1,
+      "end": 667.1,
+      "duration": 4.0,
+      "text": "Aqui no caso a gente quer criar atenção, olha só, fica desse jeito."
+    },
+    {
+      "start": 672.1,
+      "end": 681.1,
+      "duration": 9.0,
+      "text": "Tanto que você está vendo aí na tela, a versão sem efeito nenhum, sem correção de cor nenhuma e sem música."
+    },
+    {
+      "start": 681.1,
+      "end": 689.1,
+      "duration": 8.0,
+      "text": "E agora eu vou mostrar para vocês o resultado do nosso curta metragem, aplicando todos os recursos que a gente tem aí no nosso cinema."
+    },
+    {
+      "start": 741.1,
+      "end": 769.1,
+      "duration": 28.0,
+      "text": "E aí, como eu falei, esse vídeo servei não só para fazer cinema com o celular e de estar tudo no celular, mas também para melhorar a qualidade do seu vídeo do seu produto."
+    },
+    {
+      "start": 769.1,
+      "end": 773.1,
+      "duration": 4.0,
+      "text": "Aí nas inter webs, então use a bose desses recursos."
+    },
+    {
+      "start": 773.1,
+      "end": 778.1,
+      "duration": 5.0,
+      "text": "Se esse vídeo te ajudou de alguma forma, curte se você não deu a curtida da confiança lá no início,"
+    },
+    {
+      "start": 778.1,
+      "end": 781.1,
+      "duration": 3.0,
+      "text": "se inscreve no canal caso você não seja escrito."
+    },
+    {
+      "start": 781.1,
+      "end": 784.1,
+      "duration": 3.0,
+      "text": "E ativa o sininho aí para não perder mais nenhum conteúdo como esse."
+    },
+    {
+      "start": 784.1,
+      "end": 791.1,
+      "duration": 7.0,
+      "text": "Inclusive, comenta aqui embaixo sobre qualquer outro assunto aí do CapCut ou do audiovisual que você queira que a gente vai trazer aqui no canal com certeza."
+    },
+    {
+      "start": 791.1,
+      "end": 793.1,
+      "duration": 2.0,
+      "text": "Até o próximo vídeo, tchau."
+    }
+  ]
+}

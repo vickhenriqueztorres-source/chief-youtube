@@ -1,0 +1,102 @@
+{
+  "squad": "Squad O Outro Lado",
+  "episode_id": "OOL_MATRIZ_01",
+  "canal": "o_outro_lado",
+  "data_emissao": "2026-09-26 18:51",
+  "prazo_entrega": "2026-10-03",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR > 7.5% na Home (A/B test nas primeiras 6h; corte em 5.5% após 300 impressões) e Retenção > 65%",
+  "tema": "Os 40 Segundos Que Quase Deixaram São Paulo Sem Água por 3 Meses",
+  "unidade_investigada": "40 segundos nas válvulas de recalque vs 20 milhões de sedentos",
+  "tese_central": "A falha crítica nas válvulas de recalque e bombas de alta pressão do Sistema Cantareira (Estação Elevatória Santa Inês), onde um golpe de aríete hidráulico de 40 segundos quase destruiu a adutora principal de São Paulo.",
+  "publico_alvo": "Brasileiros de 18 a 44 anos impactados pelo contraste extremo Micro vs Macro e vulnerabilidade sistêmica de infraestruturas críticas.",
+  "desejo_dominante": "Descobrir o mecanismo oculto que quase causou uma catástrofe nacional em uma fração cirúrgica de tempo.",
+  "angulo_editorial": "Fórmula Matriz: [Catástrofe / Notícia Ruim] + [Tempo Cirúrgico / Mecanismo Invisível] (Contraste Micro vs Macro validado pelo outlier Z=3.08).",
+  "promessa_principal": "Revelar em tensão forense como uma falha invisível de segundos ou milímetros ameaça milhões de brasileiros sem que a TV aberta explique.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "O rastreador marcava que o carro estava na rodovia, mas quando a polícia chegou só tinha a carcaça vazia num matagal.",
+      "Coloquei 50 litros no posto e o marcador do tanque nem subiu. Chamei o gerente e ele disse que era problema da boia.",
+      "Se passar a 80 km/h na balança o caminhão é multado por 200 kg a mais, mas com o rodoar desligado não pesa nada."
+    ],
+    "unresolved_competitor_doubts": [
+      "Como um aparelhinho de R$ 50 bloqueia um satélite que custou milhões de dólares?",
+      "Se o GPS não funciona dentro do túnel, o que o carro faz pra não se perder no mapa?",
+      "Tem como a polícia saber se o caminhão está com o jammer ligado antes de mandar parar?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achava que se o carro tivesse rastreador de satélite era impossível roubar.",
+      "Dizem que o lacre da ANP na bomba garante que o combustível não foi adulterado."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Os 40 Segundos Que Quase Deixaram São Paulo Sem Água por 3 Meses: O Mecanismo Invisível Explicado Passo a Passo",
+    "longo_para_home": "Os 40 Segundos Que Quase Deixaram São Paulo Sem Água por 3 Meses",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que Os 40 Segundos Que Quase Deixaram S Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar Os 40 Segundos Que Quase Deixa",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de Os 40 Segundos Que Quase Deixa, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre Os 40 Segundos Que Quase Deixaram São Paulo Sem Água por 3 Meses. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "SABESP / ANA - Relatório Técnico de Segurança Hídrica do Sistema Cantareira e Estação Elevatória Santa Inês",
+    "ONS / ANEEL - Relatórios de Análise de Perturbação (RAP) de Infraestruturas Críticas Nacionais",
+    "ABNT NBR 12215 - Projeto de Linha Adutora de Água e Transientes Hidráulicos (Golpe de Aríete)"
+  ],
+  "riscos_e_mitigacao": "Manter rigor 100% forense e documental (35mm Denis Villeneuve chiaroscuro). Zero clickbait vazio; a promessa da capa deve ser provada nos primeiros 15 segundos.",
+  "entregaveis_obrigatorios": [
+    "Master do Documentário Longo (1080p 30fps) com As 5 Leis Hipnóticas (Open Loops, Pattern Interrupt a cada 35-50s com sub-grave braam/heartbeat, números concretos e pausas táticas de 0.8s)",
+    "Short Ponte Vertical 9:16 (Momento de Ruptura de 45s cortado no clímax absoluto + botão 'Vídeo Relacionado' apontando para o Master)",
+    "3 Thumbnails 4K (Arquitetura 0,2s: Dark Mode 60-70% + Hero Object Único + Texto de Choque 2-3 palavras em Amarelo Brutalista SEM repetir título + Medidor Digital Neon [ 00:01s ])",
+    "Arquivo de Legenda Manual (.srt) em texto puro com Seeding de Metadados Semânticos (BERT/Gemini NLP) + Loop de Sessão Fechado (End Screen de 1 único vídeo nos últimos 15s + &list=PL... no comentário fixado)"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15 (Gancho Hipnótico): Timestamp exato ('Às 03h14m08s, você estava dormindo...') + Contraste Micro vs Macro (fração de segundos/milímetros vs milhões de pessoas atingidas) + Comandos embutidos com pausas táticas de 0.8s nas palavras-gatilho: Observe, Silêncio, Falhou, Invisível, Ruptura.",
+    "o_que_nao_fazer": [
+      "NÃO repetir nenhuma palavra do título dentro do texto da thumbnail (máximo 2 a 3 palavras de choque na capa).",
+      "NÃO fazer saudações ou introduções genéricas; abrir nos primeiros 15s com timestamp cirúrgico + colapso macro + causa microscópica.",
+      "NÃO fechar blocos narrativos sem abrir a próxima pergunta invisível (Open Loop constante)."
+    ],
+    "o_que_evitar": [
+      "Evitar números vagos ('muito dinheiro', 'grande distância') — ancorar sempre em números concretos ('R$ 4.238 por minuto', '1.840 km de cabo pressurizado').",
+      "Evitar enviar o espectador para a home no final — usar exclusivamente 1 vídeo recomendado na End Screen (últimos 15s) e link com &list=PL... no comentário fixado."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "OOL_HYPNOTIC_MATRIX_V5",
+    "status_decisao": "AD_HOC",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

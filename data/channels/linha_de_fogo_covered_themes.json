@@ -1,0 +1,98 @@
+{
+  "channel_slug": "linha_de_fogo",
+  "exported_at": "2026-10-02 13:00:00",
+  "total_covered_count": 5,
+  "published_count": 0,
+  "in_production_count": 5,
+  "in_production_episodes": [
+    {
+      "id": 101,
+      "channel": "linha_de_fogo",
+      "theme_slug": "guerra_pepsi_coca_urss_submarinos",
+      "core_topic": "A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética",
+      "title_reference": "A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética",
+      "status": "IN_PRODUCTION",
+      "angle_covered": "Troca de frota militar de submarinos por xarope na URSS para sufocar a Coca.",
+      "keywords": [
+        "coca",
+        "pepsi",
+        "urss",
+        "submarino",
+        "frota",
+        "guerra_fria",
+        "monopolio"
+      ]
+    },
+    {
+      "id": 102,
+      "channel": "linha_de_fogo",
+      "theme_slug": "briga_irmaos_adidas_puma",
+      "core_topic": "A Briga Entre Dois Irmãos que Dividiu uma Cidade e Criou a Adidas e a Puma",
+      "title_reference": "A Briga Entre Dois Irmãos que Dividiu uma Cidade e Criou a Adidas e a Puma",
+      "status": "IN_PRODUCTION",
+      "angle_covered": "Rivalidade familiar de 60 anos em Herzogenaurach.",
+      "keywords": [
+        "adidas",
+        "puma",
+        "dassler",
+        "irmaos",
+        "tenis",
+        "traicao",
+        "alemanha"
+      ]
+    },
+    {
+      "id": 103,
+      "channel": "linha_de_fogo",
+      "theme_slug": "nintendo_monopolio_chip_10nes",
+      "core_topic": "Como a Nintendo Usou um Monopólio Predatório para Sufocar a Concorrência nos Anos 90",
+      "title_reference": "Como a Nintendo Usou um Monopólio Predatório para Sufocar a Concorrência nos Anos 90",
+      "status": "IN_PRODUCTION",
+      "angle_covered": "Chip de bloqueio 10NES e contratos de exclusividade abusivos.",
+      "keywords": [
+        "nintendo",
+        "chip",
+        "10nes",
+        "monopolio",
+        "games",
+        "atari",
+        "predatorio"
+      ]
+    },
+    {
+      "id": 104,
+      "channel": "linha_de_fogo",
+      "theme_slug": "ferrari_ford_le_mans_vinganca",
+      "core_topic": "O Golpe de US$ 25 Milhões da Ferrari que Fez a Ford Criar o Maior Monstro de Le Mans",
+      "title_reference": "O Golpe de US$ 25 Milhões da Ferrari que Fez a Ford Criar o Maior Monstro de Le Mans",
+      "status": "IN_PRODUCTION",
+      "angle_covered": "Quebra de acordo por Enzo Ferrari e a vingança do GT40.",
+      "keywords": [
+        "ferrari",
+        "ford",
+        "gt40",
+        "le_mans",
+        "enzo",
+        "vinganca",
+        "milhoes"
+      ]
+    },
+    {
+      "id": 105,
+      "channel": "linha_de_fogo",
+      "theme_slug": "nokia_sabotagem_interna_iphone",
+      "core_topic": "A Sabotagem Industrial que Quase Destruiu a Nokia Antes do iPhone",
+      "title_reference": "A Sabotagem Industrial que Quase Destruiu a Nokia Antes do iPhone",
+      "status": "IN_PRODUCTION",
+      "angle_covered": "Guerras internas de poder e descarte do protótipo touch em 2004.",
+      "keywords": [
+        "nokia",
+        "iphone",
+        "touchscreen",
+        "sabotagem",
+        "finlandia",
+        "symbian"
+      ]
+    }
+  ]
+}

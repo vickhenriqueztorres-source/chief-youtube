@@ -1,0 +1,102 @@
+{
+  "squad": "Squad Brecha",
+  "episode_id": "EP07",
+  "canal": "brecha",
+  "data_emissao": "2026-09-24 18:04",
+  "prazo_entrega": "2026-10-01",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Busca > 8.0% e Retenção no Ato 3 (A Defesa) > 55%",
+  "tema": "A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar",
+  "unidade_investigada": "R$ 5.000,00 transferidos às 14h30",
+  "tese_central": "Toda fraude começa por uma brecha: Enquanto a vítima leva 45 minutos para entender o golpe, a quadrilha precisa de 180 segundos para pulverizar o saldo no SPI.",
+  "publico_alvo": "Brasileiros de 25 a 55 anos que utilizam bancos digitais e Pix diariamente.",
+  "desejo_dominante": "Proteger as economias e entender por que a polícia e o Banco Central quase nunca conseguem recuperar o valor pelo MED tradicional.",
+  "angulo_editorial": "A disparidade de tempo: O cronômetro forense do crime contra a burocracia do sistema de antifraude bancário.",
+  "promessa_principal": "Desmontar o funil de contas laranjas de aluguel e mostrar os 3 passos defensivos que blindam sua conta.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "A voz no telefone era idêntica à do gerente da minha agência. Até a música de espera do banco era a mesma.",
+      "Recebi um Pix de R$ 1.500 do nada, a pessoa ligou chorando pedindo pra estornar. Devolvi e depois minha conta foi bloqueada por fraude.",
+      "O aplicativo disse 'Transferência Realizada com Sucesso'. Quando abri o extrato 5 minutos depois, tinham zerado meu limite do cheque especial."
+    ],
+    "unresolved_competitor_doubts": [
+      "Se a pessoa me mandou um Pix errado, qual o perigo real de só fazer um Pix de volta pra ela?",
+      "O MED do Banco Central realmente devolve o dinheiro ou é só protocolo burocrático?",
+      "Como o golpista consegue fazer o telefone tocar aparecendo exatamente o 0800 do meu banco no visor?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achar que mandar o Pix de volta resolve o problema em vez de usar o botão oficial de estorno do app.",
+      "Achar que comprovante em PDF com horário e autenticação bancária é garantia de pagamento recebido."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Identificar o A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar: O Guia Forense de Defesa Contra a Fraude",
+    "longo_para_home": "A Ligação Que Clonou A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar em 3 Minutos: A Falha Que Ninguém Avisa",
+    "short_1_descoberta": {
+      "titulo": "O que acontece quando você liga o A Rota dos 180 Segundos: Como ?",
+      "gancho_0_2s": "Resultado visual chocante ou objeto físico real em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "Por que a maioria das pessoas falha ao lidar com A Rota dos 180 Segundos: ?",
+    "playlist_percurso": "Dossiê Completo: A Anatomia de A Rota dos 180 Segundos: Como ",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de A Rota dos 180 Segundos: Como , o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos a física de A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar. A conclusão é contra-intuitiva: a vulnerabilidade não está no satélite ou no software, mas na camada física de 1.5 GHz. Documentamos todo o espectro de sinal e o relatório forense completo."
+  },
+  "referencias_documentais": [
+    "Banco Central do Brasil - Resolução BCB nº 103 (Regulamento MED)",
+    "FEBRABAN - Relatório de Prevenção e Combate a Fraudes Eletrônicas",
+    "Polícia Civil de SP - Inquérito Policial sobre Fábricas de Contas Laranjas"
+  ],
+  "riscos_e_mitigacao": "Culpar a vítima ou soar alarmista sensacionalista. O tom DEVE ser digno, forense e protetor.",
+  "entregaveis_obrigatorios": [
+    "Master Documentário (8 a 11 minutos) estruturado estritamente nos 4 Atos do Brecha",
+    "2 Shorts autocontidos de 45 segundos com legendas karaoke em amarelo",
+    "Thumbnail Forense (Documento bancário com carimbo de estorno recusado + Carvão #0D0D0F)",
+    "Packaging JSON completo com pinned comment defensivo"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15: O som do comprovante Pix saindo na tela do celular. Paradoxo: O aplicativo disse 'Transferência Realizada com Sucesso'. Às 14h33, o dinheiro já passou por 4 bancos e virou criptomoeda.",
+    "o_que_nao_fazer": [
+      "NÃO usar títulos em ALL CAPS gritado.",
+      "NÃO usar clichê de 'hacker com capuz em quarto escuro'. Use imagens de cozinhas, portarias e celulares com película trincada.",
+      "NÃO dividir o Short em 'Parte 1 / Parte 2 / Parte 3'; criar shorts autocontidos."
+    ],
+    "o_que_evitar": [
+      "Evitar termos puramente jurídicos sem tradução imediata para o dia a dia.",
+      "Evitar enrolação no Cold Open; ir direto ao momento da perda e à fenda."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "BRECHA_TOPIC_GREENLIGHT_V1",
+    "status_decisao": "AD_HOC",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

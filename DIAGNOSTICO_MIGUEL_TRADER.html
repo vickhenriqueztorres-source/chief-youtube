@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chief Analyst // Diagnóstico Quantitativo: Miguel Trader</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#07080B',
+                        deepsteel: '#0F111A',
+                        surface: '#141724',
+                        surfaceLight: '#1C2133',
+                        bullish: '#00FF66',
+                        bearish: '#FF3355',
+                        amberAlert: '#FFB800',
+                        cyanHud: '#00F0FF',
+                        borderMuted: '#242B42'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #07080B; color: #E2E8F0; font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0F111A; }
+        ::-webkit-scrollbar-thumb { background: #242B42; border-radius: 4px; }
+        .glow-border-cyan {
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+        }
+        .glow-border-amber {
+            border: 1px solid rgba(255, 184, 0, 0.3);
+            box-shadow: 0 0 15px rgba(255, 184, 0, 0.1);
+        }
+        .glow-border-bullish {
+            border: 1px solid rgba(0, 255, 102, 0.3);
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-obsidian text-slate-200 antialiased p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+
+        <!-- HEADER DA AUDITORIA -->
+        <header class="flex flex-wrap items-center justify-between gap-4 border-b border-borderMuted pb-6">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyanHud animate-pulse"></span>
+                    <span class="font-mono text-xs uppercase tracking-widest text-cyanHud font-semibold">Chief Analyst // Núcleo Trading Quant</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-surfaceLight text-amberAlert border border-borderMuted">MEMÓRIA ISOLADA</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-surfaceLight text-slate-300 border border-borderMuted">DERIV & AUTOMAÇÃO</span>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Diagnóstico Quantitativo & Auditoria Estratégica</h1>
+                <p class="text-sm text-slate-400 mt-1">Canal: <span class="text-cyanHud font-semibold">Miguel Trader</span> (<code class="text-xs bg-surfaceLight px-1.5 py-0.5 rounded text-slate-300">@migueltraderquant</code> / <code class="text-xs bg-surfaceLight px-1.5 py-0.5 rounded text-slate-300">@miguelrestrepotrader</code>)</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <div class="text-xs font-mono text-slate-400">DATA DA AUDITORIA</div>
+                    <div class="text-xs font-mono text-white font-bold">29/09/2026 // 17:30</div>
+                </div>
+                <button onclick="window.print()" class="px-3.5 py-2 bg-surfaceLight hover:bg-slate-700 text-xs font-mono text-white rounded-lg border border-borderMuted flex items-center gap-2 transition cursor-pointer">
+                    <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir / PDF
+                </button>
+            </div>
+        </header>
+
+        <!-- PERFIL ARQUETÍPICO DO HOST -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-5 relative overflow-hidden">
+            <div class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-cyanHud/5 to-transparent pointer-events-none"></div>
+            <div class="flex flex-wrap md:flex-nowrap items-center gap-5">
+                <div class="w-14 h-14 rounded-xl bg-surfaceLight border border-borderMuted flex items-center justify-center text-cyanHud flex-shrink-0">
+                    <i data-lucide="bot" class="w-7 h-7"></i>
+                </div>
+                <div class="space-y-1 flex-1">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs font-mono uppercase text-amberAlert font-semibold tracking-wider">Host & Identidade Narrativa</span>
+                        <span class="text-xs text-slate-500">•</span>
+                        <span class="text-xs font-mono text-slate-400">Medellín, Colômbia (32 anos)</span>
+                    </div>
+                    <h2 class="text-lg font-bold text-white">Miguel Ángel Restrepo — <span class="text-cyanHud">"El Mentor de Barrio / Hermano Mayor"</span></h2>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Perdeu $8.000 USD nos primeiros 2 anos por operar no emocional. Hoje foca em <strong>15-20% ao mês com automação (Deriv Bot / XML) e estrita gestão de risco</strong>. Valores: <em>Transparência &gt; Hype | Sobrevivência &gt; Ganância Rápida</em>.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-1 text-right text-xs font-mono border-l border-borderMuted pl-4 hidden md:flex">
+                    <span class="text-slate-400">Canal: <strong class="text-white">Canal 02 Trading</strong></span>
+                    <span class="text-slate-400">SaaS / Plataforma: <strong class="text-cyanHud">Deriv & Million Bots</strong></span>
+                    <span class="text-slate-400">Status YPP: <strong class="text-bullish">100% Demo Compliant</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI CARDS (MÉTRICAS CONSOLIDADAS) -->
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3">
+            <div class="bg-surface border border-borderMuted rounded-xl p-4">
+                <div class="text-[11px] font-mono text-slate-400 uppercase">Inscritos</div>
+                <div class="text-xl font-bold text-white mt-1">1.580</div>
+                <div class="text-[10px] text-slate-400 mt-1">Base orgânica</div>
+            </div>
+            <div class="bg-surface border border-borderMuted rounded-xl p-4">
+                <div class="text-[11px] font-mono text-slate-400 uppercase">Vídeos Longos</div>
+                <div class="text-xl font-bold text-white mt-1">6 uploads</div>
+                <div class="text-[10px] text-slate-400 mt-1">Biblioteca ativa</div>
+            </div>
+            <div class="bg-surface border border-bearish/40 rounded-xl p-4 glow-border-amber">
+                <div class="text-[11px] font-mono text-bearish uppercase flex items-center justify-between">
+                    <span>Shorts Ativos</span>
+                    <i data-lucide="alert-triangle" class="w-3 h-3 text-bearish"></i>
+                </div>
+                <div class="text-xl font-bold text-bearish mt-1">0 uploads</div>
+                <div class="text-[10px] text-bearish font-semibold mt-1">Topo de funil zerado</div>
+            </div>
+            <div class="bg-surface border border-borderMuted rounded-xl p-4">
+                <div class="text-[11px] font-mono text-slate-400 uppercase">Média Views</div>
+                <div class="text-xl font-bold text-white mt-1">489,2</div>
+                <div class="text-[10px] text-slate-400 mt-1">Max: 852 | Min: 290</div>
+            </div>
+            <div class="bg-surface border border-amberAlert/40 rounded-xl p-4">
+                <div class="text-[11px] font-mono text-amberAlert uppercase">CTR Médio</div>
+                <div class="text-xl font-bold text-amberAlert mt-1">4,77%</div>
+                <div class="text-[10px] text-slate-400 mt-1">Alvo ideal: ≥ 6,0%</div>
+            </div>
+            <div class="bg-surface border border-bearish/40 rounded-xl p-4">
+                <div class="text-[11px] font-mono text-bearish uppercase">Retenção 30s</div>
+                <div class="text-xl font-bold text-bearish mt-1">51,1%</div>
+                <div class="text-[10px] text-bearish mt-1">Gargalo de drop no Hook</div>
+            </div>
+        </div>
+
+        <!-- O MODELO DO SISTEMA (CORE CAUSAL EQUATION) -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-5">
+            <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono uppercase text-cyanHud font-semibold">Equação de Multiplicadores Causais do Canal</span>
+                <span class="text-xs font-mono text-slate-400">Chief Formula Trading v2.4</span>
+            </div>
+            <div class="p-4 bg-deepsteel rounded-lg font-mono text-xs md:text-sm text-center text-slate-200 border border-borderMuted">
+                <span class="text-cyanHud font-bold">Força do Canal</span> ≈ 
+                <span class="text-white">Clareza do Público (0.8)</span> × 
+                <span class="text-white">Interesse do Tema (0.7)</span> × 
+                <span class="text-amberAlert font-bold">CTR (0.047)</span> × 
+                <span class="text-bearish font-bold">Retenção 30s (0.51)</span> × 
+                <span class="text-bullish font-bold">Conversão Telegram (0.65)</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-3 text-center">
+                Se a Retenção nos primeiros 30s e o CTR caem simultaneamente, a distribuição por Recursos de Navegação (Browse) é interrompida pelo algoritmo.
+            </p>
+        </div>
+
+        <!-- DISSECAÇÃO FORENSE DE OUTLIERS: VENCEDOR VS PERDEDOR -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- VENCEDOR -->
+            <div class="bg-surface border border-bullish/30 rounded-xl p-5 glow-border-bullish">
+                <div class="flex items-center justify-between pb-3 border-b border-borderMuted">
+                    <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-bullish/20 text-bullish font-bold">TOP OUTLIER</span>
+                        <span class="text-xs font-mono text-slate-400">MT-L03</span>
+                    </div>
+                    <span class="text-xs font-mono text-bullish font-bold">852 Views (1.8x média)</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mt-3">"De $40 a $100 USD: La Configuración de 'Anomalía' en Deriv (Sin Martingale)"</h3>
+                <div class="grid grid-cols-3 gap-2 mt-3 p-2 bg-deepsteel rounded-lg font-mono text-xs text-center">
+                    <div>
+                        <div class="text-[10px] text-slate-400">CTR</div>
+                        <div class="text-bullish font-bold">7,4%</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-400">Ret. 30s</div>
+                        <div class="text-bullish font-bold">62,0%</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-400">AVD</div>
+                        <div class="text-bullish font-bold">48,0%</div>
+                    </div>
+                </div>
+                <div class="mt-3 space-y-1.5 text-xs text-slate-300">
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-bullish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Mecanismo Específico:</strong> O termo "Configuração de Anomalía" cria o <em>Zeigarnik Effect</em> (curiosidade irresistível).</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-bullish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Eliminação de Dor Visceral:</strong> "Sin Martingale" ataca diretamente o maior pavor do trader (quebrar banca).</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-bullish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Escala Realista:</strong> $40 a $100 fala com a realidade do público ("O Sobrevivente").</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERDEDOR -->
+            <div class="bg-surface border border-bearish/30 rounded-xl p-5">
+                <div class="flex items-center justify-between pb-3 border-b border-borderMuted">
+                    <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-bearish/20 text-bearish font-bold">MENOR DESEMPENHO</span>
+                        <span class="text-xs font-mono text-slate-400">MT-L06</span>
+                    </div>
+                    <span class="text-xs font-mono text-bearish font-bold">290 Views (0.6x média)</span>
+                </div>
+                <h3 class="text-sm font-bold text-white mt-3">"Operando en IQ Option: Estrategia de Retroceso y Continuación"</h3>
+                <div class="grid grid-cols-3 gap-2 mt-3 p-2 bg-deepsteel rounded-lg font-mono text-xs text-center">
+                    <div>
+                        <div class="text-[10px] text-slate-400">CTR</div>
+                        <div class="text-bearish font-bold">3,2%</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-400">Ret. 30s</div>
+                        <div class="text-bearish font-bold">41,0%</div>
+                    </div>
+                    <div>
+                        <div class="text-[10px] text-slate-400">AVD</div>
+                        <div class="text-bearish font-bold">31,0%</div>
+                    </div>
+                </div>
+                <div class="mt-3 space-y-1.5 text-xs text-slate-300">
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="x-circle" class="w-4 h-4 text-bearish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Título Acadêmico/Inerte:</strong> "Estratégia de retrocesso" é genérico, não causa tensão nem urgência.</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="x-circle" class="w-4 h-4 text-bearish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Falta de Mecanismo Causal:</strong> Não explica <em>por que</em> o iniciante falha ao tentar esse padrão.</span>
+                    </div>
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="x-circle" class="w-4 h-4 text-bearish flex-shrink-0 mt-0.5"></i>
+                        <span><strong>Embalagem Sem Contraste:</strong> Print comum da plataforma sem elemento herói ou quebra de padrão.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OS 3 GARGALOS FATAIS DIAGNOSTICADOS -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-6 space-y-6">
+            <div class="flex items-center gap-2 border-b border-borderMuted pb-3">
+                <i data-lucide="alert-octagon" class="w-5 h-5 text-amberAlert"></i>
+                <h2 class="text-base font-bold text-white tracking-wide uppercase font-mono">Os 3 Gargalos Fatais do Canal</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- GARGALO 1 -->
+                <div class="bg-deepsteel border border-bearish/30 rounded-xl p-4 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-bearish"></span>
+                            <span class="text-xs font-mono font-bold text-bearish uppercase">1. Abandono no Hook (30s)</span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-white">Retenção de 51.1% nos primeiros 30 segundos</h4>
+                        <p class="text-xs text-slate-400">
+                            Mais de 48% dos usuários que clicam saem antes da entrega da promessa. O canal gasta tempo com introduções burocráticas ou saudações em vez de mostrar a tela com a operação/código do bot imediatamente.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-borderMuted/60 text-[11px] font-mono text-amberAlert">
+                        ➔ Impacto: Algoritmo mata a distribuição em Browse.
+                    </div>
+                </div>
+
+                <!-- GARGALO 2 -->
+                <div class="bg-deepsteel border border-amberAlert/30 rounded-xl p-4 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-amberAlert"></span>
+                            <span class="text-xs font-mono font-bold text-amberAlert uppercase">2. Topo de Funil Bloqueado</span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-white">0 Shorts publicados / Razão 0:6</h4>
+                        <p class="text-xs text-slate-400">
+                            O canal não aproveita o feed vertical para filtragem de audiência qualificada. No nicho de trading de Deriv, demonstrações de 30s de erros de robôs possuem altíssimo potencial de viralidade e tração de inscritos.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-borderMuted/60 text-[11px] font-mono text-cyanHud">
+                        ➔ Solução: Iniciar ponte Short ➔ Longo com 3 shorts/sem.
+                    </div>
+                </div>
+
+                <!-- GARGALO 3 -->
+                <div class="bg-deepsteel border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-cyanHud"></span>
+                            <span class="text-xs font-mono font-bold text-cyanHud uppercase">3. Poluição na Miniatura</span>
+                        </div>
+                        <h4 class="text-sm font-semibold text-white">CTR médio de 4.77% (Abaixo do teto 6.0%)</h4>
+                        <p class="text-xs text-slate-400">
+                            Excesso de ruído visual (raios, múltiplos selos, textos longos). O cérebro do usuário toma a decisão de clique em 0.2s. É preciso 1 elemento de choque visual + máximo 3 palavras de impacto.
+                        </p>
+                    </div>
+                    <div class="mt-3 pt-2 border-t border-borderMuted/60 text-[11px] font-mono text-bullish">
+                        ➔ Solução: Arquitetura HUD Dark Mode + Zoom na tela.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLANO DE AÇÃO: EXPERIMENTO DE 14 DIAS (MÉTODO X + Y) -->
+        <div class="bg-surface border border-cyanHud/40 rounded-xl p-6 glow-border-cyan space-y-4">
+            <div class="flex items-center justify-between border-b border-borderMuted pb-3">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="flask-conical" class="w-5 h-5 text-cyanHud"></i>
+                    <h2 class="text-base font-bold text-white font-mono uppercase">Plano de Ação: Experimento Científico de 14 Dias</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-cyanHud/20 text-cyanHud font-mono text-xs font-bold">MÉTODO X + Y</span>
+            </div>
+
+            <div class="p-4 bg-deepsteel rounded-lg border border-borderMuted font-mono text-xs text-slate-200 leading-relaxed">
+                <span class="text-cyanHud font-bold">HIPÓTESE FALSEÁVEL:</span><br>
+                <em>"Se aplicarmos o <strong>Hook Eriksoniano nos primeiros 15s</strong> (sem saudações, entregando o mecanismo de cara) e reestruturarmos as miniaturas para <strong>Dark Mode HUD com zoom no parâmetro Anti-Martingale</strong>, então a <strong>Retenção aos 30s subirá para ≥ 60.0%</strong> e o <strong>CTR para ≥ 6.5%</strong> porque eliminamos o ruído cognitivo e ancoramos na dor do 'Sobrevivente'."</em>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                <div class="p-3 bg-surfaceLight rounded-lg border border-borderMuted">
+                    <div class="font-bold text-white mb-1">1. Regra dos Primeiros 15s</div>
+                    <p class="text-slate-400">Corte 100% de aberturas institucionais. Entrada em 0-5s com o conflito da perda e 5-15s mostrando o bot rodando em conta demo.</p>
+                </div>
+                <div class="p-3 bg-surfaceLight rounded-lg border border-borderMuted">
+                    <div class="font-bold text-white mb-1">2. Thumbnail HUD 0.2s</div>
+                    <p class="text-slate-400">Fundo escuro obsidian, 1 elemento focal (alerta de Stop Loss ou parâmetro XML) e texto de no máximo 3 palavras (ex: <code>SIN MARTINGALE</code>).</p>
+                </div>
+                <div class="p-3 bg-surfaceLight rounded-lg border border-borderMuted">
+                    <div class="font-bold text-white mb-1">3. Ponte Shorts ➔ Longos</div>
+                    <p class="text-slate-400">Publicar 3 Shorts/semana (30-45s) com cortes do momento de estresse do bot e link oficial no botão "Vídeo Relacionado".</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FILA DE PAUTAS PRIORIZADAS (P-SCORE QUANT) -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-6 space-y-4">
+            <div class="flex items-center justify-between border-b border-borderMuted pb-3">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="list-ordered" class="w-5 h-5 text-bullish"></i>
+                    <h2 class="text-base font-bold text-white font-mono uppercase">Fila de Próximas Pautas Priorizadas (P-Score)</h2>
+                </div>
+                <span class="text-xs font-mono text-slate-400">Equação P = D × C × R × E (Max: 625)</span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs border-collapse">
+                    <thead>
+                        <tr class="border-b border-borderMuted text-slate-400 font-mono uppercase bg-deepsteel/50">
+                            <th class="p-3">Score P</th>
+                            <th class="p-3">Prioridade</th>
+                            <th class="p-3">Título Estratégico (Conflito + Mecanismo)</th>
+                            <th class="p-3">Pilar</th>
+                            <th class="p-3">Gancho Causal (0-15s)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-borderMuted font-sans">
+                        <tr class="hover:bg-surfaceLight/50 transition">
+                            <td class="p-3 font-mono font-bold text-bullish">500/625</td>
+                            <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-bullish/20 text-bullish font-bold">P0 - IMEDIATO</span></td>
+                            <td class="p-3 font-semibold text-white">Cuenta de $20 USD en Deriv: La Configuración para NO Quemar Tu Capital (Demo)</td>
+                            <td class="p-3 text-slate-400">Gestão de Risco & Bancas Pequenas</td>
+                            <td class="p-3 text-slate-300"><em>"El 90% de los que empiezan con $20 pierden todo en 48h por el multiplicador. Hoy te muestro el límite exacto en demo."</em></td>
+                        </tr>
+                        <tr class="hover:bg-surfaceLight/50 transition">
+                            <td class="p-3 font-mono font-bold text-bullish">480/625</td>
+                            <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-bullish/20 text-bullish font-bold">P0 - IMEDIATO</span></td>
+                            <td class="p-3 font-semibold text-white">Probé el Bot de 'Dígitos Pares' 100 Veces Seguidas: La Verdad Matemática</td>
+                            <td class="p-3 text-slate-400">Verificação Forense de Bots</td>
+                            <td class="p-3 text-slate-300"><em>"Te dijeron que tiene 95% de acierto. Lo pusimos a correr 100 operaciones en demo para ver la racha negativa real."</em></td>
+                        </tr>
+                        <tr class="hover:bg-surfaceLight/50 transition">
+                            <td class="p-3 font-mono font-bold text-cyanHud">400/625</td>
+                            <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyanHud/20 text-cyanHud font-bold">P0 - IMEDIATO</span></td>
+                            <td class="p-3 font-semibold text-white">Deriv Bot vs Trader Manual: ¿Quién Gana en una Cuenta de $50 USD?</td>
+                            <td class="p-3 text-slate-400">Automação vs Disciplina</td>
+                            <td class="p-3 text-slate-300"><em>"Competencia directa: bot automatizado contra operativa manual por 30 min. El resultado final te va a sorprender."</em></td>
+                        </tr>
+                        <tr class="hover:bg-surfaceLight/50 transition">
+                            <td class="p-3 font-mono font-bold text-amberAlert">320/625</td>
+                            <td class="p-3"><span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amberAlert/20 text-amberAlert font-bold">P1 - FILA</span></td>
+                            <td class="p-3 font-semibold text-white">El Error del Take Profit en Índices Sintéticos (Boom y Crash)</td>
+                            <td class="p-3 text-slate-400">Mecanismo Técnico</td>
+                            <td class="p-3 text-slate-300"><em>"Cerrar por miedo antes de tiempo te cuesta más que los Stop Loss. Mira cómo configurar la salida en demo."</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ENGENHARIA DE VOZ & SSML ("SINCERIDADE HIPNÓTICA") -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-6 space-y-4">
+            <div class="flex items-center justify-between border-b border-borderMuted pb-3">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="mic" class="w-5 h-5 text-cyanHud"></i>
+                    <h2 class="text-base font-bold text-white font-mono uppercase">Engenharia de Voz SSML // "Sinceridade Hipnótica" (60s)</h2>
+                </div>
+                <span class="text-xs font-mono text-slate-400">ElevenLabs Config (60% Técnico / 40% Fraternal)</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs font-mono">
+                <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                    <div class="text-cyanHud font-bold mb-1">1. Gancho Empático (0-8s)</div>
+                    <div class="text-slate-400">Rápido, vulnerável</div>
+                    <div class="text-[10px] text-slate-500 mt-2 font-mono"><code>rate="medium" pitch="+5%"</code></div>
+                </div>
+                <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                    <div class="text-cyanHud font-bold mb-1">2. Revelação Técnica (8-35s)</div>
+                    <div class="text-slate-400">Didático com pausas</div>
+                    <div class="text-[10px] text-slate-500 mt-2 font-mono"><code>&lt;break time="0.4s"/&gt;</code></div>
+                </div>
+                <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                    <div class="text-amberAlert font-bold mb-1">3. Lição Moral (35-50s)</div>
+                    <div class="text-slate-400">Sério e protetor</div>
+                    <div class="text-[10px] text-slate-500 mt-2 font-mono"><code>rate="slow" pitch="-8%"</code></div>
+                </div>
+                <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                    <div class="text-bullish font-bold mb-1">4. Fechamento Fraternal (50-60s)</div>
+                    <div class="text-slate-400">CTA Demo + Telegram</div>
+                    <div class="text-[10px] text-slate-500 mt-2 font-mono"><code>rate="medium"</code></div>
+                </div>
+            </div>
+
+            <div class="bg-deepsteel p-4 rounded-lg border border-borderMuted font-mono text-xs text-slate-300 overflow-x-auto">
+<pre class="text-cyanHud">&lt;speak&gt;
+  &lt;prosody rate="medium" pitch="+5%"&gt;
+    Mira hermano, si estás operando en Deriv con una cuenta pequeña de veinte dólares, &lt;emphasis level="strong"&gt;tienes que parar un segundo.&lt;/emphasis&gt;
+  &lt;/prosody&gt;
+  &lt;break time="0.4s"/&gt;
+  &lt;prosody rate="medium"&gt;
+    El error que comete todo el mundo es activar el Martingale tradicional pensando que van a recuperar rápido. &lt;break time="0.3s"/&gt;
+    En esta pantalla en cuenta demo te voy a mostrar la configuración de protección de capital que yo mismo utilizo.
+  &lt;/prosody&gt;
+  &lt;break time="0.5s"/&gt;
+  &lt;prosody rate="slow" pitch="-8%"&gt;
+    Recuerda esto: el mercado no te debe nada. &lt;emphasis level="moderate"&gt;Tu único trabajo hoy es sobrevivir.&lt;/emphasis&gt;
+  &lt;/prosody&gt;
+  &lt;break time="0.4s"/&gt;
+  &lt;prosody rate="medium"&gt;
+    Pruébalo primero en tu cuenta demo. Si quieres el archivo XML completo, te lo dejo gratis en el canal de Telegram.
+  &lt;/prosody&gt;
+&lt;/speak&gt;</pre>
+            </div>
+        </div>
+
+        <!-- COMPLIANCE YPP & FUNIL ESTRATÉGICO -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-surface border border-borderMuted rounded-xl p-5 space-y-3">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-bullish"></i>
+                    <h3 class="text-sm font-bold text-white font-mono uppercase">Compliance & Gates YPP 2026/2027</h3>
+                </div>
+                <ul class="text-xs text-slate-300 space-y-2">
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-3.5 h-3.5 text-bullish mt-0.5"></i>
+                        <span><strong>Conta Demo Obrigatória:</strong> Marca d'água visível em 100% das capturas da interface da corretora.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-3.5 h-3.5 text-bullish mt-0.5"></i>
+                        <span><strong>Zero Ostentação:</strong> Proibido exibir carros, luxo, notas de dinheiro ou prints de ganhos em primeira pessoa.</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i data-lucide="check" class="w-3.5 h-3.5 text-bullish mt-0.5"></i>
+                        <span><strong>Checkbox Mídia Sintética:</strong> Marcação obrigatória de IA no YouTube Studio para blindagem de conta.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-5 space-y-3">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="git-merge" class="w-4 h-4 text-cyanHud"></i>
+                    <h3 class="text-sm font-bold text-white font-mono uppercase">Arquitetura do Funil de Conversão</h3>
+                </div>
+                <div class="text-xs text-slate-300 space-y-2">
+                    <div class="p-2 bg-deepsteel rounded border border-borderMuted flex items-center justify-between">
+                        <span class="font-bold text-white">1. YouTube (Descoberta)</span>
+                        <span class="text-[10px] font-mono text-cyanHud">Autoridade & Educação Gratuita</span>
+                    </div>
+                    <div class="text-center text-slate-500 font-mono text-[10px]">▼ Tráfego Qualificado</div>
+                    <div class="p-2 bg-deepsteel rounded border border-borderMuted flex items-center justify-between">
+                        <span class="font-bold text-white">2. Telegram VIP (Retenção)</span>
+                        <span class="text-[10px] font-mono text-bullish">Download XML + Comunidade Ativa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="pt-6 border-t border-borderMuted flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-500">
+            <div>
+                HERMES CHIEF YOUTUBE INTELLIGENCE SYSTEM &copy; 2026 // NÚCLEO TRADING
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-bullish"></span>
+                <span>AUDITORIA HOMOLOGADA & REGISTRADA EM MEMÓRIA FTS5</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

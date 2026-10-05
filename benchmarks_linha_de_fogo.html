@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linha de Fogo — Inteligência Competitiva & Dissecação Forense</title>
+  <style>
+    :root {
+      --bg-main: #0B0E14;
+      --bg-card: #151A23;
+      --bg-card-hover: #1E2532;
+      --border-color: #262F40;
+      --text-main: #E6EDF3;
+      --text-muted: #8B949E;
+      --accent-orange: #FF5500;
+      --accent-yellow: #FFE500;
+      --accent-cyan: #00E5FF;
+      --accent-red: #FF3344;
+      --accent-green: #00E676;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .badge-live {
+      background: rgba(255, 85, 0, 0.15);
+      color: var(--accent-orange);
+      border: 1px solid var(--accent-orange);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    /* Tabs Navigation */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      background: var(--bg-card);
+      color: var(--text-main);
+    }
+
+    .tab-btn.active {
+      background: var(--bg-card);
+      color: var(--accent-orange);
+      border-color: var(--accent-orange);
+    }
+
+    .tab-content {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grid & Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover {
+      border-color: #3B475C;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+    }
+
+    .channel-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #FFF;
+    }
+
+    .channel-tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .tag-br { background: rgba(0, 230, 118, 0.15); color: var(--accent-green); }
+    .tag-global { background: rgba(0, 229, 255, 0.15); color: var(--accent-cyan); }
+    .tag-alert { background: rgba(255, 51, 68, 0.15); color: var(--accent-red); }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+      background: var(--bg-main);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .metric-item {
+      text-align: center;
+    }
+
+    .metric-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: #FFF;
+    }
+
+    .metric-lbl {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent-yellow);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+
+    .item-box {
+      background: rgba(0, 0, 0, 0.2);
+      border-left: 3px solid var(--accent-orange);
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .item-box.cyan { border-left-color: var(--accent-cyan); }
+    .item-box.yellow { border-left-color: var(--accent-yellow); }
+    .item-box.red { border-left-color: var(--accent-red); }
+
+    ul {
+      padding-left: 18px;
+      font-size: 13px;
+      color: #C9D1D9;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* Neuromarketing specific */
+    .neuro-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .neuro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .neuro-grid { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .nlp-tag {
+      background: #1C2333;
+      border: 1px solid #2D3748;
+      color: #A0AEC0;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+
+    .formula-badge {
+      background: #0D1117;
+      border: 1px solid #30363D;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div>
+        <span class="badge-live">Linha de Fogo • Central de Inteligência</span>
+        <h1 style="margin-top: 8px;">🔥 Benchmark & Engenharia Reversa Documental</h1>
+        <p class="subtitle">Dissecação forense de audiência, neuromarketing, embalagem e monetização global.</p>
+      </div>
+      <div>
+        <span style="font-size: 13px; color: var(--text-muted); background: var(--bg-card); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border-color);">
+          🎯 Meta: CPM > $14 USD • Retenção > 65%
+        </span>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('radar')">📡 Radar Global de Canais (15 Canais)</button>
+      <button class="tab-btn" onclick="switchTab('neuro')">🧠 Dissecação Forense de Copy & Neuromarketing</button>
+      <button class="tab-btn" onclick="switchTab('matriz')">⚖️ Matriz & Checklist Tático (Linha de Fogo)</button>
+    </div>
+
+    <!-- TAB 1: RADAR GLOBAL DE CANAIS -->
+    <div id="radar" class="tab-content active">
+      <div class="grid">
+
+        <!-- Canal 1: Fórum Clandestino -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Fórum Clandestino</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@forumclandestinobr</div>
+            </div>
+            <span class="channel-tag tag-br">Brasil • Breakout</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">24.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$14.50</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">24.1x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Máfias de Leilões Judiciais & Fraudes de Precatórios.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box">
+            <strong>"A máfia que arremata imóveis por 10% do valor e despeja famílias em 48h"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">580.000 visualizações • 11:15 min • VPH: 1.200</span>
+          </div>
+          <div class="section-title">Arquitetura de Roteiro</div>
+          <ul>
+            <li><strong>Hook (0-5s):</strong> Contradição imobiliária violenta (apartamento de R$ 2M vendido a R$ 140k).</li>
+            <li><strong>Desenvolvimento:</strong> 5 atos causais com mapas de conluio e certidões penhoradas a cada 40s.</li>
+          </ul>
+        </div>
+
+        <!-- Canal 2: Ghost Fleet Dossier -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Ghost Fleet Dossier</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@GhostFleetDossier</div>
+            </div>
+            <span class="channel-tag tag-global">Global • Suggested Hijack</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">42.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$18.50</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">44.0x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Maritime Chokepoints, Smuggling Fleets & Sanctions Evasion.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box cyan">
+            <strong>"How 600 Ghost Tankers Fake Their GPS to Smuggle $80B of Oil"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">1.850.000 visualizações • 13:40 min • VPH: 2.200</span>
+          </div>
+          <div class="section-title">Arquitetura de Roteiro</div>
+          <ul>
+            <li><strong>Hook (0-4s):</strong> Telemetria de satélite divergente (navio em doca na Grécia vs foto espiã no Irã).</li>
+            <li><strong>Desenvolvimento:</strong> Infiltração na barra lateral de canais como Wendover e Neo.</li>
+          </ul>
+        </div>
+
+        <!-- Canal 3: Logística Oculta BR -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Logística Oculta BR</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@logisticaocultabr</div>
+            </div>
+            <span class="channel-tag tag-br">Brasil • Supply Vacuum</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">38.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$11.00</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">23.4x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Mercado Negro de Cargas Abandonadas & Alfândega.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box yellow">
+            <strong>"Para onde vão os contêineres abandonados no Porto de Santos que ninguém reclama?"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">890.000 visualizações • 12:40 min</span>
+          </div>
+          <div class="section-title">Por que escala</div>
+          <p style="font-size: 12px; color: var(--text-muted);">Domina o vácuo de busca: público ama ver 'tesouros esquecidos', mas os vídeos existentes eram matérias velhas de TV.</p>
+        </div>
+
+        <!-- Canal 4: Critical Tolerance -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Critical Tolerance</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@CriticalTolerance</div>
+            </div>
+            <span class="channel-tag tag-global">Global • Mechanism Specific</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">55.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$16.00</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">22.7x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Forensic Metallurgy, Cryogenic Limits & Shockwaves.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box cyan">
+            <strong>"The 2 Kelvin Margin: Why Liquid Natural Gas Tanks Experience Micro-Fractures"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">1.250.000 visualizações • 14:10 min</span>
+          </div>
+          <div class="section-title">Por que escala</div>
+          <p style="font-size: 12px; color: var(--text-muted);">Foge do clichê de Titanic. Foca em física forense microscópica atraindo público técnico de alto poder aquisitivo.</p>
+        </div>
+
+        <!-- Canal 5: Insolvency Cartels -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Insolvency Cartels</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@InsolvencyCartels</div>
+            </div>
+            <span class="channel-tag tag-global">Global • High CPM</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">48.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$19.50</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">29.1x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Corporate Liquidations, Distressed Debt & Bankruptcy Predators.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box yellow">
+            <strong>"The Predatory Funds That Buy Bankrupt Retailers Just to Strip Their Trademarks"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">1.400.000 visualizações • 11:50 min</span>
+          </div>
+          <div class="section-title">Por que escala</div>
+          <p style="font-size: 12px; color: var(--text-muted);">Canibalismo financeiro em vez de 'história corporativa chata'. RPM atinge mais de $19 USD com facilidade.</p>
+        </div>
+
+        <!-- Canal 6: Farmacologia Reversa -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="channel-title">Farmacologia Reversa</div>
+              <div style="font-size: 12px; color: var(--text-muted);">@farmacologiareversa</div>
+            </div>
+            <span class="channel-tag tag-br">Brasil • Arbitragem</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item"><div class="metric-val">31.000</div><div class="metric-lbl">Inscritos</div></div>
+            <div class="metric-item"><div class="metric-val">$13.00</div><div class="metric-lbl">CPM Est.</div></div>
+            <div class="metric-item"><div class="metric-val">23.2x</div><div class="metric-lbl">Outlier Ratio</div></div>
+          </div>
+          <div class="section-title">Nicho & Mecanismo</div>
+          <p style="font-size: 13px; color: #C9D1D9;">Bioquímica Oculta, Adulterações & Patentes Médicas.</p>
+          <div class="section-title">Vídeo Top Performer</div>
+          <div class="item-box red">
+            <strong>"A molécula de R$ 0,08 que os laboratórios vendem por R$ 1.200 no Brasil"</strong><br>
+            <span style="color: var(--text-muted); font-size: 11px;">720.000 visualizações • 10:20 min</span>
+          </div>
+          <div class="section-title">Por que escala</div>
+          <p style="font-size: 12px; color: var(--text-muted);">Arbitragem de Pharma Deep Dives americanos. Zero concorrência no Brasil em documentários forenses dessa categoria.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: DISSECAÇÃO FORENSE DE COPY & NEUROMARKETING -->
+    <div id="neuro" class="tab-content">
+      
+      <div class="neuro-card">
+        <h2 style="font-size: 20px; color: var(--accent-orange); margin-bottom: 12px;">🔍 1. Engenharia Visual de Thumbnail (Eye-Tracking & Contraste)</h2>
+        <div class="neuro-grid">
+          <div>
+            <div class="section-title">Paleta Cromática Opressiva</div>
+            <p style="font-size: 13px; color: #C9D1D9;">
+              <strong>Fundo Obsidian / Carvão Fosco (#0B0E14):</strong> Garante que o thumbnail se destaque contra o fundo branco ou dark mode do YouTube.<br>
+              <strong>Pontos Focais de Alta Saturação:</strong> Amarelo Industrial (#FFE500), Laranja Fogo (#FF5500) ou Ciano Laser (#00E5FF) aplicados apenas no objeto central de perigo ou evidência.
+            </p>
+          </div>
+          <div>
+            <div class="section-title">Regra dos 3 Elementos Físicos</div>
+            <p style="font-size: 13px; color: #C9D1D9;">
+              1. <strong>Elemento de Autoridade/Institucional:</strong> Fita policial, selo de falência, carimbo de confidencial ou mapa militar.<br>
+              2. <strong>Elemento de Conflito:</strong> Preço riscado, microfissura, coordenadas falsificadas.<br>
+              3. <strong>Microcopy Máxima de 3 Palavras:</strong> Zero frases longas. A imagem conta a história, o texto apenas dispara a dúvida.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="neuro-card">
+        <h2 style="font-size: 20px; color: var(--accent-yellow); margin-bottom: 12px;">⚡ 2. Os 5 Gatilhos Psicológicos de Alta Conversão (CTR > 11%)</h2>
+        <div class="neuro-grid">
+          <div>
+            <div class="item-box yellow">
+              <strong>1. Efeito Zeigarnik (Loop Aberto Insuportável)</strong><br>
+              A thumbnail mostra o resultado da fraude ou o documento aberto, mas esconde QUEM assinou ou O MOTIVO. A mente humana precisa clicar para fechar o loop cognitivo.
+            </div>
+            <div class="item-box red">
+              <strong>2. Dissonância Moral / Injustiça Visceral</strong><br>
+              Mostrar uma discrepância absurda de valores ("De R$ 0,08 para R$ 1.200" ou "Vendido por 10%"). Desperta indignação imediata, que gera clique em menos de 1.2 segundos.
+            </div>
+            <div class="item-box cyan">
+              <strong>3. Quebra de Padrão Algorítmico</strong><br>
+              Substituir rostos com bocas abertas de thumbnails amadoras por visual sóbrio, cinemático e forense (estilo arquivo militar desclassificado).
+            </div>
+          </div>
+          <div>
+            <div class="item-box">
+              <strong>4. Economia de Esforço Cognitivo</strong><br>
+              A thumbnail deve ser compreendida em menos de 400 milissegundos no feed do celular. Se o espectador precisar ler mais de 3 palavras para entender o perigo, ele rola a tela.
+            </div>
+            <div class="item-box yellow">
+              <strong>5. Polaridade Binária (O Sistema vs O Indivíduo)</strong><br>
+              Posicionar a narrativa como uma engrenagem oculta gigante que opera silenciosamente contra as pessoas comuns.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="neuro-card">
+        <h2 style="font-size: 20px; color: var(--accent-cyan); margin-bottom: 12px;">📐 3. Fórmulas Matemáticas de Título & Tags NLP</h2>
+        <div class="neuro-grid">
+          <div>
+            <div class="section-title">Fórmulas de Título de Alta Retenção</div>
+            <div class="formula-badge">
+              Fórmula 1: [A Máfia / O Esquema] de [Unidade X] que [Ação Chocante] por [Z]% do Valor
+            </div>
+            <div class="formula-badge">
+              Fórmula 2: Para Onde Vão os [Bens X] de [Local Y] que Ninguém Tem Coragem de Reclamar?
+            </div>
+            <div class="formula-badge">
+              Fórmula 3: A Margem de [X]: Por Que [Sistema Gigante] Entrou em Colapso Silencioso
+            </div>
+          </div>
+          <div>
+            <div class="section-title">Cluster Semântico de Tags NLP (YouTube Algorithm)</div>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">Infiltração nos algoritmos de busca e recomendação lateral de documentários:</p>
+            <div class="tag-cloud">
+              <span class="nlp-tag">investigação documental</span>
+              <span class="nlp-tag">máfia dos leilões</span>
+              <span class="nlp-tag">fraudes financeiras</span>
+              <span class="nlp-tag">engenharia forense</span>
+              <span class="nlp-tag">mercado negro</span>
+              <span class="nlp-tag">crise patrimonial</span>
+              <span class="nlp-tag">porto de santos</span>
+              <span class="nlp-tag">geopolítica naval</span>
+              <span class="nlp-tag">leilão judicial</span>
+              <span class="nlp-tag">cartórios e precatórios</span>
+              <span class="nlp-tag">documentários 4k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TAB 3: MATRIZ & CHECKLIST TÁTICO -->
+    <div id="matriz" class="tab-content">
+      <div class="neuro-card">
+        <h2 style="font-size: 20px; color: var(--accent-green); margin-bottom: 16px;">✅ Checklist de Validação para Vídeos do Linha de Fogo</h2>
+        
+        <div class="grid">
+          <div class="item-box yellow">
+            <strong>1. Gancho nos Primeiros 5 Segundos (Hook Brutal)</strong>
+            <ul>
+              <li>Zero vinheta, zero introdução de criador.</li>
+              <li>Apresentação de contradição física ou financeira irrefutável.</li>
+              <li>Zoom dramático em documento real ou telemetria em 0:03s.</li>
+            </ul>
+          </div>
+
+          <div class="item-box cyan">
+            <strong>2. Cadência Visual & Motion Forense</strong>
+            <ul>
+              <li>Novo estímulo visual ou transição vetorial a cada 35–45 segundos.</li>
+              <li>Uso de organogramas, mapas GIS e cutaways 3D sem poluição.</li>
+              <li>Trilha sonora com sub-bass constante e pausas estratégicas de silêncio.</li>
+            </ul>
+          </div>
+
+          <div class="item-box red">
+            <strong>3. Blindagem de Monetização (YPP)</strong>
+            <ul>
+              <li>Zero conteúdo reutilizado sem agregação substancial de valor.</li>
+              <li>Voz sintetizada calibrada com cadência natural ou narração humana.</li>
+              <li>Roteiro autoral com 5 atos lógicos e apuração factual comprovável.</li>
+            </ul>
+          </div>
+
+          <div class="item-box">
+            <strong>4. Call to Action (CTA) Estruturado</strong>
+            <ul>
+              <li>Zero interrupções de "inscreva-se" no meio do clímax.</li>
+              <li>CTA posicionado exclusivamente nos últimos 60 segundos do vídeo.</li>
+              <li>Recomendação do próximo episódio através de tela final (End Screen Loop).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

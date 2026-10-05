@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Profe Motion Engine // Matriz de Ideias Validadas para Produção</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#07080B',
+                        deepsteel: '#0F111A',
+                        surface: '#141724',
+                        surfaceLight: '#1C2133',
+                        bullish: '#00FF66',
+                        bearish: '#FF3355',
+                        amberAlert: '#FFB800',
+                        cyanHud: '#00F0FF',
+                        borderMuted: '#242B42'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { background-color: #07080B; color: #E2E8F0; font-family: 'Inter', sans-serif; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #0F111A; }
+        ::-webkit-scrollbar-thumb { background: #242B42; border-radius: 4px; }
+        .gradient-border {
+            border: 1px solid transparent;
+            background: linear-gradient(#141724, #141724) padding-box, linear-gradient(135deg, #00FF66 0%, #00F0FF 50%, #FFB800 100%) border-box;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-obsidian text-slate-200 antialiased p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto space-y-8">
+
+        <!-- HEADER DA MATRIZ -->
+        <header class="flex flex-wrap items-center justify-between gap-4 border-b border-borderMuted pb-6">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-bullish animate-pulse"></span>
+                    <span class="font-mono text-xs uppercase tracking-widest text-bullish font-semibold">El Profe Motion Engine // Blueprint Generator</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-surfaceLight text-cyanHud border border-borderMuted">AUTOMATION PIPELINE</span>
+                </div>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Matriz de Ideias Validadas para Produção Automatizada</h1>
+                <p class="text-sm text-slate-400 mt-1">Aulas didáticas em Remotion Engine com narração humana e natural para o canal <span class="text-amberAlert font-semibold">@ElProfdelLasVelas</span></p>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <div class="text-xs font-mono text-slate-400">ENGINE STATUS</div>
+                    <div class="text-xs font-mono text-white font-bold">REMOTION v4.0 READY</div>
+                </div>
+                <button onclick="window.print()" class="px-3.5 py-2 bg-surfaceLight hover:bg-slate-700 text-xs font-mono text-white rounded-lg border border-borderMuted flex items-center gap-2 transition">
+                    <i data-lucide="printer" class="w-3.5 h-3.5"></i> Imprimir / PDF
+                </button>
+            </div>
+        </header>
+
+        <!-- REGRAS DA ARQUITETURA DE AUTOMAÇÃO -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-5 space-y-3">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                    <i data-lucide="cpu" class="w-4 h-4 text-cyanHud"></i>
+                    Diretrizes do Pipeline de Renderização (Código Remotion + Narração Humana)
+                </h3>
+                <span class="text-xs font-mono text-slate-400">Sessões Reais Normalizadas (30 a 60 candles)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300">
+                <div class="bg-surfaceLight/60 p-3 rounded-lg border border-borderMuted/60">
+                    <strong class="text-bullish block mb-1">1. Trechos Íntegros de Mercado:</strong>
+                    Apenas trechos sem lacunas temporais (validade de 30-50 candles contínuos de 1 min).
+                </div>
+                <div class="bg-surfaceLight/60 p-3 rounded-lg border border-borderMuted/60">
+                    <strong class="text-cyanHud block mb-1">2. Eventos Visuais Dinâmicos:</strong>
+                    Zoom em mechas, traçado automático de suporte/resistência e marcadores didáticos BUY/SELL no fechamento.
+                </div>
+                <div class="bg-surfaceLight/60 p-3 rounded-lg border border-borderMuted/60">
+                    <strong class="text-amberAlert block mb-1">3. Voz Fluida e Sem Apelação:</strong>
+                    Pensamento em voz alta ("Mira acá...", "A ver..."), sem técnicas de retenção forçada, 135-140 palavras/min.
+                </div>
+            </div>
+        </div>
+
+        <!-- LISTA DAS 6 AULAS VALIDADAS PARA PRODUÇÃO -->
+        <div class="space-y-6">
+
+            <!-- EPISÓDIO 1 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 01 // P0</span>
+                        <h2 class="text-lg font-bold text-white">Seguir la Tendencia en 1 Minuto (Sin Indicadores Raros)</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~3:00 min | Remotion Range: 45 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                O iniciante polui a tela com 5 indicadores e se perde nos sinais conflitantes. A aula mostra na prática como a sequência de topos e fundos ascendentes + retração na média visual dá 100% da informação necessária.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Trecho com tendência de alta clara (10-15 candles verdes), 1 vela vermelha de correção deixando mecha inferior de rejeição, seguida por fechamento de confirmação verde.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual (Remotion Event Triggers):
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:25]</span> <code>CAMERA_PAN_OVERVIEW</code> ➔ Gráfico limpo com 15 candles. Fala: <em>"Mira la pantalla. No pongas diez indicadores..."</em></div>
+                            <div><span class="text-amberAlert">[00:25 - 01:05]</span> <code>HIGHLIGHT_CANDLE(index=32)</code> ➔ Destaque suave na vela vermelha de recuo. Fala: <em>"Aparece una vela roja y el principiante piensa que cambió..."</em></div>
+                            <div><span class="text-amberAlert">[01:05 - 01:50]</span> <code>FOCUS_WICK_REJECTION(zoom=1.25)</code> ➔ Zoom no pavio inferior sendo formado. Fala: <em>"Mira la mecha que está dejando abajo. Tranquilo, no tocamos nada todavía..."</em></div>
+                            <div><span class="text-amberAlert">[01:50 - 02:30]</span> <code>DIDACTIC_SIGNAL_MARKER(type='BUY')</code> ➔ Marcação didática de compra no fechamento da vela. Fala: <em>"Ahí cerró. El cuerpo confirmó. Sin adivinar."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">Cómo Leer la Tendencia en 1 Minuto Sin Llenar la Pantalla de Indicadores</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-amberAlert font-mono font-bold">SOLO VELAS</span> | <span class="text-bullish font-mono">1 MINUTO</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPISÓDIO 2 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 02 // P0</span>
+                        <h2 class="text-lg font-bold text-white">Ruptura Falsa vs Ruptura Real: La Mecha Perfora, el Cuerpo Confirma</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~3:15 min | Remotion Range: 50 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                O erro mais comum: ver o preço ultrapassar o suporte durante os 30 segundos da vela e clicar em venda no impulso, apenas para ver a vela retrair e fechar verde do lado de dentro.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Linha de suporte horizontal clara testada 2 vezes. No 3º teste: vela que fura a linha com mecha de 60% e fecha dentro do canal (falsa ruptura). Logo depois, uma vela com corpo cheio que fecha rompendo (ruptura real).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual:
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:35]</span> <code>DRAW_HORIZONTAL_ZONE(color='#00F0FF')</code> ➔ Remotion desenha a linha de suporte. Fala: <em>"Mira este nivel. El precio ya rebotó dos veces acá..."</em></div>
+                            <div><span class="text-amberAlert">[00:35 - 01:20]</span> <code>SIMULATE_WICK_SPIKE(candle=28)</code> ➔ Vela perfura a linha para baixo e retrai. Fala: <em>"¿Ves que rompió la línea? Mucha gente vende ahí en el calor. Mira cómo la mecha vuelve..."</em></div>
+                            <div><span class="text-amberAlert">[01:20 - 02:10]</span> <code>SIDE_BY_SIDE_COMPARISON</code> ➔ Destaque da vela de falsa ruptura vs vela de ruptura verdadeira com corpo sólido. Fala: <em>"La mecha solo perfora; el cuerpo confirma. Si el cuerpo no cerró afuera, no hay ruptura."</em></div>
+                            <div><span class="text-amberAlert">[02:10 - 03:00]</span> <code>DIDACTIC_SIGNAL_MARKER(type='REVERSAL')</code> ➔ Marcação didática de compra no retorno. Fala: <em>"Pruébalo en demo antes de arriesgar. Sin adivinar."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">Ruptura Falsa vs Ruptura Real: El Secreto Está en el Cierre de la Vela</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-bearish font-mono font-bold">NO ROMPIÓ</span> | <span class="text-amberAlert font-mono">LA MECHA</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPISÓDIO 3 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 03 // P0</span>
+                        <h2 class="text-lg font-bold text-white">El Secreto de los Números Redondos: Zonas Psicológicas en Deriv e IQ Option</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~2:50 min | Remotion Range: 40 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                O iniciante acha que o preço reage por mágica. A aula demonstra que ordens de grandes instituições e algoritmos se acumulam em preços que terminam em .000 e .500 (números redondos).
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Vela esticada tocando exatamente uma cotação terminada em .000 (ex: 1.08500 ou índice de volatilidade 500.00), gerando reversão imediata de 1 minuto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual:
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:40]</span> <code>FOCUS_PRICE_AXIS(target='.000')</code> ➔ Zoom suave no eixo de preço lateral da corretora. Fala: <em>"Fíjate en este número al costado: termina en tres ceros (.000)..."</em></div>
+                            <div><span class="text-amberAlert">[00:40 - 01:30]</span> <code>DRAW_ROUND_NUMBER_GRID</code> ➔ Linha pontilhada automática na cotação redonda. Fala: <em>"No es casualidad que cuando la vela toca esta línea, frena de golpe. Es donde están las órdenes..."</em></div>
+                            <div><span class="text-amberAlert">[01:30 - 02:20]</span> <code>CANDLE_TOUCH_REACTION</code> ➔ Animação do impacto e retração. Fala: <em>"Mira cómo toca y rechaza. En vez de adivinar el soporte, aprende a mirar el número exacto."</em></div>
+                            <div><span class="text-amberAlert">[02:20 - 02:50]</span> <code>CALLOUT_DEMO_EXERCISE</code> ➔ Card: 'Tarefa: Identifique 3 números redondos no seu gráfico hoje'. Fala: <em>"Abre Deriv o IQ Option en demo y márcalos tú mismo."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">El Secreto de los Números Redondos: Por Qué el Precio Rebota en Estas Líneas</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-cyanHud font-mono font-bold">.000</span> | <span class="text-amberAlert font-mono">ZONA CLAVE</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPISÓDIO 4 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 04 // P0</span>
+                        <h2 class="text-lg font-bold text-white">Vela Doji en Zona Clave: Lo Que la Mayoría Ignora Sobre la Indecisión</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~3:10 min | Remotion Range: 42 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                O mito de que todo Doji (vela em cruz) significa reversão imediata. A aula ensina que Doji é equilíbrio e que o operador profissional espera a vela seguinte para definir a direção.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Tendência prévia de 8 candles, 1 Doji perfeito (corpo < 5% do range total, mechas simétricas), seguido por vela de força na direção da confirmação.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual:
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:30]</span> <code>ISOLATE_DOJI_CANDLE</code> ➔ Zoom macro no Doji no centro da tela. Fala: <em>"Ves esta vela finita con mechas a los dos lados. Te dijeron que es cambio inmediato. Falso..."</em></div>
+                            <div><span class="text-amberAlert">[00:30 - 01:20]</span> <code>EQUILIBRIUM_VISUALIZER</code> ➔ Gráfico de balança comparando compradores e vendedores 50/50. Fala: <em>"Un Doji es una pausa, un empate momentáneo. No toques nada todavía."</em></div>
+                            <div><span class="text-amberAlert">[01:20 - 02:15]</span> <code>WAIT_CONFIRMATION_CANDLE</code> ➔ Animação da vela seguinte rompendo a máxima do Doji. Fala: <em>"La vela siguiente es la que te dice quién ganó el empate. Mira el cuerpo verde cerrando arriba..."</em></div>
+                            <div><span class="text-amberAlert">[02:15 - 03:10]</span> <code>SUMMARY_CARD_RULE</code> ➔ Regra: 'Doji = Pausa | Próxima Vela = Gatillo'. Fala: <em>"Aprende a esperar. Sin adivinar."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">Vela Doji: Por Qué Operar Inmediatamente en Esta Vela Te Hace Perder</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-amberAlert font-mono font-bold">NO ES GIRO</span> | <span class="text-white font-mono">DOJI</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPISÓDIO 5 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 05 // P0</span>
+                        <h2 class="text-lg font-bold text-white">El Checklist de 3 Pasos Antes de Tocar el Botón</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~3:30 min | Remotion Range: 55 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                A ansiedade do clique impulsivo destrói a disciplina do trader. O Profe ensina um protocolo verbal de 3 verificações antes de abrir qualquer operação.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Simulação de entrada em tempo real onde o gráfico vai pausando e os 3 checks aparecem na tela (1. Direção das últimas 3 velas; 2. Tempo de expiração de 1 min; 3. Fechamento completo).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual:
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:40]</span> <code>PAUSE_PLAYBACK_ON_TRIGGER</code> ➔ Pausa suave no gráfico na iminência de uma entrada. Fala: <em>"Para la mano un segundo. Antes de tocar el botón verde o rojo, responde estas tres preguntas..."</em></div>
+                            <div><span class="text-amberAlert">[00:40 - 01:30]</span> <code>OVERLAY_CHECKLIST_ITEM(1)</code> ➔ HUD: '1. ¿A dónde van las últimas 3 velas?'. Fala: <em>"Paso uno: mira el contexto inmediato, no una vela aislada..."</em></div>
+                            <div><span class="text-amberAlert">[01:30 - 02:20]</span> <code>OVERLAY_CHECKLIST_ITEM(2)</code> ➔ HUD: '2. ¿El tiempo está bien configurado?'. Fala: <em>"Paso dos: revisa el reloj de la operación, que no se te haya corrido el tiempo..."</em></div>
+                            <div><span class="text-amberAlert">[02:20 - 03:00]</span> <code>OVERLAY_CHECKLIST_ITEM(3)</code> ➔ HUD: '3. ¿La vela cerró por completo?'. Fala: <em>"Paso tres: espera el cierre. Si los tres son 'sí', entras tranquilo. Sin adivinar."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">El Checklist de 3 Pasos Antes de Tocar el Botón en Deriv e IQ Option</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-bullish font-mono font-bold">3 PASOS</span> | <span class="text-amberAlert font-mono">ANTES DEL CLIC</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EPISÓDIO 6 -->
+            <div class="bg-surface border border-borderMuted rounded-xl overflow-hidden shadow-lg">
+                <div class="bg-surfaceLight px-6 py-4 border-b border-borderMuted flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-3">
+                        <span class="px-2.5 py-1 rounded text-xs font-mono font-bold bg-bullish/10 text-bullish border border-bullish/30">EPISÓDIO 06 // P1</span>
+                        <h2 class="text-lg font-bold text-white">El Error del Martingale: Por Qué Doblar la Entrada Destruye Tu Proceso</h2>
+                    </div>
+                    <span class="text-xs font-mono text-cyanHud">Duração: ~3:20 min | Remotion Range: 48 candles</span>
+                </div>
+                <div class="p-6 space-y-4 text-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Tese Causal & Problema:</span>
+                            <p class="text-xs text-slate-300">
+                                Desconstrói a falácia matemática mais destrutiva do trading latino: dobrar a aposta após uma perda ($1 -> $2 -> $4 -> $8) acreditando que "a próxima vela tem que reverter".
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono text-slate-400 uppercase block mb-1">Requisitos de Dados do Gráfico:</span>
+                            <p class="text-xs text-slate-300">
+                                Sequência de 5 velas verdes consecutivas em tendência forte onde um trader hipotético tenta vender em cada uma e quebra o saldo demonstrativo em 4 minutos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mapeamento de Blueprint Remotion -->
+                    <div class="bg-obsidian border border-borderMuted/80 rounded-lg p-4 font-mono text-xs space-y-2">
+                        <div class="text-cyanHud font-bold uppercase mb-1 flex items-center gap-1.5">
+                            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                            Blueprint de Sincronização Áudio-Visual:
+                        </div>
+                        <div class="space-y-1 text-slate-300">
+                            <div><span class="text-amberAlert">[00:00 - 00:45]</span> <code>MATH_CASCADE_OVERLAY</code> ➔ Tabela lateral mostrando a progressão geométrica das perdas: $1 ➔ $2 ➔ $4 ➔ $8 = -$15. Fala: <em>"Perdiste una operación y tu primer impulso es meter el doble..."</em></div>
+                            <div><span class="text-amberAlert">[00:45 - 01:45]</span> <code>CANDLE_TREND_RUN</code> ➔ Gráfico continua subindo com 5 velas verdes ignorando as tentativas de venda. Fala: <em>"El mercado no sabe cuánto dinero tienes ni te debe nada. Mira cómo sigue subiendo..."</em></div>
+                            <div><span class="text-amberAlert">[01:45 - 02:40]</span> <code>CONTRAST_DISCIPLINE_VS_EGO</code> ➔ Comparativo de trader disciplinado com risco fixo vs trader com martingale. Fala: <em>"Duplicar la entrada no es estrategia; es desesperación. En demo o en real, el riesgo siempre es fijo."</em></div>
+                            <div><span class="text-amberAlert">[02:40 - 03:20]</span> <code>CLOSING_MANIFESTO</code> ➔ Fala final do Profe: <em>"Antes de arriesgar, entiende. Antes de creer, comprueba. Sin adivinar."</em></div>
+                        </div>
+                    </div>
+
+                    <!-- Embalagem 0,2s -->
+                    <div class="flex flex-wrap items-center justify-between pt-2 border-t border-borderMuted/40 text-xs">
+                        <div><strong class="text-slate-400">Título YouTube:</strong> <span class="text-white font-medium">Por Qué el Martingale Destruye Cuentas de Trading (Demostración en Pantalla)</span></div>
+                        <div><strong class="text-slate-400">Texto Thumbnail:</strong> <span class="text-bearish font-mono font-bold">MARTINGALE</span> | <span class="text-amberAlert font-mono">EL ERROR</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEÇÃO: GERADOR DE BLUEPRINT JSON AUTOMATIZADO -->
+        <div class="gradient-border rounded-xl p-6 space-y-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <span class="px-2 py-0.5 text-xs font-mono rounded bg-cyanHud/20 text-cyanHud border border-cyanHud/40 font-bold">SCHEMA TÉCNICO // REMOTION AUTOMATION</span>
+                    <h3 class="text-lg font-extrabold text-white mt-2">Como Exportar Esses Blueprints Diretamente para o El Profe Motion Engine</h3>
+                </div>
+                <i data-lucide="code-2" class="w-8 h-8 text-cyanHud"></i>
+            </div>
+            <p class="text-xs text-slate-300">
+                Cada card acima foi projetado para alimentar diretamente o array <code>visual_events</code> do Remotion, garantindo sincronia milissegundo a milissegundo entre a locução gerada pelo ElevenLabs (voz de Eric a 140 WPM) e as animações de canvas do dashboard.
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="flex items-center justify-between border-t border-borderMuted pt-6 text-xs font-mono text-slate-500">
+            <div>EL PROFE MOTION ENGINE // AUTOMATED LESSON SYSTEM</div>
+            <div>STATUS: MATRIZ DE PRODUÇÃO 100% SALVA EM HTML</div>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chief Analyst // Dossiê de Técnicas Avançadas de Descoberta de Nichos Faceless</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#050608',
+                        deepsteel: '#0A0C13',
+                        surface: '#10121D',
+                        surfaceLight: '#181B2A',
+                        surfaceElevated: '#1F2336',
+                        neonCyan: '#00F0FF',
+                        neonEmerald: '#10B981',
+                        neonAmber: '#F59E0B',
+                        neonPurple: '#8B5CF6',
+                        neonRose: '#F43F5E',
+                        borderMuted: '#23283B',
+                        borderLight: '#323952'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #050608;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #0A0C13; }
+        ::-webkit-scrollbar-thumb { background: #23283B; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3B425C; }
+        .tab-btn.active {
+            background-color: #1F2336;
+            color: #00F0FF;
+            border-color: #00F0FF;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+        }
+        .glow-border-cyan { box-shadow: 0 0 25px rgba(0, 240, 255, 0.08); }
+        .glow-border-emerald { box-shadow: 0 0 25px rgba(16, 185, 129, 0.08); }
+        .glow-border-amber { box-shadow: 0 0 25px rgba(245, 158, 11, 0.08); }
+        .gradient-text-cyan {
+            background: linear-gradient(135deg, #00F0FF 0%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-emerald {
+            background: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .copy-badge {
+            transition: all 0.2s ease;
+        }
+        .copy-badge:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-obsidian text-slate-200 antialiased p-3 sm:p-6 lg:p-10">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+
+        <!-- TOP BAR & BRANDING -->
+        <header class="bg-surface/80 border border-borderMuted backdrop-blur-md rounded-2xl p-6 sm:p-8 relative overflow-hidden glow-border-cyan">
+            <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-3">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/70 border border-cyan-800/60 text-[11px] font-mono font-bold text-cyan-400">
+                            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                            CHIEF ANALYST // ALGORITHMIC RADAR
+                        </span>
+                        <span class="text-xs font-mono text-slate-400">v3.4 Multi-Method</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+                        Engenharia Forense de Nichos Faceless
+                    </h1>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
+                        Auditoria de 6 Técnicas Avançadas de Descoberta além de Palavras-Chave. Extração de 18 Territórios de Oceano Azul com alto RPM, barreira de entrada contra amadores e 100% de blindagem contra as regras YPP 2026/2027.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <div class="bg-deepsteel border border-borderMuted rounded-xl px-4 py-2.5 font-mono text-right">
+                        <div class="text-[10px] text-slate-400 uppercase tracking-wider">Benchmark RPM 2026</div>
+                        <div class="text-sm font-bold text-emerald-400">$10.00 – $19.50 USD</div>
+                    </div>
+                    <button onclick="exportFullJSON()" class="px-4 py-2.5 bg-surfaceLight hover:bg-slate-700 text-xs font-mono font-semibold text-white rounded-xl border border-borderMuted flex items-center gap-2 transition hover:border-cyan-500">
+                        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i> Exportar Dados (JSON)
+                    </button>
+                    <button onclick="window.print()" class="px-4 py-2.5 bg-cyan-500/10 hover:bg-cyan-500/20 text-xs font-mono font-semibold text-cyan-300 rounded-xl border border-cyan-500/30 flex items-center gap-2 transition">
+                        <i data-lucide="printer" class="w-4 h-4"></i> Imprimir Dossiê
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- KPI SUMMARY METRICS RIBBON -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3.5 font-mono">
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="compass" class="w-3.5 h-3.5 text-cyan-400"></i> MÉTODOS</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-white">6</div>
+                    <span class="text-[10px] text-cyan-400 font-semibold">Técnicas Não-Óbvias</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="layers" class="w-3.5 h-3.5 text-emerald-400"></i> SUB-NICHOS</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-emerald-400">18</div>
+                    <span class="text-[10px] text-emerald-500">3 por Técnica</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="dollar-sign" class="w-3.5 h-3.5 text-amber-400"></i> RPM MÉDIO</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-amber-400">$14.20</div>
+                    <span class="text-[10px] text-slate-400">USD / 1k views</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> YPP COMPLIANCE</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-emerald-400">100%</div>
+                    <span class="text-[10px] text-slate-400">Zero Reused Content</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5 text-purple-400"></i> RETENÇÃO AVD</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-purple-400">&ge; 48%</div>
+                    <span class="text-[10px] text-slate-400">9 a 14 minutos</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col justify-between">
+                <span class="text-[11px] text-slate-400 flex items-center gap-1.5"><i data-lucide="cpu" class="w-3.5 h-3.5 text-rose-400"></i> FORMATOS</span>
+                <div class="mt-2">
+                    <div class="text-2xl font-black text-rose-400">1 & 3</div>
+                    <span class="text-[10px] text-slate-400">Motion + IA Forense</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- GLOBAL SEARCH & FILTER TOOLBAR -->
+        <div class="bg-surface border border-borderMuted rounded-xl p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="relative w-full md:w-96">
+                <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                <input type="text" id="nicheSearchInput" onkeyup="filterNiches()" placeholder="Filtrar por tema, palavra-chave, título ou mecanismo..." class="w-full bg-deepsteel border border-borderMuted rounded-lg pl-10 pr-4 py-2 text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition">
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 w-full md:w-auto justify-end">
+                <span class="text-xs font-mono text-slate-400 mr-1">Filtrar por Formato:</span>
+                <button onclick="setFormatFilter('all')" id="filter-format-all" class="filter-format-btn px-2.5 py-1 rounded bg-cyan-950 border border-cyan-700 text-cyan-300 text-[11px] font-mono">Todos</button>
+                <button onclick="setFormatFilter('1')" id="filter-format-1" class="filter-format-btn px-2.5 py-1 rounded bg-deepsteel border border-borderMuted text-slate-400 hover:text-white text-[11px] font-mono">Formato 1 (Motion)</button>
+                <button onclick="setFormatFilter('3')" id="filter-format-3" class="filter-format-btn px-2.5 py-1 rounded bg-deepsteel border border-borderMuted text-slate-400 hover:text-white text-[11px] font-mono">Formato 3 (Vídeo IA)</button>
+            </div>
+        </div>
+
+        <!-- NAVIGATION TABS FOR THE 6 METHODS -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-borderMuted text-xs font-mono" id="tabsHeader">
+            <button onclick="switchTab('tab-all')" id="btn-tab-all" class="tab-btn active px-4 py-2.5 rounded-xl border border-transparent font-bold flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="grid" class="w-4 h-4"></i> Visão Geral (18 Nichos)
+            </button>
+            <button onclick="switchTab('tab-1')" id="btn-tab-1" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="file-text" class="w-4 h-4 text-cyan-400"></i> 1. Transposição de Mídias
+            </button>
+            <button onclick="switchTab('tab-2')" id="btn-tab-2" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="award" class="w-4 h-4 text-emerald-400"></i> 2. Caça por Patrocinadores
+            </button>
+            <button onclick="switchTab('tab-3')" id="btn-tab-3" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i> 3. Promessas Quebradas
+            </button>
+            <button onclick="switchTab('tab-4')" id="btn-tab-4" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="git-merge" class="w-4 h-4 text-purple-400"></i> 4. Assimetria de Grafo
+            </button>
+            <button onclick="switchTab('tab-5')" id="btn-tab-5" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="scale" class="w-4 h-4 text-rose-400"></i> 5. Fricção Regulatória
+            </button>
+            <button onclick="switchTab('tab-6')" id="btn-tab-6" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="search-check" class="w-4 h-4 text-teal-400"></i> 6. Vácuo de Qualidade
+            </button>
+            <button onclick="switchTab('tab-matrix')" id="btn-tab-matrix" class="tab-btn px-4 py-2.5 rounded-xl border border-transparent text-slate-400 hover:text-white flex items-center gap-2 whitespace-nowrap transition">
+                <i data-lucide="table" class="w-4 h-4 text-indigo-400"></i> Matriz P-Score & Comparativo
+            </button>
+        </div>
+
+        <!-- TAB CONTENT CONTAINER -->
+        <main id="tabContents" class="space-y-12">
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 1: TRANSPOSIÇÃO DE MÍDIAS PROFUNDAS -->
+            <!-- ========================================== -->
+            <section id="section-tech-1" class="technique-section space-y-6">
+                <div class="bg-surface border border-cyan-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-cyan">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-mono text-[11px] font-bold">MÉTODO #01</span>
+                                <h2 class="text-xl font-black text-white">Transposição de Mídias Profundas (Media Format Transposition)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Transformação de relatórios densos, processos judiciais de 200 páginas e whitepapers técnicos em documentários cinematográficos de 12 minutos.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Barreira de Entrada:</span>
+                            <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/50 font-bold">ALTÍSSIMA (Zero Amadores)</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-cyan-400 font-mono block mb-1">🔍 Onde Minerar Dados:</b>
+                            <p class="text-slate-300">Dossiês NTSB/FAA, relatórios de auditoria PwC/KPMG, petições iniciais de cortes de falência (Delaware) e whitepapers da DARPA/Naval Institute.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-cyan-400 font-mono block mb-1">⚡ O Mecanismo Causal:</b>
+                            <p class="text-slate-300">A verdade técnica está presa em PDFs que ninguém lê. A audiência tem sede pelo detalhe forense exato que os jornais resumem em duas linhas.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-cyan-400 font-mono block mb-1">🎬 Vantagem de Produção:</b>
+                            <p class="text-slate-300">Zero risco de copyright strike: todo documento público oficial é de domínio público e ganha vida através de motion graphics e simulações 3D.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 1 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 1.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-cyan-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="ntsb aviação falhas metalúrgicas relatórios">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase">Sub-Nicho 1.1 // Engenharia Aeronáutica</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$13.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Relatórios Forenses NTSB: A Física das Falhas de Aviação a 35.000 Pés</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Dissecação matemática de desastres e incidentes aéreos com base exclusivamente nos relatórios finais de 150 páginas da NTSB, gravações de caixa-preta (CVR/FDR) e metalurgia de pás de turbina.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Vídeo IA + CAD 3D de Turbinas + Telemetria de Altitude)</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Público:</b> Homens 24–65, pilotos, engenheiros, entusiastas de simulação de voo e mentes analíticas.</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>O micro-fissura de 2mm na pá de titânio que desligou a turbina em voo</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>A telemetria de 47 segundos da caixa-preta que o fabricante tentou selar</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>Por que o sensor Pitot congelou a -50°C e enganou 3 computadores de bordo</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-cyan-400">540/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-cyan-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 1.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-cyan-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="fraudes sec balanços falência contabilidade delaware">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase">Sub-Nicho 1.2 // Finanças Forenses</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$17.80</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Autópsias de Balanços da SEC: A Contabilidade Criminosa de Wall Street</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Leitura forense de petições de falência da corte de Delaware e notas de rodapé de formulários 10-K da SEC, revelando o momento exato em que auditorias aprovaram empresas que já estavam mortas.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Motion Minimalista Suíço + Organogramas de Balanço + Fluxo de Caixa)</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Público:</b> Investidores, contadores, advogados tributários, founders e profissionais do mercado financeiro.</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>A nota de rodapé na página 142 do balanço que previa o colapso de US$ 12B</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>Como a auditoria 'Big 4' carimbou como lucro uma dívida de R$ 8 bilhões</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>O truque contábil do 'Off-Balance Sheet' que escondeu 4.000 imóveis hipotecados</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-cyan-400">580/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-cyan-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 1.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-cyan-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="sonar naval acústica submarino darpa guerra eletrônica">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase">Sub-Nicho 1.3 // Balística & Guerra Naval</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$15.20</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Física Batimétrica & Guerra de Sonar: A Acústica Oculta dos Oceanos</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Baseado em monografias do Instituto Naval dos EUA e relatórios desclassificados da Guerra Fria sobre a termoclina oceânica, cavitação de hélices e detecção passiva de submarinos nucleares.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Mapas GIS Oceânicos + Visualização de Espectro Sonar + Vídeo IA 4K)</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Público:</b> Geopolítica global, militares da reserva, físicos acústicos e público fascinado por espionagem.</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>A camada de água a 200m de profundidade onde submarinos ficam 100% invisíveis</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>O som de cavitação de hélice que os hidrofones da OTAN identificam a 800 km</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-cyan-400">›</span><span>Por que um pulso de sonar ativo a 240 decibéis é letal para qualquer ser vivo</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-cyan-400">510/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-cyan-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 2: CAÇA POR PATROCINADORES DE ALTO LTV -->
+            <!-- ========================================== -->
+            <section id="section-tech-2" class="technique-section space-y-6">
+                <div class="bg-surface border border-emerald-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-emerald">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono text-[11px] font-bold">MÉTODO #02</span>
+                                <h2 class="text-xl font-black text-white">Caça Reversa por Patrocinadores de Alto LTV (Sponsor-First Niche Hunting)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Engenharia reversa dos orçamentos publicitários de grandes empresas B2B. Criação de canais desenhados para atrair marcas que pagam $3.000 a $8.000 por integração.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Modelo de Monetização:</span>
+                            <span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/50 font-bold">AdSense Alto + Patrocínio B2B</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-emerald-400 font-mono block mb-1">💎 Quem são os Compradores:</b>
+                            <p class="text-slate-300">CrowdStrike, Cloudflare, Oracle SCM, SAP, Samsara, plataformas de câmbio corporativo e corretoras de hedge de commodities.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-emerald-400 font-mono block mb-1">🎯 A Mágica do Volume Baixo:</b>
+                            <p class="text-slate-300">Um canal de 30 mil views com diretores de TI assistindo fatura 10x mais que um canal de 500 mil views sobre fofocas ou entretenimento adolescente.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-emerald-400 font-mono block mb-1">🛡️ Barreira YPP:</b>
+                            <p class="text-slate-300">Conteúdo 100% profissional, educacional e causal. Anúncios institucionais rodam com leilões de CPM disputados no topo do AdSense.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 2.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-emerald-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="cibersegurança corporativa ransomware active directory vpn b2b">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase">Sub-Nicho 2.1 // Cibersegurança Corporativa</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$18.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Anatomia de Invasões Corporativas & Ransomware B2B</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Documentários técnicos sobre como invasores penetram redes de grandes corporações através de portas VPN mal configuradas, ataques de movimento lateral e negociações de resgate em Bitcoin.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Patrocinadores Alvo:</b> SentinelOne, CrowdStrike, NordPass, Keeper Security, Cloudflare.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Topologia de Rede Vetorial + Motion de Terminais + Telas SIEM)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>Como uma credencial de VPN de R$ 50 paralisou uma fábrica de US$ 4 bilhões</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>A negociação secreta de resgate de 400 Bitcoins dentro de um chat da Dark Web</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>Como criminosos saltam de uma impressora esquecida até o servidor do controlador de domínio</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-emerald-400">605/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-emerald-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 2.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-emerald-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="frotas logística pesada telemetria erp suprimentos combustível">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase">Sub-Nicho 2.2 // Gestão de Frotas & Supply Chain</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$16.20</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Física & Matemática da Gestão de Frotas Pesadas e Silos</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A engenharia dos custos invisíveis de transporte: telemetria de consumo de diesel por inclinação de pista, desgaste de pneus a 90 km/h e perdas térmicas em silos frigoríficos.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Patrocinadores Alvo:</b> Samsara, Geotab, Cartões de Frota (Ticket Log/Edenred), SAP SCM.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Vídeo IA Industrial + Telemetria de Sensores IoT + Gráficos 3D)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>A diferença de 0.4 bar na pressão dos pneus que custa R$ 800 mil por mês</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>Como a telemetria de aceleração detecta desvios de combustível antes do fim da viagem</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>A equação de rota que economizou 2 milhões de litros de diesel eliminando conversões à esquerda</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-emerald-400">530/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-emerald-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 2.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-emerald-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="trade finance câmbio swift importação carta de crédito">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase">Sub-Nicho 2.3 // Comércio Exterior & Trade Finance</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$19.00</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Engenharia de Câmbio Corporativo, Cartas de Crédito & SWIFT</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Como funciona a arquitetura bancária de liquidação internacional de cargas de soja, minério e maquinário: cartas de crédito irrevogáveis, travas de câmbio futuro e fraudes de Bill of Lading.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Patrocinadores Alvo:</b> Bancos de Câmbio, Corretoras de Hedging, Softwares de Comex.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Fluxogramas Financeiros em Motion + Contratos Marítimos Animados)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>O golpe do conhecimento de embarque falso que desviou US$ 30 milhões em aço</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>Como os bancos usam travas de spread de câmbio para lucrar na liquidação de grãos</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-emerald-400">›</span><span>A rota de uma mensagem SWIFT de R$ 500 milhões entre São Paulo, Nova York e Xangai</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-emerald-400">590/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-emerald-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 3: MINERAÇÃO DE PROMESSAS QUEBRADAS -->
+            <!-- ========================================== -->
+            <section id="section-tech-3" class="technique-section space-y-6">
+                <div class="bg-surface border border-amber-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-amber">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-mono text-[11px] font-bold">MÉTODO #03</span>
+                                <h2 class="text-xl font-black text-white">Mineração de Promessas Quebradas (Broken Promise Mining)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Identificação de vídeos com mais de 2 milhões de views em canais gigantes onde o roteiro foi superficial ou enrolou a audiência. Você produz a resposta exata e sequestra a barra de recomendados.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Fonte de Tráfego:</span>
+                            <span class="px-2 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/50 font-bold">&gt;60% Vídeos Sugeridos</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-amber-400 font-mono block mb-1">💬 Onde Está a Mina:</b>
+                            <p class="text-slate-300">Comentários mais curtidos com queixas como: *"o vídeo de 15 minutos só falou da história e não mostrou como o reator funciona"*.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-amber-400 font-mono block mb-1">🔗 Infiltração Algorítmica:</b>
+                            <p class="text-slate-300">O algoritmo detecta que o usuário assistiu ao vídeo gigante e ainda busca mais sobre o termo. Seu vídeo surge como a conclusão perfeita.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-amber-400 font-mono block mb-1">⚡ Regra de Roteiro:</b>
+                            <p class="text-slate-300">Entregar o mecanismo exato nos primeiros 15 segundos, eliminando qualquer introdução burocrática ou história desnecessária.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 3 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 3.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-amber-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="reator nuclear resfriamento pressão física usina">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-amber-400 font-bold uppercase">Sub-Nicho 3.1 // Engenharia Nuclear & Termodinâmica</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$11.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Física Exata do Circuito Primário de Reatores Nucleares</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Fuga do clichê dramático de Chernobyl. Foco na hidráulica pesada: como bombas de 15.000 HP mantêm água a 320°C líquida sob 155 atmosferas de pressão para evitar a ebulição instantânea.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Falha do Concorrente:</b> Vídeos de 4M views mostram apenas fumaça e historinhas sem um único diagrama de pressão.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Cortes Transversais 3D de Vasos de Pressão + Telemetria de Fluxo)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>Por que a água a 320°C dentro do reator nuclear não vira vapor instantaneamente</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>O que acontece em 3 segundos quando a bomba primária de 155 atmosferas para de girar</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>A física do coeficiente de vazio: como o reator se autodestrói por excesso de bolhas</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-amber-400">560/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-amber-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 3.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-amber-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="falsa central voip bina spoofing pbx asterisk telecom">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-amber-400 font-bold uppercase">Sub-Nicho 3.2 // Infraestrutura de Telecomunicações</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$11.00</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Engenharia Clandestina de Spoofing de BINA & Servidores SIP</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Em vez de reportagens com depoimentos de vítimas, o vídeo desmonta o servidor Asterisk PBX, a injeção de pacotes SIP de falsificação de número de banco e a rota de troncos VoIP internacionais.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Falha do Concorrente:</b> Jornais de TV apenas dizem "cuidado com ligações", sem explicar como o 0800 do banco aparece na tela.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Motion de Roteamento de Pacotes VoIP + Painéis SIP Simulados)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>O comando no servidor VoIP que faz o número oficial do banco aparecer no seu celular</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>Como uma central clandestina compra troncos de telefonia nos EUA para ligar no Brasil</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>Por que as operadoras de telefonia demoram 48 horas para derrubar uma rota de spoofing</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-amber-400">575/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-amber-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 3.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-amber-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="turbina eólica offshore hvdc alta tensão corrosão salina">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-amber-400 font-bold uppercase">Sub-Nicho 3.3 // Energia Offshore & Transmissão HVDC</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$12.80</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Engenharia das Turbinas Eólicas Gigantes no Meio do Mar</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A física monumental das pás de 115 metros de fibra de carbono: como conversores de corrente contínua submarinos (HVDC) transmitem 2 gigawatts sem dissipar energia na água salgada.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Falha do Concorrente:</b> Vídeos genéricos de ecologia ignoram a mecânica de jaquetas de 80m fincadas no fundo do mar.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Vídeo IA Oceânico 4K + Cortes de Nacele de 600 Toneladas)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>Como uma pá de turbina de 115 metros gira a 300 km/h na ponta sem se despedaçar</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>A subestação elétrica submarina que converte 500.000 volts no fundo do Mar do Norte</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-amber-400">›</span><span>O que acontece quando o rolamento da nacele de 600 toneladas precisa ser trocado em alto-mar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-amber-400">520/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-amber-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 4: ASSIMETRIA DE GRAFO & INTERSECÇÃO -->
+            <!-- ========================================== -->
+            <section id="section-tech-4" class="technique-section space-y-6">
+                <div class="bg-surface border border-purple-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-purple">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-purple-500/20 text-purple-300 font-mono text-[11px] font-bold">MÉTODO #04</span>
+                                <h2 class="text-xl font-black text-white">Assimetria de Grafo & Intersecção de Nichos (Algorithmic Intersection)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Cruzamento de dois universos temáticos gigantes que compartilham o mesmo público, mas onde ninguém criou um canal especializado no ponto de colisão.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Vantagem Competitiva:</span>
+                            <span class="px-2 py-0.5 rounded bg-purple-950 text-purple-400 border border-purple-800/50 font-bold">Audiência Dupla Qualificada</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-purple-400 font-mono block mb-1">🧬 Como Funciona o Grafo:</b>
+                            <p class="text-slate-300">Espectadores de aviação também adoram finanças complexas. Espectadores de geopolítica também assistem a documentários sobre baterias e mineração.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-purple-400 font-mono block mb-1">📈 Fuga da Competição Direta:</b>
+                            <p class="text-slate-300">Você não disputa com os gigantes de finanças nem com os de aviação. Você se torna a autoridade única da fusão dos dois.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-purple-400 font-mono block mb-1">💰 Multiplicador de CPM:</b>
+                            <p class="text-slate-300">Ao combinar tecnologia e finanças, os algoritmos de leilão de anúncios aplicam as taxas mais elevadas de ambas as categorias.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 4 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 4.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-purple-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="leasing aviação finanças turbinas wall street aerolinhas">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-purple-400 font-bold uppercase">Sub-Nicho 4.1 // Aviação Comercial × Engenharia Financeira</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$16.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">O Mercado de Leasing de Turbinas de Avião & Fundos de Dublin</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Revelação de por que 70% das frotas de grandes companhias aéreas pertencem a fundos de investimento tributários na Irlanda e como o aluguel de uma turbina GE90 custa US$ 12.000 por hora de voo.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Intersecção:</b> Apaixonados por Aviação (Planespotters) + Investidores de Ações/Renda Fixa.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Vídeos IA de Hangares de Manutenção + Contratos de Leaseback em Motion)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>Por que quase nenhuma companhia aérea é dona dos aviões que você viaja</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>O fundo de investimento em Dublin que cobra US$ 350 mil/mês por uma única turbina</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>A cláusula de devolução de aeronave que quase quebrou uma grande empresa aérea</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-purple-400">595/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-purple-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 4.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-purple-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="lítio baterias ânodo grafite geopolítica mineração refino">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-purple-400 font-bold uppercase">Sub-Nicho 4.2 // Geopolítica × Engenharia Eletroquímica</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$14.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Rota do Lítio & A Química Oculta dos Ânodos de Bateria</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A rota de extração da salmoura no Atacama até a síntese de grafite sintético a 3.000°C na China: a dependência mundial de um monopólio de 5 fábricas de refino químico.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Intersecção:</b> Geopolítica & Relações Internacionais + Tecnologia de Materiais e Veículos Elétricos.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Mapas GIS Batimétricos e de Satélite + Animações Moleculares 3D)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>A rota de 18 meses que o lítio percorre antes de entrar na bateria do seu celular</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>Por que 90% do grafite mundial precisa ser cozido a 3.000°C em apenas uma província</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>A física da dendrita: o micro-filamento que perfura baterias e causa incêndios químicos</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-purple-400">550/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-purple-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 4.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-purple-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="neurociência dopamina cassinos slots rng apostas algoritmos">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-purple-400 font-bold uppercase">Sub-Nicho 4.3 // Neurociência × Algoritmos de Jogos (RNG)</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$15.00</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Engenharia Neuro-Matemática de Slots & Casas de Apostas</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Como matemáticos e neurocientistas calibram geradores de números pseudo-aleatórios (RNG) com o mecanismo de "Near-Miss" (quase vitória) para disparar dopamina sem pagar prêmios reais.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Intersecção:</b> Psicologia Comportamental + Análise Algorítmica e Probabilidade.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Motion de Circuitos de Dopamina Cerebral + Simulação de Código RNG)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>A matemática do 'Near-Miss': como o algoritmo faz seu cérebro acreditar que quase venceu</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>O cálculo de Volatilidade vs RTP que garante 100% de lucro matemático à banca</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-purple-400">›</span><span>A frequência de áudio em 432 Hz programada para suprimir a sensação de perda financeira</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-purple-400">570/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-purple-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 5: FRICÇÃO REGULATÓRIA & MACROECONÔMICA -->
+            <!-- ========================================== -->
+            <section id="section-tech-5" class="technique-section space-y-6">
+                <div class="bg-surface border border-rose-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-rose">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-mono text-[11px] font-bold">MÉTODO #05</span>
+                                <h2 class="text-xl font-black text-white">Fricção Regulatória & Macroeconômica (Regulatory Trigger)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Antecipação de novas leis, exigências de conformidade ambiental, auditorias de inteligência artificial e regulações tributárias que geram picos massivos de busca por explicações técnicas.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Intenção de Busca:</span>
+                            <span class="px-2 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/50 font-bold">Altíssima Urgência & Retenção</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-rose-400 font-mono block mb-1">⚖️ O Gatilho Legal:</b>
+                            <p class="text-slate-300">Quando o Banco Central, a UE ou a Receita anunciam uma norma com prazo final, milhões de afetados correm para entender as penalidades.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-rose-400 font-mono block mb-1">🔍 Como se Destacar:</b>
+                            <p class="text-slate-300">Em vez de ler o texto frio da lei, demonstre os sensores, câmeras, softwares e fluxos contábeis que serão usados na fiscalização.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-rose-400 font-mono block mb-1">⏳ Perenidade (Longa Cauda):</b>
+                            <p class="text-slate-300">A regulação permanece em vigor por décadas, garantindo tráfego orgânico diário por anos após a publicação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 5 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 5.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-rose-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="pedágio free flow rfid ocr câmeras multas radar rodovia">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-rose-400 font-bold uppercase">Sub-Nicho 5.1 // Fiscalização Eletrônica & Rodovias</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$9.80</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Física do Pedágio Sem Cancela (Free Flow) & Câmeras OCR</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A engenharia dos pórticos com lasers de volumetria 3D, antenas RFID de 915 MHz e câmeras de alta velocidade estroboscópicas infravermelhas capazes de ler placas a 160 km/h na chuva.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Fricção Real:</b> A expansão do Free Flow no Brasil e as milhares de multas por evasão geram picos de buscas no YouTube.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Esquemas Gráficos de Feixes Laser + Telemetria de Leitura de Placas)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>Como os pórticos do Free Flow identificam seu carro a 140 km/h sem errar a placa</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>A tecnologia de laser volumétrico que mede a altura dos eixos com o caminhão em movimento</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>Para onde vai a foto de alta resolução captada pela câmera infravermelha do pórtico</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-rose-400">515/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-rose-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 5.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-rose-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="cbam carbono exportação união europeia satélite sentinel">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-rose-400 font-bold uppercase">Sub-Nicho 5.2 // Comércio Internacional & Tributação Verde</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$14.20</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">O Mecanismo de Taxação de Carbono da Europa (CBAM) & Rastreio por Satélite</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Como a União Europeia audita fazendas e siderúrgicas brasileiras usando satélites ópticos Sentinel-2 e cálculos de balanço térmico de alto-forno para impor sobretaxas na alfândega.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Fricção Real:</b> Exportadores e consultores de sustentabilidade demandam entendimento forense do CBAM.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Satélites de Sensoriamento Remoto + Diagramas Térmicos Industriais)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>Como os satélites europeus detectam a pegada de carbono de uma siderúrgica a 800 km</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>A taxa CBAM que pode bloquear bilhões em exportações de aço e soja do Brasil</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>A fórmula matemática exata que converte emissões de gás em imposto alfandegário</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-rose-400">545/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-rose-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 5.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-rose-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="deepfake voz biometria espectrograma forense ia regulação">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-rose-400 font-bold uppercase">Sub-Nicho 5.3 // Biometria Sintética & Forense de Deepfakes</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$16.00</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Espectrogramas Forenses: Como Peritos Detectam Vozes Clonadas por IA</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A análise acústica de micro-artefatos espectrais e jitter de fase que softwares de clonagem de voz deixam para trás, e como tribunais validam provas periciais em fraudes digitais.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Fricção Real:</b> Leis eleitorais e regulações bancárias de prova de vida por voz geram interesse maciço.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Espectrogramas de Frequência em Tempo Real + Análise de Formantes de Voz)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>A frequência oculta em 16 kHz que revela instantaneamente se um áudio foi gerado por IA</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>Como os bancos atualizam os algoritmos de biometria de voz para barrar clonagens em tempo real</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-rose-400">›</span><span>O laudo pericial que comprovou a falsificação de voz em um golpe corporativo de R$ 5 milhões</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-rose-400">585/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-rose-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- TÉCNICA 6: VÁCUO DE QUALIDADE NA BUSCA -->
+            <!-- ========================================== -->
+            <section id="section-tech-6" class="technique-section space-y-6">
+                <div class="bg-surface border border-teal-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-teal">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-teal-500/20 text-teal-300 font-mono text-[11px] font-bold">MÉTODO #06</span>
+                                <h2 class="text-xl font-black text-white">Vácuo de Qualidade na Busca (Supply Vacuum Search)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Identificação de termos com altíssimo volume de busca no YouTube onde os vídeos da 1ª página são amadores, gravados em celular, antigos (&gt;2 anos) ou com áudio ruim. Seu documentário 4K domina a SERP.</p>
+                        </div>
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="text-slate-400">Potencial de Ranqueamento:</span>
+                            <span class="px-2 py-0.5 rounded bg-teal-950 text-teal-400 border border-teal-800/50 font-bold">#1 em Search em &lt;14 dias</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-teal-400 font-mono block mb-1">🕳️ O Vácuo de Oferta:</b>
+                            <p class="text-slate-300">Milhões de pessoas buscam o termo todo mês, mas o algoritmo é forçado a recomendar vídeos de 2018 com 360p porque ninguém fez uma versão moderna.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-teal-400 font-mono block mb-1">🚀 Substituição Instantânea:</b>
+                            <p class="text-slate-300">Assim que você publica um vídeo com CTR &gt; 7% e AVD &gt; 50%, o algoritmo rebaixa todos os vídeos velhos e te fixa no topo.</p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded-lg border border-borderMuted">
+                            <b class="text-teal-400 font-mono block mb-1">📦 Tráfego Perpétuo:</b>
+                            <p class="text-slate-300">Garante visualizações constantes e receita de AdSense todos os dias, independentemente da aba 'Início' do YouTube.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARDS DE NICHOS DO MÉTODO 6 -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                    <!-- NICHO 6.1 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-teal-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="resgate submarino navio afundado lastro robôs rov hidrostática">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-teal-400 font-bold uppercase">Sub-Nicho 6.1 // Engenharia de Salvatagem Marítima</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$10.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Física do Resgate & Içamento de Navios Afundados</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A termodinâmica e mecânica dos fluidos por trás do içamento de cargueiros afundados: injeção de ar comprimido em tanques de lastro submersos, corte térmico com tochas de plasma a 100m de profundidade e robôs ROV.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Concorrência Atual:</b> Vídeos amadores de operários de 2017 gravados sem edição e sem roteiro.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Render 3D de Hidrostática Submarina + Vídeos IA 4K de Robôs ROV)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>Como engenheiros içam um navio de 40.000 toneladas do fundo do oceano</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>A física do bolsão de ar comprimido que descolou a carcaça da lama submarina</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>Por que tochas de plasma conseguem queimar aço a 100 metros embaixo d'água</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-teal-400">535/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-teal-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 6.2 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-teal-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="1" data-name="cabos de aço pontes elevadores ensaios não destrutivos mfl magnetismo">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-teal-400 font-bold uppercase">Sub-Nicho 6.2 // Ensaios Não-Destrutivos & Cabos de Aço</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$11.80</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">Como Cabos de Aço de Elevadores e Pontes são Testados sem Quebrar</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A ciência dos testes de dispersão de fluxo magnético (MFL): como sensores identificam a ruptura de um único arame interno de 1mm dentro de um cabo de sustentação de ponte sem precisar desmontar a estrutura.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Concorrência Atual:</b> Vídeos técnicos alemães de 12 anos atrás sem narração ou aulas teóricas de 2 horas.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 1 (Visualização de Linhas de Campo Magnético em Motion + Telas de Sensor)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>O sensor magnético que detecta 1 arame quebrado dentro de um cabo de 200 toneladas</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>Como os engenheiros sabem a hora exata de trocar o cabo do elevador antes da fadiga</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>A física da perda de tensão que quase colapsou uma ponte pênsil na década de 90</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-teal-400">510/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-teal-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- NICHO 6.3 -->
+                    <div class="niche-card bg-surface border border-borderMuted hover:border-teal-500/50 rounded-xl p-5 space-y-4 transition flex flex-col justify-between" data-format="3" data-name="data center submarino servidores nitrogênio microsoft natick refrigeração">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-borderMuted pb-2.5">
+                                <span class="text-[10px] font-mono text-teal-400 font-bold uppercase">Sub-Nicho 6.3 // Infraestrutura de Servidores Submarinos</span>
+                                <span class="text-xs font-mono text-emerald-400 font-bold">RPM ~$15.50</span>
+                            </div>
+                            <h3 class="text-base font-black text-white">A Termodinâmica dos Data Centers Submarinos de Nitrogênio Seco</h3>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                A engenharia dos cilindros pressurizados com nitrogênio no fundo do mar (Project Natick): por que servidores imersos em água fria falham 8x menos que em terra e como a convecção elimina o custo de ar-condicionado.
+                            </p>
+                            <div class="bg-deepsteel p-2.5 rounded border border-borderMuted text-[11px] space-y-1">
+                                <div class="text-slate-400"><b class="text-slate-200">Concorrência Atual:</b> Apenas releases institucionais de 2 minutos sem detalhes térmicos ou de pressão.</div>
+                                <div class="text-slate-400"><b class="text-slate-200">Formato:</b> 3 (Vídeo IA do Leito Oceânico + Simulação CFD de Troca Térmica)</div>
+                            </div>
+                            <div class="space-y-1.5">
+                                <span class="text-[11px] font-mono text-slate-400 block font-semibold">TÍTULOS DE ALTA RETENÇÃO:</span>
+                                <ul class="space-y-1 text-xs text-slate-300 font-mono">
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>Por que colocar servidores em cápsulas de nitrogênio a 40m no fundo do mar reduz falhas em 8x</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>A termodinâmica do trocador de calor oceânico que resfria 1.000 placas de vídeo sem eletricidade</span></li>
+                                    <li class="flex items-start gap-1.5"><span class="text-teal-400">›</span><span>O que acontece dentro da cápsula submarina quando um chip superaquece a 95°C</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-borderMuted flex items-center justify-between">
+                            <span class="text-[10px] font-mono text-slate-400">P-Score: <b class="text-teal-400">590/625</b></span>
+                            <button onclick="copyTitles(this)" class="copy-badge px-2 py-1 rounded bg-surfaceLight hover:bg-slate-700 text-[10px] font-mono text-teal-300 border border-borderMuted flex items-center gap-1">
+                                <i data-lucide="copy" class="w-3 h-3"></i> Copiar Títulos
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ========================================== -->
+            <!-- MATRIZ COMPARATIVA GERAL & P-SCORE SIMULATOR -->
+            <!-- ========================================== -->
+            <section id="section-matrix" class="technique-section space-y-6">
+                <div class="bg-surface border border-indigo-500/30 rounded-2xl p-6 relative overflow-hidden glow-border-cyan">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-borderMuted pb-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="px-2.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300 font-mono text-[11px] font-bold">MATRIZ DECISÓRIA</span>
+                                <h2 class="text-xl font-black text-white">Ranking Causal & Pontuação P-Score (Equação Multiplicativa)</h2>
+                            </div>
+                            <p class="text-xs text-slate-300 mt-1">Classificação dos 18 sub-nichos mapeados por Potencial de Tração: $P = D \times C \times R \times E$ (Max 625 pontos).</p>
+                        </div>
+                        <div class="text-right font-mono text-xs text-slate-400">
+                            Filtro: <span class="text-indigo-400 font-bold">Top Rentabilidade & Retenção</span>
+                        </div>
+                    </div>
+
+                    <!-- TABELA DINÂMICA COMPARATIVA -->
+                    <div class="overflow-x-auto mt-6">
+                        <table class="w-full text-left text-xs font-mono">
+                            <thead class="bg-deepsteel text-slate-400 border-b border-borderMuted">
+                                <tr>
+                                    <th class="p-3">RANK</th>
+                                    <th class="p-3">SUB-NICHO</th>
+                                    <th class="p-3">TÉCNICA DE ORIGEM</th>
+                                    <th class="p-3 text-center">FORMATO</th>
+                                    <th class="p-3 text-right">RPM EST.</th>
+                                    <th class="p-3 text-center">P-SCORE</th>
+                                    <th class="p-3 text-center">STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-borderMuted text-slate-300">
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#01</td>
+                                    <td class="p-3 font-semibold text-white">Cibersegurança & Ransomware B2B</td>
+                                    <td class="p-3 text-slate-400">Caça por Patrocinadores</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$18.50</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">605</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#02</td>
+                                    <td class="p-3 font-semibold text-white">Leasing de Turbinas & Fundos de Dublin</td>
+                                    <td class="p-3 text-slate-400">Assimetria de Grafo</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">3 (Vídeo IA)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$16.50</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">595</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#03</td>
+                                    <td class="p-3 font-semibold text-white">Comércio Exterior & Trade Finance SWIFT</td>
+                                    <td class="p-3 text-slate-400">Caça por Patrocinadores</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$19.00</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">590</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#04</td>
+                                    <td class="p-3 font-semibold text-white">Data Centers Submarinos de Nitrogênio</td>
+                                    <td class="p-3 text-slate-400">Vácuo de Qualidade</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">3 (Vídeo IA)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$15.50</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">590</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#05</td>
+                                    <td class="p-3 font-semibold text-white">Biometria Sintética & Espectrogramas de Voz</td>
+                                    <td class="p-3 text-slate-400">Fricção Regulatória</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$16.00</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">585</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#06</td>
+                                    <td class="p-3 font-semibold text-white">Autópsias de Balanços da SEC (Wall Street)</td>
+                                    <td class="p-3 text-slate-400">Transposição de Mídias</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$17.80</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">580</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#07</td>
+                                    <td class="p-3 font-semibold text-white">Engenharia de Spoofing VoIP & PBX</td>
+                                    <td class="p-3 text-slate-400">Promessas Quebradas</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$11.00</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">575</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#08</td>
+                                    <td class="p-3 font-semibold text-white">Neuro-Matemática de Slots & RNG</td>
+                                    <td class="p-3 text-slate-400">Assimetria de Grafo</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">1 (Motion)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$15.00</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">570</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#09</td>
+                                    <td class="p-3 font-semibold text-white">Circuito Primário de Reatores Nucleares</td>
+                                    <td class="p-3 text-slate-400">Promessas Quebradas</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">3 (Vídeo IA)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$11.50</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">560</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                                <tr class="hover:bg-surfaceLight/50 transition">
+                                    <td class="p-3 font-bold text-cyan-400">#10</td>
+                                    <td class="p-3 font-semibold text-white">Rota do Lítio & Química de Baterias</td>
+                                    <td class="p-3 text-slate-400">Assimetria de Grafo</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-800">3 (Vídeo IA)</span></td>
+                                    <td class="p-3 text-right font-bold text-emerald-400">$14.50</td>
+                                    <td class="p-3 text-center font-bold text-indigo-400">550</td>
+                                    <td class="p-3 text-center"><span class="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">P0 GREENLIGHT</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER & COMPLIANCE SUMMARY -->
+        <footer class="border-t border-borderMuted pt-8 pb-12 text-xs font-mono text-slate-400 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span>Chief Analyst System // All Rights Reserved 2026</span>
+            </div>
+            <div class="text-slate-500">
+                Auditoria de Conformidade: YPP Safe (Zero Reused Content / Zero AI Template Penalties)
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 bg-surfaceLight border border-cyan-500 text-cyan-300 font-mono text-xs px-4 py-3 rounded-xl shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-4 flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-4 h-4 text-cyan-400"></i>
+        <span id="toastMessage">Títulos copiados com sucesso!</span>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Switch Tab Function
+        function switchTab(tabId) {
+            // Update Tab Buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('text-slate-400');
+            });
+            const activeBtn = document.getElementById('btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('active');
+                activeBtn.classList.remove('text-slate-400');
+            }
+
+            // Update Content Sections
+            const allSections = document.querySelectorAll('.technique-section');
+            if (tabId === 'tab-all') {
+                allSections.forEach(sec => sec.style.display = 'block');
+            } else if (tabId === 'tab-matrix') {
+                allSections.forEach(sec => sec.style.display = 'none');
+                document.getElementById('section-matrix').style.display = 'block';
+            } else {
+                const targetId = 'section-tech-' + tabId.replace('tab-', '');
+                allSections.forEach(sec => {
+                    if (sec.id === targetId) {
+                        sec.style.display = 'block';
+                    } else {
+                        sec.style.display = 'none';
+                    }
+                });
+            }
+            window.scrollTo({ top: 350, behavior: 'smooth' });
+        }
+
+        // Search & Filter Niches
+        function filterNiches() {
+            const query = document.getElementById('nicheSearchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.niche-card');
+            
+            cards.forEach(card => {
+                const text = (card.getAttribute('data-name') + ' ' + card.innerText).toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Format Filter
+        let currentFormat = 'all';
+        function setFormatFilter(format) {
+            currentFormat = format;
+            document.querySelectorAll('.filter-format-btn').forEach(b => {
+                b.classList.remove('bg-cyan-950', 'border-cyan-700', 'text-cyan-300');
+                b.classList.add('bg-deepsteel', 'border-borderMuted', 'text-slate-400');
+            });
+            const activeBtn = document.getElementById('filter-format-' + format);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-cyan-950', 'border-cyan-700', 'text-cyan-300');
+                activeBtn.classList.remove('bg-deepsteel', 'border-borderMuted', 'text-slate-400');
+            }
+
+            const cards = document.querySelectorAll('.niche-card');
+            cards.forEach(card => {
+                const cardFormat = card.getAttribute('data-format');
+                if (format === 'all' || cardFormat === format) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Copy Titles to Clipboard
+        function copyTitles(btn) {
+            const card = btn.closest('.niche-card');
+            const titleElements = card.querySelectorAll('ul li span:last-child');
+            let text = "";
+            titleElements.forEach(el => text += el.innerText + "\n");
+            
+            navigator.clipboard.writeText(text.trim()).then(() => {
+                showToast("3 Títulos de alta retenção copiados!");
+            });
+        }
+
+        // Toast Helper
+        function showToast(msg) {
+            const toast = document.getElementById('toastNotification');
+            const msgEl = document.getElementById('toastMessage');
+            msgEl.innerText = msg;
+            toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }, 2500);
+        }
+
+        // Export JSON Dataset
+        function exportFullJSON() {
+            const data = {
+                title: "Chief Analyst - Dossiê de Técnicas Avançadas de Descoberta de Nichos Faceless",
+                date: "2026-09-30",
+                total_methods: 6,
+                total_niches: 18,
+                average_rpm_usd: 14.20,
+                ypp_compliance: "100%",
+                methods: [
+                    { id: 1, name: "Transposição de Mídias Profundas", niches: ["Falhas NTSB Aviação", "Autópsias SEC Wall Street", "Física de Sonar Naval"] },
+                    { id: 2, name: "Caça por Patrocinadores de Alto LTV", niches: ["Cibersegurança Ransomware B2B", "Gestão de Frotas e Silos", "Trade Finance SWIFT"] },
+                    { id: 3, name: "Mineração de Promessas Quebradas", niches: ["Reatores Nucleares 320C", "Engenharia Spoofing VoIP", "Turbinas Eólicas Offshore"] },
+                    { id: 4, name: "Assimetria de Grafo & Intersecção", niches: ["Leasing Turbinas Aviação", "Rota do Lítio e Baterias", "Neuro-Matemática de Slots"] },
+                    { id: 5, name: "Fricção Regulatória & Macroeconômica", niches: ["Pedágio Free Flow OCR", "Taxação CBAM Satélite", "Biometria de Voz Clonada"] },
+                    { id: 6, name: "Vácuo de Qualidade na Busca", niches: ["Resgate de Navios Afundados", "Ensaios de Cabos de Aço MFL", "Data Centers Submarinos"] }
+                ]
+            };
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "dossie_descoberta_nichos_faceless_2026.json";
+            a.click();
+            showToast("Download do dataset JSON concluído!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "status": "LIVE_ANALYSIS_COMPLETED",
+  "channel_slug": "o_outro_lado",
+  "channel_name": "O Outro Lado",
+  "handle": "@outroladodetudo",
+  "vital_signs": {
+    "subscribers": 5,
+    "total_videos_analyzed": 30,
+    "long_videos_count": 18,
+    "shorts_count": 12,
+    "long_views_average": 28.4,
+    "shorts_views_average": 435.8,
+    "trend": "ACCELERATING"
+  },
+  "traction_analysis": {
+    "top_performing_longs": [
+      {
+        "title": "O Outro Lado do Pix: O Que Acontece Se os Servidores do Bacen Pararem?",
+        "views": 108
+      },
+      {
+        "title": "Como roubam a sua gasolina sem você perceber: O golpe da bomba nos postos",
+        "views": 85
+      },
+      {
+        "title": "O Segundo Invisível que Apagou 25 Estados do Brasil de Uma Só Vez",
+        "views": 68
+      }
+    ],
+    "top_performing_shorts": [
+      {
+        "title": "Mergulhadores a 14 Metros Sem Soltar Bolhas de Ar no Porto (Parte 1)",
+        "views": 1400
+      },
+      {
+        "title": "O Esconderijo Secreto Debaixo do Navio que o Sonar Não Vê (Parte 2)",
+        "views": 1200
+      },
+      {
+        "title": "Em 600 milissegundos, a rede sacrificou o país para salvar as usinas",
+        "views": 1100
+      }
+    ],
+    "stalled_longs": [
+      {
+        "title": "A Armadilha do Pedágio Sem Cancela: Por Que 3,4 Milhões Foram Multados?",
+        "views": 5
+      },
+      {
+        "title": "O Que Acontece nos 400 Milissegundos Entre o Cartão e a Maquininha",
+        "views": 3
+      },
+      {
+        "title": "O Outro Lado das 3 da Madrugada: A Máquina que Muda as Leis do País Enquanto Você Dorme",
+        "views": 2
+      }
+    ],
+    "semantic_clusters": {
+      "CRIME_RISCO_SUBMUNDO": {
+        "count": 10,
+        "total_views": 3862,
+        "avg_views": 386.2,
+        "top_video": "Mergulhadores a 14 Metros Sem Soltar Bolhas de Ar no Porto (Parte 1)"
+      },
+      "INFRAESTRUTURA_SISTEMAS": {
+        "count": 14,
+        "total_views": 1578,
+        "avg_views": 112.7,
+        "top_video": "Em 600 milissegundos, a rede sacrificou o país para salvar as usinas"
+      },
+      "TECNOLOGIA_FISICA_ABSTRATA": {
+        "count": 5,
+        "total_views": 233,
+        "avg_views": 46.6,
+        "top_video": "Por Que Essa Seringa de Hospital Pesa 2 Quilos? (PT 1)"
+      }
+    }
+  },
+  "current_bottleneck": {
+    "id": "DESCOBERTA_COLD_START",
+    "name": "Gargalo de Descoberta // Cold Start Algorítmico",
+    "symptom": "Pouquíssimas impressões totais (< 500) e visualizações médias < 25.",
+    "root_cause": "Canal recente sem histórico, postagens em ritmo excessivo sem cohortes sementes ativas."
+  },
+  "strategic_decisions": {
+    "prescribed_next_p0_episode": {
+      "topic": "Jammer de Carro Roubado e Rastreadores",
+      "unit": "1 sinal GPS de 1.575 GHz",
+      "thesis": "O dispositivo de R$ 50 que cria uma bolha eletromagnética de silêncio e desativa o rastreador de satélite cobrado pela seguradora.",
+      "hook_suggestion": "No instante em que o ladrão liga este aparelho no acendedor de cigarro, o carro evapora do mapa do Brasil.",
+      "p_score": 500,
+      "s_score": 3,
+      "priority": "P0",
+      "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+      "factors": {
+        "D": 5,
+        "C": 5,
+        "R": 5,
+        "E": 4
+      }
+    },
+    "packaging_directive": {
+      "winning_title_structure": "Paradoxo + Mecanismo Concreto (Ex: 'O Jammer de 50 Reais que Apaga o Rastreador')",
+      "forbidden_patterns": [
+        "Caixa alta excessiva (ALL CAPS)",
+        "Títulos genéricos sem mecanismo ('O Outro Lado da Tomada')",
+        "Shorts com títulos de hashtag"
+      ],
+      "thumbnail_aesthetic": "Elemento focal único de alto contraste (Sodium Amber / Cyan), fundo escuro (#060709), texto máximo de 3 palavras em caixa alta."
+    },
+    "fourteen_day_experiment": {
+      "duration_days": 14,
+      "hypothesis": "Se alinharmos os próximos 3 episódios em uma única série temática ('A Máquina do Dinheiro Oculto') e vincularmos os Shorts virais via botão de Vídeo Relacionado, o número de Espectadores Recorrentes crescerá em > 40% porque o público semente terá relevância contínua.",
+      "test_design": [
+        "Ação 1: Vincular no YouTube Studio os 2 Shorts virais (Santos 1.4k e Apagão 1.1k) aos seus documentários longos correspondentes.",
+        "Ação 2: Produzir 2 novos episódios com P ≥ 450 (Jammer de Carro Roubado e O Chip da Bomba de Combustível).",
+        "Ação 3: Limitar cadência a 2 vídeos longos por semana para permitir amostragem algorítmica de 72h."
+      ],
+      "metric_targets": {
+        "returning_viewers": "+40% na aba Audience",
+        "browse_ctr": "> 6.0%",
+        "retention_30s": "> 65%"
+      },
+      "success_decision": "Consolidar editorial exclusivamente em Infraestrutura de Crime/Dinheiro e pausar temas de física pura.",
+      "failure_decision": "Se a CTR não subir com a nova embalagem, rever a paleta de cores e o enquadramento do objeto hero na thumbnail."
+    }
+  },
+  "memory_ingestion": {
+    "recorded_in_fts5": true,
+    "database": "D:\\CHIEF YOUTUBE\\.hermes\\memory\\chief_memory.db"
+  }
+}

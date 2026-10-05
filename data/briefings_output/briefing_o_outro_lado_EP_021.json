@@ -1,0 +1,96 @@
+{
+  "squad": "Squad O Outro Lado",
+  "episode_id": "EP_021",
+  "canal": "o_outro_lado",
+  "data_emissao": "2026-09-24 18:23",
+  "prazo_entrega": "2026-10-01",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR > 7.0% na Home e Retenção aos 30s > 68%",
+  "tema": "O Jammer de Carro Roubado: A Bolha de Silêncio Que Apaga o GPS em 3 Segundos",
+  "unidade_investigada": "1 pulso eletromagnético na frequência L1 de 1.575 GHz",
+  "tese_central": "A verdade de um sistema aparece quando seus rastros físicos são colocados lado a lado: o rastreador de R$ 2.000 é anulado por um ruído de R$ 50 no acendedor do carro.",
+  "publico_alvo": "Motoristas, proprietários de veículos, entusiastas de tecnologia e segurança patrimonial urbana no Brasil.",
+  "desejo_dominante": "Evitar ter o patrimônio roubado sem chance de recuperação e compreender por que a tecnologia das seguradoras falha.",
+  "angulo_editorial": "Dissecção física do bloqueio de sinal por interferência de radiofrequência vs a central de monitoramento que fica cega.",
+  "promessa_principal": "Mostrar o mecanismo exato que faz o satélite perder o veículo e como a polícia rastreia o sinal fantasma.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "O rastreador marcava que o carro estava na rodovia, mas quando a polícia chegou só tinha a carcaça vazia num matagal.",
+      "Coloquei 50 litros no posto e o marcador do tanque nem subiu. Chamei o gerente e ele disse que era problema da boia.",
+      "Se passar a 80 km/h na balança o caminhão é multado por 200 kg a mais, mas com o rodoar desligado não pesa nada."
+    ],
+    "unresolved_competitor_doubts": [
+      "Como um aparelhinho de R$ 50 bloqueia um satélite que custou milhões de dólares?",
+      "Se o GPS não funciona dentro do túnel, o que o carro faz pra não se perder no mapa?",
+      "Tem como a polícia saber se o caminhão está com o jammer ligado antes de mandar parar?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achava que se o carro tivesse rastreador de satélite era impossível roubar.",
+      "Dizem que o lacre da ANP na bomba garante que o combustível não foi adulterado."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Funciona o O Jammer de Carro Roubado: A Bolha de Silêncio Que Apaga o GPS em 3 Segundos: A Engenharia Oculta Explicada Passo a Passo",
+    "longo_para_home": "O Aparelho de R$ 50 Que Faz O Jammer de Carro Roubado: A Bolha de Silêncio Que Apaga o GPS em 3 Segundos Desaparecer em Segundos",
+    "short_1_descoberta": {
+      "titulo": "O que acontece quando você liga o O Jammer de Carro Roubado: A B?",
+      "gancho_0_2s": "Resultado visual chocante ou objeto físico real em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "Por que a maioria das pessoas falha ao lidar com O Jammer de Carro Roubado?",
+    "playlist_percurso": "Dossiê Completo: A Anatomia de O Jammer de Carro Roubado: A B",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de O Jammer de Carro Roubado: A B, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos a física de O Jammer de Carro Roubado: A Bolha de Silêncio Que Apaga o GPS em 3 Segundos. A conclusão é contra-intuitiva: a vulnerabilidade não está no satélite ou no software, mas na camada física de 1.5 GHz. Documentamos todo o espectro de sinal e o relatório forense completo."
+  },
+  "referencias_documentais": [
+    "ANATEL - Relatório de Fiscalização sobre Bloqueadores de Sinais de Radiocomunicações (BSR)",
+    "IEEE Transactions on Aerospace and Electronic Systems - GPS Jamming & Spoofing",
+    "Polícia Rodoviária Federal (PRF) - Operações contra receptação de veículos"
+  ],
+  "riscos_e_mitigacao": "Não parecer tutorial para criminosos. O foco deve ser 100% forense, de engenharia do sistema e contra-medidas policiais.",
+  "entregaveis_obrigatorios": [
+    "Master do Documentário Longo (8 a 12 minutos) a 1080p 30fps",
+    "2 Shorts verticais 9:16 (Parte 1: Choque do Jammer / Parte 2: O Rastreio da Polícia)",
+    "3 Opções de Thumbnails 4K (Variante A: Raio-X do Jammer / Variante B: Mapa com perda de sinal)",
+    "Metadata Package JSON (.packaging.json com títulos e timestamps)"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:10: O clique do botão do jammer no acendedor e a tela da central de monitoramento congelando. Paradoxo: O carro tem 4 antenas e sinal de 24 satélites, mas às 14h02 ele simplesmente deixou de existir.",
+    "o_que_nao_fazer": [
+      "NÃO usar rostos com expressões forçadas de espanto na thumbnail.",
+      "NÃO usar músicas pop energéticas; manter suspense atmosférico sombrio Denis Villeneuve.",
+      "NÃO fazer introduções de mais de 10 segundos antes de mostrar o jammer em funcionamento."
+    ],
+    "o_que_evitar": [
+      "Evitar explicações puramente matemáticas de ondas eletromagnéticas sem mostrar o equipamento físico real.",
+      "Evitar termos em inglês desnecessários; manter linguagem acessível e sóbria em português brasileiro."
+    ]
+  }
+}

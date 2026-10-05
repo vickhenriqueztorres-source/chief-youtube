@@ -1,0 +1,148 @@
+{
+  "channel_id": "UC_EL_CAZADOR_DEL_WINS_02",
+  "channel_slug": "el_cazador_del_wins",
+  "channel_name": "El Cazador del Wins",
+  "handle": "@elcazadordelwins",
+  "canonical_handle": "@elcazadordelwins",
+  "fallback_handle": "@cazadordelwins",
+  "url": "https://www.youtube.com/@elcazadordelwins",
+  "language": "es-419",
+  "subscribers": 420,
+  "total_videos": 8,
+  "last_synced_at": "2026-09-30 15:50:00",
+  "dominant_traffic_sources": [
+    "Recursos de Navegación (Home/Browse)",
+    "Feed dos Shorts",
+    "Pesquisa do YouTube"
+  ],
+  "genre": "Trading Automatizado / Auditoria e Caça de Bots / Leitura de Registro e Drawdown em Conta Demo",
+  "archetype": "O Fora-da-Lei com ética de Investigador (O Cazador - Anônimo na Sombra com Mira)",
+  "host": {
+    "name": "El Cazador",
+    "visual_identity": "Silhueta noturna, moletom preto com capuz levantado na sombra, ombros largos, iluminação de recorte amarelo-ácido (#D8F200), mira reticular com robô quebrado.",
+    "voice": {
+      "provider": "ElevenLabs",
+      "tone": "Masculina, grave, fria e controlada, sem gírias, 145-155 ppm, espanhol latino neutro, baixa o tom quando o bot escapa."
+    }
+  },
+  "visual_palette": {
+    "bg": "#0A0B0E",
+    "fg": "#EDEDED",
+    "accent": "#D8F200",
+    "green_proof": "#2FBF71",
+    "red_drawdown": "#D9403A"
+  },
+  "promise": "Cazamos el bot que te prometieron. Y te mostramos lo que realmente atrapa.",
+  "mantra": "Antes de arriesgar, entiende. Antes de creer, comprueba. No importa quién soy. Importa lo que atrapo.",
+  "videos": [
+    {
+      "id": "CZ-L01",
+      "youtube_id": "cz_bot_997_telegram",
+      "title": "Cacé el Bot de  de Telegram por 14 Días (Aquí Escapó) | La Cacería",
+      "format": "long",
+      "views": 184,
+      "ctr": 6.2,
+      "avd_pct": 44.5,
+      "retention_30s": 67.0,
+      "duration_seconds": 685,
+      "pillar": "La Cacería",
+      "thumbnail_elements": "Capuz na sombra à direita, mira amarelo-ácido #D8F200 com robô quebrado, -34% circulado a vermelho em Caveat",
+      "notes": "Vídeo pilar da tese do canal: teste completo de 14 dias com perda visível no nono dia."
+    },
+    {
+      "id": "CZ-L02",
+      "youtube_id": "cz_trampa_dbot_deriv",
+      "title": "Construí la Trampa desde Cero en Deriv DBot: El Error de Martingala | La Trampa",
+      "format": "long",
+      "views": 95,
+      "ctr": 5.4,
+      "avd_pct": 39.8,
+      "retention_30s": 61.0,
+      "duration_seconds": 740,
+      "pillar": "La Trampa",
+      "thumbnail_elements": "Interface Deriv DBot na tela, blocos XML em foco, carimbo LA TRAMPA e selo ATRAPADO",
+      "notes": "Formato B: construção de bot do zero com regras estritas de parada e gestão de lote."
+    },
+    {
+      "id": "CZ-L03",
+      "youtube_id": "cz_rastro_bot_500_dia",
+      "title": "Rastreé el Bot Viral de  al Día: Lo que Realmente Atrapa | El Rastro",
+      "format": "long",
+      "views": 62,
+      "ctr": 4.8,
+      "avd_pct": 37.0,
+      "retention_30s": 58.0,
+      "duration_seconds": 490,
+      "pillar": "El Rastro",
+      "thumbnail_elements": "Promessa viral vs Registro de Caza real na tela com drawdown de -28%",
+      "notes": "Formato C: rastreamento de afirmação viral de terceiro desmontada com teste de estresse em demo."
+    },
+    {
+      "id": "CZ-L04",
+      "youtube_id": "cz_bot_rsi_14_demo",
+      "title": "Probé el Bot de RSI 14 en Cuenta Demo: El Momento Exacto donde Quemó la Cuenta",
+      "format": "long",
+      "views": 48,
+      "ctr": 4.1,
+      "avd_pct": 35.2,
+      "retention_30s": 54.0,
+      "duration_seconds": 610,
+      "pillar": "La Cacería",
+      "thumbnail_elements": "Gráfico de sobrecompra com rompimento contínuo e anotação manual escapó aquí",
+      "notes": "Demonstração técnica de como tendências fortes atropelam osciladores clássicos sem stop."
+    },
+    {
+      "id": "CZ-L05",
+      "youtube_id": "cz_trampa_30s_rapidos",
+      "title": "La Trampa de los 30 Segundos: Por Qué los Bots Rápidos Escapan Siempre",
+      "format": "long",
+      "views": 35,
+      "ctr": 3.9,
+      "avd_pct": 34.0,
+      "retention_30s": 52.0,
+      "duration_seconds": 530,
+      "pillar": "La Trampa",
+      "thumbnail_elements": "Zoom no relógio de expiração de 30s vs ruído de ticks aleatórios",
+      "notes": "Análise matemática de ruído em micro-timeframes."
+    },
+    {
+      "id": "CZ-S01",
+      "youtube_id": "cz_short_escapo_dia_9",
+      "title": "Te vendieron este bot de Telegram: mira dónde escapó el día 9 #Shorts",
+      "format": "short",
+      "views": 512,
+      "ctr": 7.8,
+      "avd_pct": 82.0,
+      "retention_30s": 74.0,
+      "duration_seconds": 34,
+      "pillar": "Trofeo",
+      "notes": "Short vertical Trofeo: gancho de curiosidade, gráfico com loss real em demo e CTA para o vídeo longo."
+    },
+    {
+      "id": "CZ-S02",
+      "youtube_id": "cz_short_martingala_oculta",
+      "title": "La martingala oculta: 5 segundos antes de quemar la demo #Shorts",
+      "format": "short",
+      "views": 340,
+      "ctr": 6.5,
+      "avd_pct": 78.5,
+      "retention_30s": 71.0,
+      "duration_seconds": 28,
+      "pillar": "Trofeo",
+      "notes": "Exposição do multiplicador exponencial 2.1x no DBot."
+    },
+    {
+      "id": "CZ-S03",
+      "youtube_id": "cz_short_99pct_aciertos",
+      "title": "El bot que promete 99% de aciertos: cazado en 30 segundos #Shorts",
+      "format": "short",
+      "views": 280,
+      "ctr": 6.1,
+      "avd_pct": 75.0,
+      "retention_30s": 68.0,
+      "duration_seconds": 31,
+      "pillar": "Trofeo",
+      "notes": "Desmonte rápido da tese de win rate sem assimetria de risco-retorno."
+    }
+  ]
+}

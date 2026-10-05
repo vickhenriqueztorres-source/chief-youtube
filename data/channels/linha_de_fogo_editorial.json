@@ -1,0 +1,138 @@
+{
+  "channel_slug": "linha_de_fogo",
+  "channel_name": "Linha de Fogo",
+  "handle": "@linhadefogodocs",
+  "slogan": "A guerra invisível por trás dos maiores impérios do mundo.",
+  "mantra": "Nenhum império bilionário foi construído com aperto de mãos limpas.",
+  "niche": "Documentário Investigativo de Guerras Corporativas, Monopólios & Espionagem Industrial",
+  "archetype": "O Observador de Bastidores (Sábio 45% + Sombra 35% + Goverante 20%)",
+  "identity_v2": {
+    "aesthetic_archetype": "Thriller de Espionagem Anos 60/70 (Escola Saul Bass + Colagem de Papel + Textura de Impressão Antiga)",
+    "visual_signature": "O Corte Diagonal: traço diagonal contundente que corta o frame dividindo os dois lados do conflito (Lado A | CORTE | Lado B) + silhuetas posterizadas de alto contraste.",
+    "sound_signature": "Jazz tenso de espionagem: contrabaixo acústico, saxofone sombrio, bateria com escovinha, teletipo mecânico, ruído de fita cassete analógica e golpe seco de martelo (gavel).",
+    "palette": {
+      "papel_offwhite": "#EDE6D6",
+      "preto": "#111111",
+      "vermelho_cartaz": "#C62D1F",
+      "mostarda": "#D4A537"
+    },
+    "palette_proportions": {
+      "papel_offwhite": "60% (Fundo, documentos, respiro)",
+      "preto": "25% (Silhuetas, títulos, peso gráfico)",
+      "vermelho_cartaz": "15% (Ataque, perigo, corte diagonal, alerta)",
+      "mostarda": "≤ 10% (Exclusivo para valores em dinheiro US$, selos de choque ou VS)"
+    },
+    "duotones": [
+      "Preto x Papel (#111111 x #EDE6D6): Padrão para cenas, prédios corporativos e pessoas.",
+      "Preto x Vermelho (#111111 x #C62D1F): Momentos de ataque clandestino, traição e ponto de virada.",
+      "Preto x Mostarda (#111111 x #D4A537): Cenas de transação financeira obscura, cemitério de dólares e cifras astronômicas."
+    ],
+    "typography": {
+      "display_title": "Anton, League Gothic, Bebas Neue com textura de desgaste e recorte manual",
+      "secondary_support": "Inter, Helvetica Neue, Arial Condensed Bold (Caixa Alta)"
+    },
+    "prohibitions": [
+      "PROIBIÇÃO TOTAL de luz neon, gradientes digitais, brilho holográfico ou estilo sci-fi/cyberpunk.",
+      "PROIBIÇÃO TOTAL de fotografia colorida natural crua sem tratamento em duotone ou alto contraste P&B.",
+      "PROIBIÇÃO TOTAL de animações 3D infantis, emojis ou setas vermelhas clickbait amadoras."
+    ]
+  },
+  "target_audience": {
+    "demographics": "22 a 55 anos (foco 25-45). Homens e mulheres empreendedores, executivos, profissionais de tecnologia, investidores e entusiastas de história corporativa.",
+    "psychographics": "Mentes analíticas e competitivas obcecadas por poder, estratégia de mercado e psicologia de bastidores. Querem entender o que aconteceu a portas fechadas.",
+    "common_enemy": "Relações públicas (PR) corporativo morno, biografias higienizadas e palestras motivacionais clichês."
+  },
+  "narrative_structure": {
+    "model": "5 Atos Canônicos (Ritmo 140-145 WPM com pausas de 1.0s antes de revelações cruciais)",
+    "acts": [
+      {
+        "act": "Ato 0 (00:00 - 01:30)",
+        "name": "O Ataque Clandestino",
+        "function": "Cold Open hipnótico, apresentação do paradoxo brutal e da promessa de bastidores."
+      },
+      {
+        "act": "Ato 1 (01:30 - 04:30)",
+        "name": "A Guerra Secreta",
+        "function": "Origens do conflito, primeiras escaramuças e o primeiro sangue corporativo derramado."
+      },
+      {
+        "act": "Ato 2 (04:30 - 07:30)",
+        "name": "O Ponto de Virada",
+        "function": "O memorando secreto, o chip adulterado ou a traição contratual nos bastidores."
+      },
+      {
+        "act": "Ato 3 (07:30 - 10:30)",
+        "name": "A Retaliação Sangrenta",
+        "function": "A contraofensiva impiedosa do rival para sufocar o mercado e destruir a concorrência."
+      },
+      {
+        "act": "Ato 4 (10:30 - 13:00)",
+        "name": "O Cemitério de Dólares",
+        "function": "Veredito causal, cálculo das perdas bilionárias e o saldo da terra arrasada."
+      }
+    ],
+    "laws_of_retention": [
+      "1. O Efeito Zeigarnik (Loop Aberto nos primeiros 15s): Todo ato termina abrindo uma pergunta invisível.",
+      "2. O Quebra-Padrão Causal (a cada 40-50s): Interrupção acústica com batida seca ou silêncio tenso de 1s.",
+      "3. Ancoragem em Números Concretos: Nunca usar cifras vagas; usar valores exatos e datas precisas.",
+      "4. O Inimigo Concreto: O conflito sempre tem duas forças opostas bem definidas colidindo."
+    ]
+  },
+  "ypp_compliance": {
+    "narrative": "100% autoral baseada em investigações públicas, biografias consolidadas e relatórios judiciais.",
+    "visuals": "100% de imagens geradas em IA com direção de arte em duotone + documentos oficiais fac-símile.",
+    "disclosure": "Checkbox de mídia sintética ativado no YouTube Studio."
+  },
+  "candidate_backlog": [
+    {
+      "episode_id": "EP01",
+      "status": "IN_PRODUCTION",
+      "topic": "A Guerra Secreta de Espiões entre Coca-Cola e Pepsi na União Soviética",
+      "thumb_text": "FROTA SECRETA",
+      "everyday_object": "Garrafa de Pepsi ao lado de submarino militar soviético na neblina",
+      "unit": "1 frota de 17 submarinos e 3 navios de guerra russos trocados por concentrado de xarope",
+      "thesis": "Como a Pepsi explorou a Guerra Fria para se tornar a sexta maior marinha militar do planeta e erguer um monopólio na URSS contra a Coca-Cola.",
+      "hook": "Em 1989, uma empresa americana de refrigerantes se tornou dona da sexta maior frota militar de submarinos do planeta. Não foi um erro contábil nem uma metáfora de marketing. Foi o lance final para derrotar a Coca-Cola."
+    },
+    {
+      "episode_id": "EP02",
+      "status": "IN_PRODUCTION",
+      "topic": "A Briga Entre Dois Irmãos que Dividiu uma Cidade e Criou a Adidas e a Puma",
+      "thumb_text": "RIVALIDADE DE SANGUE",
+      "everyday_object": "Dois tênis clássicos cortados ao meio por fenda vermelha profunda",
+      "unit": "60 anos de rixa familiar e uma cidade dividida ao meio em Herzogenaurach",
+      "thesis": "A suspeita de traição durante um bombardeio na Segunda Guerra que fez dois irmãos destruírem sua fábrica e dividirem uma cidade inteira entre duas marcas inimigas.",
+      "hook": "Nesta cidade da Alemanha, antes de dizer bom dia a um estranho, os moradores olhavam primeiro para os sapatos da pessoa. Se fossem da marca errada, você virava as costas."
+    },
+    {
+      "episode_id": "EP03",
+      "status": "IN_PRODUCTION",
+      "topic": "Como a Nintendo Usou um Monopólio Predatório para Sufocar a Concorrência nos Anos 90",
+      "thumb_text": "MONOPÓLIO ILEGAL",
+      "everyday_object": "Cartucho cinza clássico com chip 10NES sob alvo vermelho e algemas",
+      "unit": "1 chip de bloqueio eletrônico 10NES e cláusula de exclusividade de 2 anos",
+      "thesis": "O sistema de licenciamento predatório que permitiu à Nintendo ditar quais jogos podiam ser fabricados no Ocidente sob ameaça de destruição comercial.",
+      "hook": "Se você quisesse lançar um jogo nos anos 80, precisava pedir permissão para uma única empresa em Kyoto. Se eles recusassem, o chip de bloqueio destruía o seu negócio antes da primeira venda."
+    },
+    {
+      "episode_id": "EP04",
+      "status": "IN_PRODUCTION",
+      "topic": "O Golpe de US$ 25 Milhões da Ferrari que Fez a Ford Criar o Maior Monstro de Le Mans",
+      "thumb_text": "A VINGANÇA",
+      "everyday_object": "Cavalo rampante da Ferrari e faróis do GT40 cortando a escuridão",
+      "unit": "US$ 25 milhões auditados e uma cláusula riscada com caneta-tinteiro roxa",
+      "thesis": "Enzo Ferrari usou meses de auditoria da Ford apenas para forçar a Fiat a pagar mais caro, humilhando Henry Ford II e disparando a guerra do lendário GT40.",
+      "hook": "Henry Ford II gastou milhões de dólares auditando cada parafuso em Maranello. O contrato estava impresso. As canetas estavam na mesa. Foi aí que Enzo Ferrari olhou para a página, levantou-se e disse: Minha assinatura não tem preço."
+    },
+    {
+      "episode_id": "EP05",
+      "status": "IN_PRODUCTION",
+      "topic": "A Sabotagem Industrial que Quase Destruiu a Nokia Antes do iPhone",
+      "thumb_text": "MORTE ANUNCIADA",
+      "everyday_object": "Celular clássico partido no chão de concreto com silhueta de executivo",
+      "unit": "1 protótipo com tela capacitiva e conexão veloz engavetado em 2004",
+      "thesis": "A paralisia política entre feudos executivos internos na Finlândia que enterrou um smartphone moderno três anos antes de Steve Jobs subir ao palco.",
+      "hook": "Três anos antes do primeiro iPhone ser anunciado, este aparelho com tela sensível ao toque e loja de aplicativos já estava pronto na sede da Nokia. Ele nunca chegou às lojas porque os próprios diretores da empresa decidiram matá-lo."
+    }
+  ]
+}

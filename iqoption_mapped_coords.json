@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "resolution": "1920x1080",
+    "calibrated_at": "2026-09-30 16:45:00",
+    "status": "CALIBRADO_ALTA_PRECISAO",
+    "monitor_index": 1
+  },
+  "elements": {
+    "tipo_grafico": {
+      "x": 28,
+      "y": 775,
+      "desc": "Ícone de Tipo de Gráfico (Menu lateral esquerdo)"
+    },
+    "opcao_velas": {
+      "x": 115,
+      "y": 775,
+      "desc": "Opção Velas Japonesas (Candlesticks)"
+    },
+    "periodo_vela": {
+      "x": 28,
+      "y": 830,
+      "desc": "Ícone de Período da Vela (Menu lateral esquerdo)"
+    },
+    "opcao_5s": {
+      "x": 115,
+      "y": 830,
+      "desc": "Opção 5 Segundos (5s no seletor de tempo)"
+    },
+    "indicadores": {
+      "x": 28,
+      "y": 935,
+      "desc": "Ícone de Indicadores (Menu lateral esquerdo)"
+    },
+    "busca_indicadores": {
+      "x": 180,
+      "y": 220,
+      "desc": "Barra de Pesquisa de Indicadores"
+    },
+    "btn_call": {
+      "x": 1835,
+      "y": 515,
+      "desc": "Botão Verde CALL / COMPRA (Painel direito)"
+    },
+    "btn_put": {
+      "x": 1835,
+      "y": 625,
+      "desc": "Botão Vermelho PUT / VENDA (Painel direito)"
+    },
+    "centro_grafico": {
+      "x": 960,
+      "y": 540,
+      "desc": "Centro da Área Gráfica"
+    },
+    "topo_grafico": {
+      "x": 960,
+      "y": 350,
+      "desc": "Banda Superior (Resistência Bollinger)"
+    },
+    "fundo_grafico": {
+      "x": 960,
+      "y": 730,
+      "desc": "Banda Inferior (Suporte Bollinger)"
+    }
+  }
+}

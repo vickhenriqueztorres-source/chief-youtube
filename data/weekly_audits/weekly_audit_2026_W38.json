@@ -1,0 +1,415 @@
+{
+  "timestamp": "2026-09-22 16:22:23",
+  "week": "2026_W38",
+  "active_experiments_count": 2,
+  "active_experiments": [
+    {
+      "id": 2,
+      "channel": "hidden_systems_lab",
+      "hypothesis": "Se renomearmos os 3 Shorts de hashtags com ganchos de paradoxo em inglês, o YouTube começará a mostrá-los no feed de Shorts (> 500 views).",
+      "test_design": "Mudar títulos para 'The 500ms Disaster That Almost Destroyed the Pad' e medir impressões.",
+      "metric_target": "Shown in Feed > 1.000 e Viewed Rate > 60% em 72h",
+      "status": "RUNNING",
+      "result_observed": null,
+      "created_at": "2026-09-22 14:57:23",
+      "updated_at": "2026-09-22 14:57:23"
+    },
+    {
+      "id": 1,
+      "channel": "o_outro_lado",
+      "hypothesis": "Se adicionarmos o link oficial de 'Vídeo Relacionado' nos Shorts de Santos e Apagão, o vídeo longo receberá tráfego contínuo do Shorts feed.",
+      "test_design": "Editar os 2 shorts mais vistos no YouTube Studio e apontar para os masters correspondentes.",
+      "metric_target": "> 30 visualizações no vídeo longo vindas de Shorts Feed em 7 dias",
+      "status": "RUNNING",
+      "result_observed": null,
+      "created_at": "2026-09-22 14:57:22",
+      "updated_at": "2026-09-22 14:57:22"
+    }
+  ],
+  "channels": {
+    "o_outro_lado": {
+      "bottleneck": "Gargalo de Descoberta // Cold Start Algorítmico",
+      "symptom": "Pouquíssimas impressões totais (< 500) e visualizações médias < 25.",
+      "experiment": {
+        "duration_days": 14,
+        "hypothesis": "Se alinharmos os próximos 3 episódios em uma única série temática ('A Máquina do Dinheiro Oculto') e vincularmos os Shorts virais via botão de Vídeo Relacionado, o número de Espectadores Recorrentes crescerá em > 40% porque o público semente terá relevância contínua.",
+        "test_design": [
+          "Ação 1: Vincular no YouTube Studio os 2 Shorts virais (Santos 1.4k e Apagão 1.1k) aos seus documentários longos correspondentes.",
+          "Ação 2: Produzir 2 novos episódios com P ≥ 450 (Jammer de Carro Roubado e O Chip da Bomba de Combustível).",
+          "Ação 3: Limitar cadência a 2 vídeos longos por semana para permitir amostragem algorítmica de 72h."
+        ],
+        "metric_targets": {
+          "returning_viewers": "+40% na aba Audience",
+          "browse_ctr": "> 6.0%",
+          "retention_30s": "> 65%"
+        },
+        "success_decision": "Consolidar editorial exclusivamente em Infraestrutura de Crime/Dinheiro e pausar temas de física pura.",
+        "failure_decision": "Se a CTR não subir com a nova embalagem, rever a paleta de cores e o enquadramento do objeto hero na thumbnail."
+      },
+      "metrics": {
+        "channel_id": "UCf6Ox9rzQbIkDeE94to9AEQ",
+        "channel_name": "O Outro Lado",
+        "subscribers": 5,
+        "total_videos_analyzed": 30,
+        "long_form_summary": {
+          "count": 18,
+          "mean_views": 28.3,
+          "std_dev_views": 31.1,
+          "mean_ctr": 3.53,
+          "mean_retention_30s": 52.11,
+          "mean_avd_pct": 41.28,
+          "trend": "ACCELERATING",
+          "outliers": [
+            {
+              "id": "OOL-05",
+              "title": "Como roubam a sua gasolina sem você perceber: O golpe da bomba nos postos",
+              "views": 85.0,
+              "sigma": 1.82,
+              "type": "HIGH_OUTLIER"
+            },
+            {
+              "id": "OOL-18",
+              "title": "O Outro Lado do Pix: O Que Acontece Se os Servidores do Bacen Pararem?",
+              "views": 108.0,
+              "sigma": 2.56,
+              "type": "HIGH_OUTLIER"
+            }
+          ],
+          "rolling_avg_3_latest": 47.3,
+          "rolling_avg_7_latest": 28.6
+        },
+        "shorts_summary": {
+          "count": 12,
+          "mean_views": 434.3,
+          "std_dev_views": 499.3,
+          "mean_ctr": 5.27,
+          "mean_retention_30s": 65.08,
+          "mean_avd_pct": 58.0,
+          "trend": "DECELERATING",
+          "outliers": [
+            {
+              "id": "OOL-S01",
+              "title": "Mergulhadores a 14 Metros Sem Soltar Bolhas de Ar no Porto (Parte 1)",
+              "views": 1400.0,
+              "sigma": 1.93,
+              "type": "HIGH_OUTLIER"
+            }
+          ],
+          "rolling_avg_3_latest": 63.7,
+          "rolling_avg_7_latest": 71.6
+        },
+        "shorts_to_long_ratio": 0.098,
+        "traffic_sources_dominant": [
+          "Recursos de Navegação (Browse)",
+          "Pesquisa do YouTube",
+          "Feed dos Shorts"
+        ]
+      },
+      "top_themes": [
+        {
+          "topic": "Jammer de Carro Roubado e Rastreadores",
+          "unit": "1 sinal GPS de 1.575 GHz",
+          "thesis": "O dispositivo de R$ 50 que cria uma bolha eletromagnética de silêncio e desativa o rastreador de satélite cobrado pela seguradora.",
+          "hook_suggestion": "No instante em que o ladrão liga este aparelho no acendedor de cigarro, o carro evapora do mapa do Brasil.",
+          "p_score": 500,
+          "s_score": 3,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 5,
+            "R": 5,
+            "E": 4
+          }
+        },
+        {
+          "topic": "Balanças Rodoviárias e Truques de Eixo",
+          "unit": "1 caminhão com 45 toneladas",
+          "thesis": "A física da pesagem dinâmica em movimento a 80 km/h e como a suspensão pneumática distribui peso para driblar multas milionárias da ANTT.",
+          "hook_suggestion": "Se o caminhão passar a 79 km/h, ele é multado em R$ 12.000. Se passar a 82 km/h, o sensor não fecha o cálculo.",
+          "p_score": 400,
+          "s_score": 4,
+          "priority": "P1",
+          "urgency": "PRÓXIMA ONDA (Ciclo seguinte)",
+          "factors": {
+            "D": 4,
+            "C": 5,
+            "R": 4,
+            "E": 5
+          }
+        },
+        {
+          "topic": "Galpões Clandestinos de Carga Roubada",
+          "unit": "1 carreta de defensivos agrícolas ou eletrônicos",
+          "thesis": "A esteira de transbordo clandestina que esvazia uma carreta em 40 minutos sob gaiola de Faraday antes que a nota fiscal eletrônica seja cancelada no SEFAZ.",
+          "hook_suggestion": "A polícia tem 45 minutos antes que a carga seja fatiada em cinco vans descaracterizadas.",
+          "p_score": 400,
+          "s_score": 1,
+          "priority": "P1",
+          "urgency": "PRÓXIMA ONDA (Ciclo seguinte)",
+          "factors": {
+            "D": 5,
+            "C": 4,
+            "R": 5,
+            "E": 4
+          }
+        }
+      ]
+    },
+    "hidden_systems_lab": {
+      "bottleneck": "Gargalo de Embalagem // Baixa Taxa de Clique",
+      "symptom": "Impressões existem (> 1.000), mas CTR na Home/Browse está abaixo de 4.0%.",
+      "experiment": {
+        "duration_days": 14,
+        "hypothesis": "Se substituirmos os títulos de apenas hashtags nos Shorts por paradoxos em inglês ('The 500ms Disaster That Almost Destroyed the Pad') e removermos os re-uploads duplicados, o canal recuperará a confiança do algoritmo e os Shorts atingirão > 500 views.",
+        "test_design": [
+          "Ação 1: Deletar ou colocar como privado os uploads duplicados (Airport Fuel e Skyscrapers Water).",
+          "Ação 2: Renomear os 3 Shorts zerados com gancho de paradoxo nos primeiros 40 caracteres.",
+          "Ação 3: Publicar o próximo master ('The 1,200 m/s Water Hammer Shockwave') com thumb de Hero Object em alto contraste."
+        ],
+        "metric_targets": {
+          "shorts_shown_in_feed": "> 1.500 impressões",
+          "viewed_vs_swiped": "> 60% Viewed",
+          "long_views": "> 300 views nas primeiras 72h"
+        },
+        "success_decision": "Adotar títulos de paradoxo absoluto em 100% dos próximos 15 vídeos do HSL.",
+        "failure_decision": "Se o alcance em inglês continuar travado, auditar a pronúncia e ritmo da narração ElevenLabs (Chris)."
+      },
+      "metrics": {
+        "channel_id": "UC-HiddenSystemsLab",
+        "channel_name": "Hidden Systems Lab",
+        "subscribers": 158,
+        "total_videos_analyzed": 29,
+        "long_form_summary": {
+          "count": 19,
+          "mean_views": 90.9,
+          "std_dev_views": 185.2,
+          "mean_ctr": 3.47,
+          "mean_retention_30s": 46.63,
+          "mean_avd_pct": 34.63,
+          "trend": "DECELERATING",
+          "outliers": [
+            {
+              "id": "HSL-01",
+              "title": "How Jet Fuel Reaches an Aircraft Without Stopping the Airport",
+              "views": 680.0,
+              "sigma": 3.18,
+              "type": "HIGH_OUTLIER"
+            },
+            {
+              "id": "HSL-02",
+              "title": "THE 20-YEAR FLAME: WHY A BLAST FURNACE CAN NEVER BE SHUT DOWN",
+              "views": 568.0,
+              "sigma": 2.58,
+              "type": "HIGH_OUTLIER"
+            }
+          ],
+          "rolling_avg_3_latest": 5.7,
+          "rolling_avg_7_latest": 10.6
+        },
+        "shorts_summary": {
+          "count": 10,
+          "mean_views": 6.6,
+          "std_dev_views": 14.2,
+          "mean_ctr": 1.55,
+          "mean_retention_30s": 34.8,
+          "mean_avd_pct": 29.0,
+          "trend": "DECELERATING",
+          "outliers": [
+            {
+              "id": "HSL-S01",
+              "title": "Why Engineers Dig 300-Meter Hollow Caves Inside Mountains",
+              "views": 49.0,
+              "sigma": 2.98,
+              "type": "HIGH_OUTLIER"
+            },
+            {
+              "id": "HSL-S09",
+              "title": "#Shorts #FluidDynamics #RocketEngine #Engineering #Science #Aerospace #HiddenSystemsLab",
+              "views": 0,
+              "type": "ZERO_VIEW_STALL"
+            },
+            {
+              "id": "HSL-S10",
+              "title": "#Shorts #Engineering #SpaceX #NASA #RocketLaunch #Physics #Acoustics #HiddenSystemsLab",
+              "views": 0,
+              "type": "ZERO_VIEW_STALL"
+            }
+          ],
+          "rolling_avg_3_latest": 0.3,
+          "rolling_avg_7_latest": 1.1
+        },
+        "shorts_to_long_ratio": 26.182,
+        "traffic_sources_dominant": [
+          "Browse Features",
+          "Suggested Videos",
+          "Direct or Unknown"
+        ]
+      },
+      "top_themes": [
+        {
+          "topic": "The 1,200 m/s Water Hammer Shockwave",
+          "unit": "1 shockwave of 200 bar",
+          "thesis": "The supersonic acoustic pressure wave created when massive hydroelectric valves close too fast, and the subterranean relief caverns that prevent dams from exploding.",
+          "hook_suggestion": "Closing a 4-meter valve 2 seconds too early creates a shockwave traveling at 1,200 meters per second through solid steel.",
+          "p_score": 500,
+          "s_score": 4,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 4,
+            "R": 5,
+            "E": 5
+          }
+        },
+        {
+          "topic": "Black Start Continental Grid",
+          "unit": "0.0 Megawatts (Absolute Zero)",
+          "thesis": "How power engineers bootstrap an entire continental electric grid from dead silence without external power, using diesel generators to spin hydroelectric turbines in cascade.",
+          "hook_suggestion": "If a continent goes 100% dark, you cannot simply flip a switch. You need to jumpstart the generators with another generator that doesn't exist.",
+          "p_score": 500,
+          "s_score": 3,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 5,
+            "R": 5,
+            "E": 4
+          }
+        },
+        {
+          "topic": "Data Center Underground Diesel Storage",
+          "unit": "1,000,000 gallons of fuel",
+          "thesis": "Why artificial intelligence clusters maintain military-grade fuel reserves underground to survive 72 hours of complete civilian grid collapse.",
+          "hook_suggestion": "Behind every clean AI prompt is a subterranean bunker with enough diesel fuel to power a naval destroyer.",
+          "p_score": 320,
+          "s_score": 4,
+          "priority": "P1",
+          "urgency": "PRÓXIMA ONDA (Ciclo seguinte)",
+          "factors": {
+            "D": 4,
+            "C": 5,
+            "R": 4,
+            "E": 4
+          }
+        }
+      ]
+    },
+    "brecha": {
+      "bottleneck": "Gargalo de Audiência Fantasma // Inscritos Inativos",
+      "symptom": "Base de inscritos relevante (> 500), mas visualizações em novos uploads < 2% dos inscritos.",
+      "experiment": {
+        "duration_days": 14,
+        "hypothesis": "Se eliminarmos o ALL CAPS nos títulos, substituirmos por copy forense de cronômetro ('A Rota dos 180 Segundos') e pararmos de dividir Shorts em partes sequenciais, a retenção e o clique externo crescerão sem depender dos inscritos inativos.",
+        "test_design": [
+          "Ação 1: Renomear os 6 vídeos longos existentes no canal adotando a fórmula forense Eugene Schwartz.",
+          "Ação 2: Publicar 2 episódios novos sobre fraudes com alta busca ativa (Spoofing da URA Bancária e Golpe do Falso Comprovante).",
+          "Ação 3: Postar Shorts autocontidos de 45s com o 'Momento da Brecha' explícito aos 15 segundos."
+        ],
+        "metric_targets": {
+          "external_search_traffic": "> 35% das visualizações",
+          "ctr_impressions": "> 7.5%",
+          "avd_pct": "> 50%"
+        },
+        "success_decision": "Manter tom documental premium de Defesa Cotidiana e iniciar produção da série 'Anatomia do Golpe'.",
+        "failure_decision": "Se inscritos continuarem sabotando a CTR da Home, criar campanhas direcionadas para reciclar a base."
+      },
+      "metrics": {
+        "channel_id": "UC-CanalBrecha",
+        "channel_name": "Brecha",
+        "subscribers": 1120,
+        "total_videos_analyzed": 16,
+        "long_form_summary": {
+          "count": 6,
+          "mean_views": 6.5,
+          "std_dev_views": 3.1,
+          "mean_ctr": 0.7,
+          "mean_retention_30s": 35.5,
+          "mean_avd_pct": 28.5,
+          "trend": "DECELERATING",
+          "outliers": [],
+          "rolling_avg_3_latest": 3.7,
+          "rolling_avg_7_latest": 6.5
+        },
+        "shorts_summary": {
+          "count": 10,
+          "mean_views": 98.5,
+          "std_dev_views": 178.3,
+          "mean_ctr": 3.23,
+          "mean_retention_30s": 48.4,
+          "mean_avd_pct": 43.1,
+          "trend": "DECELERATING",
+          "outliers": [
+            {
+              "id": "BRE-S01",
+              "title": "COMO A I.A ROUBA SUA VOZ EM 3 SEGUNDOS. #shorts #CanalBrecha #GolpeDoWhatsApp",
+              "views": 590.0,
+              "sigma": 2.76,
+              "type": "HIGH_OUTLIER"
+            }
+          ],
+          "rolling_avg_3_latest": 8.7,
+          "rolling_avg_7_latest": 14.4
+        },
+        "shorts_to_long_ratio": 0.04,
+        "traffic_sources_dominant": [
+          "Recursos de Navegação (Inscritos Inativos)",
+          "Pesquisa do YouTube",
+          "Feed dos Shorts"
+        ]
+      },
+      "top_themes": [
+        {
+          "topic": "O Golpe da Falsa URA Telefônica (Spoofing)",
+          "unit": "1 número 0800 adulterado no protocolo SS7",
+          "thesis": "Como quadrilhas compram rotas VoIP no mercado cinza para fazer o bina do celular exibir exatamente o telefone oficial do seu banco com música de espera idêntica.",
+          "hook_suggestion": "O número que ligou era exatamente o que está gravado atrás do seu cartão de crédito. Você não errou. O protocolo de telefonia é que nunca verificou quem estava chamando.",
+          "p_score": 625,
+          "s_score": 5,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 5,
+            "R": 5,
+            "E": 5
+          }
+        },
+        {
+          "topic": "SIM Swap: O Golpe da Portabilidade Clandestina",
+          "unit": "1 código IMSI de chip GSM",
+          "thesis": "O segundo exato em que funcionários de operadoras trocam o chip no sistema interno da loja, deixando o celular da vítima 'Sem Serviço' enquanto contas bancárias são resetadas via SMS.",
+          "hook_suggestion": "Se o sinal da sua operadora cair do nada enquanto você está em casa, você tem exatamente 4 minutos antes que seu WhatsApp saia do ar.",
+          "p_score": 500,
+          "s_score": 5,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 5,
+            "R": 5,
+            "E": 4
+          }
+        },
+        {
+          "topic": "O 'Chupa-Cabra' das Maquininhas com Wi-Fi Clandestino",
+          "unit": "1 teclado de terminal POS adulterado",
+          "thesis": "A engenharia dos módulos microcontrolados soldados secretamente sob o teclado numérico de maquininhas de restaurante que transmitem a senha digitada por Wi-Fi em milissegundos.",
+          "hook_suggestion": "A transação foi aprovada normalmente na sua conta. Mas o circuito extra dentro da carcaça acabou de salvar a senha de 6 dígitos.",
+          "p_score": 500,
+          "s_score": 3,
+          "priority": "P0",
+          "urgency": "PRODUÇÃO IMEDIATA (Próximo ciclo)",
+          "factors": {
+            "D": 5,
+            "C": 4,
+            "R": 5,
+            "E": 5
+          }
+        }
+      ]
+    }
+  }
+}

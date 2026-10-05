@@ -1,0 +1,123 @@
+{
+  "squad": "Squad Brecha V2 (Cinematic Investigative Noir)",
+  "episode_id": "EP_009",
+  "canal": "brecha",
+  "data_emissao": "2026-09-27 14:18",
+  "prazo_entrega": "2026-10-04",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Browse/Home > 8.5%, Retenção 0:30 > 70% e Retenção nos Shorts em Loop > 125%",
+  "tema": "O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta",
+  "unidade_investigada": "Placa de acrílico de QR Code no balcão com adesivo de 5 cm sobreposto",
+  "tese_central": "Dissecação forense e engenharia sombria do cotidiano: como uma pequena fissura física em um objeto de confiança desvia recursos em segundos sem disparar alertas.",
+  "publico_alvo": "Brasileiros de 18 a 44 anos, espectadores de documentários investigativos, tecnologia, finanças e engenharia reversa.",
+  "desejo_dominante": "Fechar o loop cognitivo do Paradoxo de Zeigarnik e enxergar a engrenagem invisível por trás de objetos cotidianos.",
+  "angulo_editorial": "A fissura física entre o acrílico original e o adesivo fosco colado por cima em 2 segundos de distração",
+  "promessa_principal": "Dissecar a anatomia da falha nos 3 Mundos (Mundo Real, Evidência em Papel #E9E4DA, Sistema A->B->C) e blindar o espectador com 3 protocolos práticos.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "A voz no telefone era idêntica à do gerente da minha agência. Até a música de espera do banco era a mesma.",
+      "Recebi um Pix de R$ 1.500 do nada, a pessoa ligou chorando pedindo pra estornar. Devolvi e depois minha conta foi bloqueada por fraude.",
+      "O aplicativo disse 'Transferência Realizada com Sucesso'. Quando abri o extrato 5 minutos depois, tinham zerado meu limite do cheque especial."
+    ],
+    "unresolved_competitor_doubts": [
+      "Se a pessoa me mandou um Pix errado, qual o perigo real de só fazer um Pix de volta pra ela?",
+      "O MED do Banco Central realmente devolve o dinheiro ou é só protocolo burocrático?",
+      "Como o golpista consegue fazer o telefone tocar aparecendo exatamente o 0800 do meu banco no visor?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achar que mandar o Pix de volta resolve o problema em vez de usar o botão oficial de estorno do app.",
+      "Achar que comprovante em PDF com horário e autenticação bancária é garantia de pagamento recebido."
+    ],
+    "search_queries_in_autocomplete": [
+      "como mudar o pix para outra conta",
+      "o que fazer quando enviar um pix para conta errada",
+      "como mudar o pix para outro celular",
+      "como fazer um pix para outra conta"
+    ]
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Identificar o O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta: O Guia Forense de Defesa Contra a Fraude",
+    "longo_para_home": "A Ligação Que Clonou O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta em 3 Minutos: A Falha Que Ninguém Avisa",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que O Adesivo de 5 cm Que Pode Mandar S Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar O Adesivo de 5 cm Que Pode Man",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de O Adesivo de 5 cm Que Pode Man, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "Banco Central do Brasil - Arquitetura e Regras do SPI / Payload EMVCo",
+    "ANATEL / DEIC - Relatórios Periciais de Engenharia Social e Adulteração Física",
+    "FEBRABAN - Dossiê de Prevenção e Anatomia de Fraudes Financeiras"
+  ],
+  "riscos_e_mitigacao": "Evitar termos bloqueados ('golpe, roubo, quadrilha') no título para não acionar o filtro Harmful & Dangerous Policies (Yellow Icon).",
+  "entregaveis_obrigatorios": [
+    "Master Documentário (8 a 11 min) em Cinematic Investigative Noir (#0A0A0A Obsidian, #171717 Charcoal, #E9E4DA Paper Bone White, #EF2B1D Brecha Red Fissura) alternando entre os 3 Mundos (01 Mundo Real, 02 Evidência Física, 03 Sistema A->B->C) + Picos Límbicos a cada 7-10s (+10% exposição por 3 frames + som CRACK)",
+    "4 Shorts 9:16 com Topologia em Laço Perfeito (Infinite Loop: a última meia-frase completa sintaticamente o segundo 0.0s da abertura + drone contínuo)",
+    "Thumbnail V2 (Lei de Weber 0.2s): Composição 55/45 ou 60/40 — Hero Object Cotidiano (45-65%) + Fissura Vermelha (#EF2B1D) + Consequência em 2 a 4 palavras em Sans Condensada Pesada (ex: 'PIX DESVIADO') sobre mesa escura",
+    "Arquivo .SRT com Envenenamento Semântico (Vetor 1: locução exata + clusters de alto CPM nos segundos finais silenciosos para indexação Gemini/BERT) + Guilhotina de Sequestro de Sessão nos últimos 15s + 1 Armadilha Técnica de Comentários"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15 (Abertura Eriksoniana): Dado/Situação Improvável -> Consequência Visceral -> [Corte Seco + Som CRACK] -> Revelação do Mecanismo. Zero saudações. A Fissura Vermelha (#EF2B1D) rasga a tela no segundo exato da ruptura.",
+    "o_que_nao_fazer": [
+      "NÃO usar as palavras 'golpe', 'roubo', 'quadrilha' ou ALL CAPS gritado no título.",
+      "NÃO usar ciano (#00E5FF), amarelo ácido, HUD sci-fi, estética Matrix ou fonte monoespaçada como protagonista.",
+      "NÃO fazer CTA genérico ('inscreva-se e deixe o like'); aplicar a Guilhotina de Atenção nos últimos 15s abrindo o loop para o próximo dossiê com apenas 1 vídeo na Tela Final #0A0A0A."
+    ],
+    "o_que_evitar": [
+      "Evitar repetir palavras do título no texto da thumbnail (Thumbnail = Consequência | Título = Mecanismo).",
+      "Evitar mais de 10 segundos sem um Pico Límbico óptico/acústico."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "BRECHA_TOPIC_GREENLIGHT_V2",
+    "status_decisao": "GREENLIT",
+    "filtros_validados": {
+      "objeto_topo_funil": "A placa de acrílico com QR Code sob luz quente de balcão de café, padaria ou estacionamento.",
+      "maquina_oculta": "Geração de payload EMVCo estático vinculado a contas de passagem com nome fantasia idêntico ao estabelecimento real.",
+      "gargalo_ponto_brecha": "O segundo exato em que o cliente olha apenas o valor na tela e o funcionário olha apenas a tela de 'comprovante enviado' de longe, sem conferir o CNPJ destinatário.",
+      "escala_realidade_brasileira": "Inquéritos de adulteração física em centros comerciais brasileiros e regras de exibição de dados do recebedor no SPI/Bacen.",
+      "veredito_defesa_ativa": "Conferência obrigatória do nome/CNPJ no visor antes do PIN, exigência de QR Code dinâmico emitido na tela da maquininha POS e validação no extrato do lojista."
+    },
+    "anatomia_objeto_cotidiano": {
+      "everyday_object": "Placa de acrílico de QR Code no balcão com adesivo de 5 cm sobreposto",
+      "hidden_machine": "Redirecionamento silencioso via payload EMVCo para conta laranja com nome similar ao comércio",
+      "breach_point": "A fissura física entre o acrílico original e o adesivo fosco colado por cima em 2 segundos de distração",
+      "symptom": "O cliente vê o comprovante real de saída, o caixa vê a tela de confirmação, mas o saldo nunca entra na conta do estabelecimento",
+      "active_defense": [
+        "1. Nunca confiar em QR Code impresso em papel ou acrílico exposto ao alcance da mão sem conferir o CNPJ/Razão Social na tela de pré-confirmação.",
+        "2. Preferir sempre QR Code dinâmico gerado diretamente no visor luminoso da maquininha POS a cada compra.",
+        "3. Para comerciantes: substituir placas estáticas de balcão por confirmação integrada ao PDV que só libera o cupom fiscal após o webhook do banco."
+      ]
+    }
+  }
+}

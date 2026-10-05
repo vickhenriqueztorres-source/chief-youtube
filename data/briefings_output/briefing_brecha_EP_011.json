@@ -1,0 +1,107 @@
+{
+  "squad": "Squad Brecha (Brutalismo Forense V2)",
+  "episode_id": "EP_011",
+  "canal": "brecha",
+  "data_emissao": "2026-09-27 13:39",
+  "prazo_entrega": "2026-10-04",
+  "prioridade": "P0",
+  "metrica_alvo": "CTR de Browse > 8.5% (Lei de Weber 0.2s) | Retenção 0:30 > 68% (Abertura Eriksoniana) | Short-to-Long Conversion > 5%",
+  "tema": "Quando sua própria voz assalta a sua conta bancária",
+  "unidade_investigada": "3 segundos de áudio espectral extraídos de uma ligação muda",
+  "tese_central": "A extração espectral de apenas 3 segundos da voz humana permite sintetizar os formantes vocais para derrotar a biometria telefônica e autorizar transferências de alto valor.",
+  "publico_alvo": "Brasileiros de 18 a 49 anos expostos diariamente a sistemas bancários, Pix, maquininhas POS, telecom (Anatel) e autenticação biométrica/voz.",
+  "desejo_dominante": "Descobrir a brecha invisível de engenharia que invalida a proteção dos bancos e operadoras em segundos.",
+  "angulo_editorial": "Vetor 3: O Vírus Sintético (Extração Espectral e Deepfake Audio Clone em 0.003s)",
+  "promessa_principal": "Dissecar cirurgicamente o mecanismo oculto sem clichês policiais e blindar o espectador com protocolo de defesa ativa.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "A voz no telefone era idêntica à do gerente da minha agência. Até a música de espera do banco era a mesma.",
+      "Recebi um Pix de R$ 1.500 do nada, a pessoa ligou chorando pedindo pra estornar. Devolvi e depois minha conta foi bloqueada por fraude.",
+      "O aplicativo disse 'Transferência Realizada com Sucesso'. Quando abri o extrato 5 minutos depois, tinham zerado meu limite do cheque especial."
+    ],
+    "unresolved_competitor_doubts": [
+      "Se a pessoa me mandou um Pix errado, qual o perigo real de só fazer um Pix de volta pra ela?",
+      "O MED do Banco Central realmente devolve o dinheiro ou é só protocolo burocrático?",
+      "Como o golpista consegue fazer o telefone tocar aparecendo exatamente o 0800 do meu banco no visor?"
+    ],
+    "popular_myths_to_debunk": [
+      "Achar que mandar o Pix de volta resolve o problema em vez de usar o botão oficial de estorno do app.",
+      "Achar que comprovante em PDF com horário e autenticação bancária é garantia de pagamento recebido."
+    ],
+    "search_queries_in_autocomplete": [
+      "como reagir a um assalto meme",
+      "hackearam minha conta do banco"
+    ]
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "Como Identificar o Quando sua própria voz assalta a sua conta bancária: O Guia Forense de Defesa Contra a Fraude",
+    "longo_para_home": "A Ligação Que Clonou Quando sua própria voz assalta a sua conta bancária em 3 Minutos: A Falha Que Ninguém Avisa",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que Quando sua própria voz assalta a su Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar Quando sua própria voz assalta",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de Quando sua própria voz assalta, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre Quando sua própria voz assalta a sua conta bancária. A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "Banco Central do Brasil (BCB) - Arquitetura do SPI e Limites Físicos de Liquidação Instantânea",
+    "ANATEL - Regulamento Geral de Numeração, Portabilidade e Reaproveitamento de Linhas (Quarentena de 180 dias)",
+    "IEEE / USENIX Security - Acoustic & Biometric Spoofing and Physical Layer Interception"
+  ],
+  "riscos_e_mitigacao": "VIOLAÇÃO HARMFUL POLICY: Jamais usar 'golpe, fraude, roubo, quadrilha' no título ou nos primeiros 15s para evitar filtro Yellow Icon e supressão algorítmica.",
+  "entregaveis_obrigatorios": [
+    "Master Documentário 1080p 30fps com Overlay Brutalismo Forense V2 (#0C0C0C Vantablack + HUD Monospace + Picos Límbicos a cada 8s / 240 frames com flash óptico +10% de 3 frames)",
+    "Guilhotina de Sessão nos últimos 20s: corte seco sem despedida ('se inscreva' PROIBIDO), tela #0C0C0C pura com APENAS 1 vídeo sugerido na End Screen",
+    "Shorts em Topologia Infinite Loop (9:16): última frase incompleta ('E é exatamente por causa dessa brecha invisível que...') completando no frame 0.0s ('...os bancos nunca vão te devolver esse dinheiro.') sobre drone sub-bass contínuo",
+    "Thumbnail Brutalismo Forense V2 (Lei de Weber 0.2s): Vácuo #0C0C0C + Macro-Kinético extremo + 1 única cor de ameaça (#E1FF00 Acid Yellow ou #00FFFF Toxic Cyan) + HUD Monospace máx 3 palavras",
+    "Arquivo .SRT/.VTT com Semantic Poisoning (injeção oculta nos gaps de silêncio e outro escuro: 'banco central', 'brecha nubank', 'segurança itaú', 'vazamento de dados 2026', 'fraude pix milionária')",
+    "Comment Trap (Polarização Límbica) plantado no Ato 3 para forçar debates técnicos longos nos comentários e inflar Dwell Time"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "Bastaram três segundos de uma chamada que caiu na caixa postal para que um modelo acústico reconstruísse as pregas vocais de um engenheiro do Rio de Janeiro e esvaziasse seu fundo de previdência.",
+    "o_que_nao_fazer": [
+      "PROIBIDO usar as palavras 'golpe', 'fraude', 'roubo' ou 'quadrilha' no título principal.",
+      "PROIBIDO usar ALL CAPS gritado ou estética de telejornal policial / dicas de segurança.",
+      "PROIBIDO dar 'oi', pedir inscrição ou fazer encerramento lento (o final deve ser uma Guilhotina de Sessão)."
+    ],
+    "o_que_evitar": [
+      "Evitar múltiplas cores na thumbnail — respeitar monocromia fria + 1 única cor de ameaça (#E1FF00 ou #00FFFF).",
+      "Evitar mais de 3 segundos de imagem estática sem movimento de câmera, zoom forense ou pulso óptico límbico."
+    ]
+  },
+  "governanca_editorial": {
+    "politica": "BRECHA_FORENSIC_BRUTALISM_V2",
+    "status_decisao": "AD_HOC",
+    "filtros_validados": {},
+    "anatomia_objeto_cotidiano": {}
+  }
+}

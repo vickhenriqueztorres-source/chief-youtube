@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê Executivo // Auditoria Forense YouTube Chief - 3 Canais</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#060709',
+                        deepsteel: '#0D0E15',
+                        surface: '#12141F',
+                        surfaceLight: '#1A1D2B',
+                        sodium: '#FF5500',
+                        telemetry: '#00F0FF',
+                        klein: '#0038FF',
+                        acid: '#FFE500',
+                        coral: '#FF5A47',
+                        mint: '#10B981',
+                        borderMuted: '#242938'
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'Fira Code', 'Courier New', 'monospace'],
+                        sans: ['Inter', 'Segoe UI', 'Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #060709;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D0E15;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #242938;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF5500;
+        }
+        .tab-btn.active {
+            background-color: #FF5500;
+            color: #FFFFFF;
+            border-color: #FF5500;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .glass-panel {
+            background: rgba(13, 14, 21, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 85, 0, 0.15);
+        }
+        .badge-cyan {
+            background: rgba(0, 240, 255, 0.1);
+            color: #00F0FF;
+            border: 1px solid rgba(0, 240, 255, 0.3);
+        }
+        .badge-sodium {
+            background: rgba(255, 85, 0, 0.1);
+            color: #FF5500;
+            border: 1px solid rgba(255, 85, 0, 0.3);
+        }
+        .badge-acid {
+            background: rgba(255, 229, 0, 0.1);
+            color: #FFE500;
+            border: 1px solid rgba(255, 229, 0, 0.3);
+        }
+        .badge-mint {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10B981;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        .badge-coral {
+            background: rgba(255, 90, 71, 0.1);
+            color: #FF5A47;
+            border: 1px solid rgba(255, 90, 71, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Top Navigation / Header -->
+    <header class="border-b border-borderMuted bg-deepsteel/90 sticky top-0 z-50 backdrop-blur-md px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-sodium/20 border border-sodium flex items-center justify-center text-sodium font-mono font-bold text-lg">
+                    Ψ
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                        DOSSIÊ DE AUDITORIA CHIEF <span class="text-xs px-2 py-0.5 rounded font-mono bg-sodium/20 text-sodium border border-sodium/30">MÉTODO X + Y</span>
+                    </h1>
+                    <p class="text-xs text-slate-400 font-mono">
+                        DIAGNÓSTICO QUANTITATIVO FORENSE // O OUTRO LADO • HIDDEN SYSTEMS LAB • BRECHA
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-xs font-mono text-slate-400 border border-borderMuted px-3 py-1.5 rounded-md bg-surface">
+                    <i data-lucide="database" class="w-3.5 h-3.5 inline mr-1 text-telemetry"></i> 75 VÍDEOS AUDITADOS
+                </span>
+                <span class="text-xs font-mono text-mint border border-mint/30 px-3 py-1.5 rounded-md bg-mint/10">
+                    <i data-lucide="check-circle" class="w-3.5 h-3.5 inline mr-1"></i> STATUS: AUDITADO AO VIVO
+                </span>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="max-w-7xl mx-auto mt-4 flex overflow-x-auto space-x-2 border-t border-borderMuted pt-3 no-scrollbar text-xs font-mono">
+            <button onclick="switchTab('tab-diagnostico')" class="tab-btn active px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="activity" class="w-3.5 h-3.5"></i> 1. DIAGNÓSTICO DO SISTEMA
+            </button>
+            <button onclick="switchTab('tab-outro-lado')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="radar" class="w-3.5 h-3.5"></i> 2. O OUTRO LADO
+            </button>
+            <button onclick="switchTab('tab-hsl')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="cpu" class="w-3.5 h-3.5"></i> 3. HIDDEN SYSTEMS LAB
+            </button>
+            <button onclick="switchTab('tab-brecha')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="shield-alert" class="w-3.5 h-3.5"></i> 4. BRECHA
+            </button>
+            <button onclick="switchTab('tab-metodo-cientifico')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="flask-conical" class="w-3.5 h-3.5"></i> 5. MATRIZ DE HIPÓTESES (X+Y)
+            </button>
+            <button onclick="switchTab('tab-copy-packaging')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> 6. ENGENHARIA DE COPY & EMBALAGEM
+            </button>
+            <button onclick="switchTab('tab-roadmap-50')" class="tab-btn px-4 py-2 rounded-md border border-borderMuted transition-all flex items-center gap-2">
+                <i data-lucide="compass" class="w-3.5 h-3.5"></i> 7. PLANO DOS 50 VÍDEOS
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 max-w-7xl w-full mx-auto p-6 space-y-8">
+
+        <!-- ========================================== -->
+        <!-- TAB 1: DIAGNÓSTICO DO SISTEMA (CHIEF) -->
+        <!-- ========================================== -->
+        <section id="tab-diagnostico" class="tab-content active space-y-6">
+            
+            <!-- Hero Banner: Definição Rigorosa do Problema -->
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-sodium relative overflow-hidden">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <div class="badge-sodium text-xs font-mono px-2.5 py-1 rounded inline-block mb-2">
+                            POSTULADO DO CHIEF // DEFINIÇÃO DO PROBLEMA
+                        </div>
+                        <h2 class="text-2xl font-bold text-white mb-2">
+                            O Canal Não "Morreu". Ele Está Preso no Gargalo da Descoberta.
+                        </h2>
+                        <p class="text-sm text-slate-300 max-w-4xl leading-relaxed">
+                            O erro comum de criadores é afirmar: <span class="italic text-slate-100">"Meu canal morreu / O algoritmo me odeia / O nicho não tem público"</span>. 
+                            No framework analítico do Chief, o canal é uma máquina de fluxo com 5 nós em série:
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Equation Container -->
+                <div class="mt-6 bg-obsidian p-4 rounded-lg border border-borderMuted font-mono text-center">
+                    <div class="text-xs text-slate-400 mb-1">EQUAÇÃO FUNDAMENTAL DE FORÇA DO CANAL (CHIEF QUANT):</div>
+                    <div class="text-lg md:text-xl font-bold text-white tracking-wide">
+                        <span class="text-sodium">Força do Canal</span> = 
+                        <span class="text-telemetry">Clareza do Público</span> × 
+                        <span class="text-acid">Interesse do Tema</span> × 
+                        <span class="text-mint">Clique (CTR)</span> × 
+                        <span class="text-cyan-400">Retenção (AVD)</span> × 
+                        <span class="text-indigo-400">Satisfação</span>
+                    </div>
+                    <div class="text-xs text-slate-500 mt-2">
+                        Se qualquer um desses multiplicadores cair para zero, o tráfego resultante é zero: <span class="text-slate-300">V ≈ Impressões × CTR × Retenção</span>
+                    </div>
+                </div>
+
+                <!-- Three Root Causes Stated by the User -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div class="bg-surface p-4 rounded-lg border border-borderMuted">
+                        <div class="flex items-center gap-2 text-acid font-mono text-xs font-bold mb-1">
+                            <i data-lucide="help-circle" class="w-4 h-4"></i> DÚVIDA DO CRIADOR 1
+                        </div>
+                        <h3 class="text-sm font-semibold text-white">"Devia ter começado a postar shorts antes?"</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                            <strong class="text-slate-200">Veredito do Chief:</strong> Não necessariamente. Shorts geram velocidade de amostragem, mas <em>"A view não é um ativo. A audiência compatível é o ativo."</em> Postar Shorts genéricos sem intenção de funil apenas atrai tráfego volátil que nunca assistirá a um documentário de 10 min.
+                        </p>
+                    </div>
+
+                    <div class="bg-surface p-4 rounded-lg border border-borderMuted">
+                        <div class="flex items-center gap-2 text-coral font-mono text-xs font-bold mb-1">
+                            <i data-lucide="alert-triangle" class="w-4 h-4"></i> DÚVIDA DO CRIADOR 2
+                        </div>
+                        <h3 class="text-sm font-semibold text-white">"Acho que tá genérico?"</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                            <strong class="text-slate-200">Veredito do Chief:</strong> Sim, na seleção de certos temas e na embalagem dos títulos. Títulos como <em>"How the Internet Gets to Your House"</em> ou <em>"The 50 Hz Machine"</em> competem com a Wikipedia. O que vence no YouTube é a <strong>anomalia com risco humano real</strong>.
+                        </p>
+                    </div>
+
+                    <div class="bg-surface p-4 rounded-lg border border-borderMuted">
+                        <div class="flex items-center gap-2 text-telemetry font-mono text-xs font-bold mb-1">
+                            <i data-lucide="shuffle" class="w-4 h-4"></i> DÚVIDA DO CRIADOR 3
+                        </div>
+                        <h3 class="text-sm font-semibold text-white">"Conteúdos aleatórios?"</h3>
+                        <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                            <strong class="text-slate-200">Veredito do Chief:</strong> Exato. O algoritmo do YouTube é um classificador probabilístico. Quando você publica sobre <em>gasolina adulterada</em> hoje, <em>drones de soja</em> amanhã e <em>isótopos hospitalares</em> depois, o cluster de público semente se fragmenta em três tribos incompatíveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Channels Scorecard -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Outro Lado -->
+                <div class="bg-surface border border-borderMuted rounded-xl p-5 hover:border-sodium/50 transition-all">
+                    <div class="flex justify-between items-start mb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-sodium"></span>
+                            <h3 class="font-bold text-white text-base">O Outro Lado</h3>
+                        </div>
+                        <span class="badge-sodium text-[10px] font-mono px-2 py-0.5 rounded">BR // SISTEMAS</span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-slate-300">
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Inscritos:</span>
+                            <span class="font-bold text-white">5 inscritos</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Vídeos Longos:</span>
+                            <span class="font-bold text-white">18 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Shorts:</span>
+                            <span class="font-bold text-white">12 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Pico Longo:</span>
+                            <span class="text-sodium font-bold">108 views (Pix / Bacen)</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-500">Pico Short:</span>
+                            <span class="text-mint font-bold">1.413 views (Mergulhadores)</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-borderMuted text-xs text-slate-400">
+                        <strong class="text-slate-300">Diagnóstico Síntese:</strong> Descoberta bloqueada por dispersão temática (ciência pura vs crime/fraude) e volume diário excessivo em canal sem base semente.
+                    </div>
+                </div>
+
+                <!-- HSL -->
+                <div class="bg-surface border border-borderMuted rounded-xl p-5 hover:border-telemetry/50 transition-all">
+                    <div class="flex justify-between items-start mb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-telemetry"></span>
+                            <h3 class="font-bold text-white text-base">Hidden Systems Lab</h3>
+                        </div>
+                        <span class="badge-cyan text-[10px] font-mono px-2 py-0.5 rounded">GLOBAL // EN</span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-slate-300">
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Inscritos:</span>
+                            <span class="font-bold text-white">158 inscritos</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Vídeos Longos:</span>
+                            <span class="font-bold text-white">29 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Shorts:</span>
+                            <span class="font-bold text-white">10 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Pico Longo:</span>
+                            <span class="text-telemetry font-bold">680 views (Jet Fuel)</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-500">Pico Short:</span>
+                            <span class="text-acid font-bold">49 views (Caves / Blast)</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-borderMuted text-xs text-slate-400">
+                        <strong class="text-slate-300">Diagnóstico Síntese:</strong> Autocanibalização por reposts idênticos, títulos de Shorts contendo apenas hashtags (0 views) e ausência de drama humano nos títulos em inglês.
+                    </div>
+                </div>
+
+                <!-- Brecha -->
+                <div class="bg-surface border border-borderMuted rounded-xl p-5 hover:border-coral/50 transition-all">
+                    <div class="flex justify-between items-start mb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-coral"></span>
+                            <h3 class="font-bold text-white text-base">Brecha</h3>
+                        </div>
+                        <span class="badge-coral text-[10px] font-mono px-2 py-0.5 rounded">BR // DEFESA DIGITAL</span>
+                    </div>
+                    <div class="space-y-2 text-xs font-mono text-slate-300">
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Inscritos:</span>
+                            <span class="font-bold text-white">1.120 inscritos</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Vídeos Longos:</span>
+                            <span class="font-bold text-white">6 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Shorts:</span>
+                            <span class="font-bold text-white">10 publicados</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-borderMuted">
+                            <span class="text-slate-500">Pico Longo:</span>
+                            <span class="text-coral font-bold">11 views (Celular Roubado)</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-500">Pico Short:</span>
+                            <span class="text-mint font-bold">590 views (IA Rouba Voz)</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-borderMuted text-xs text-slate-400">
+                        <strong class="text-slate-300">Diagnóstico Síntese:</strong> <em>"Fantasma de Inscritos"</em> (1.1k subs inativos matando a entrega na Browse) e títulos em ALL CAPS excessivo que confundem o tom documental com canal policial barato.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela de Anatomia do Algoritmo YouTube (Cold Start) -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i data-lucide="layers" class="w-5 h-5 text-sodium"></i> A FÍSICA DO COLD START NO YOUTUBE (O QUE NINGUÉM CONTA)
+                    </h3>
+                    <span class="text-xs font-mono text-slate-400">BASEADO NA DOCUMENTAÇÃO OFICIAL DO GOOGLE & CHIEF</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs font-mono">
+                        <thead class="bg-deepsteel text-slate-400 uppercase border-b border-borderMuted">
+                            <tr>
+                                <th class="p-3">Fase do Vídeo</th>
+                                <th class="p-3">Ação do Algoritmo</th>
+                                <th class="p-3">Gatilho de Decisão</th>
+                                <th class="p-3">O que está acontecendo no seu canal</th>
+                                <th class="p-3">Ação Corretiva Chief</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-borderMuted text-slate-300">
+                            <tr>
+                                <td class="p-3 font-bold text-white">Fase 1: Impressão Semente (0-24h)</td>
+                                <td class="p-3">Entrega 50 a 300 impressões para inscritos ativos e pessoas com histórico de busca idêntico.</td>
+                                <td class="p-3 text-acid">CTR > 6.0% e Retenção nos primeiros 30s > 65%</td>
+                                <td class="p-3 text-coral">Canais novos com 5 subs têm ZERO inscritos ativos. O YouTube não sabe para quem entregar as primeiras 100 impressões.</td>
+                                <td class="p-3 text-mint">Forçar porta de BUSCA com títulos com alto volume de pesquisa ou usar Shorts como amostragem guiada.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">Fase 2: Expansão Lookalike (24h-72h)</td>
+                                <td class="p-3">Testa o vídeo em páginas iniciais (Browse/Home) de pessoas com interesses semelhantes.</td>
+                                <td class="p-3 text-acid">Satisfação (Watch Time Médio + AVD > 45%)</td>
+                                <td class="p-3 text-coral">Vídeos de 10 min com retenção rápida morrem aqui. Títulos acadêmicos não provocam o clique no browse.</td>
+                                <td class="p-3 text-mint">Abertura sem enrolação (Cold Open com o paradoxo em 15s) e thumbnail com Contraste Causal.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">Fase 3: Sugeridos & Tráfego Contínuo</td>
+                                <td class="p-3">Anexa o vídeo na lateral de canais grandes do mesmo nicho (Johnny Harris, neo, Veritasium).</td>
+                                <td class="p-3 text-acid">Taxa de Próximo Vídeo (Viewer Session Watch Time)</td>
+                                <td class="p-3 text-coral">Vídeos isolados sem playlists ou telas finais não criam sessões continuadas.</td>
+                                <td class="p-3 text-mint">Agrupar os 50 vídeos em 3 séries fechadas de 5 episódios interligados com loops abertos.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: AUDITORIA CANAL O OUTRO LADO -->
+        <!-- ========================================== -->
+        <section id="tab-outro-lado" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-sodium">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="badge-sodium text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                            CANAL 01 // @outroladodetudo
+                        </div>
+                        <h2 class="text-xl font-bold text-white">O Outro Lado // Engenharia Oculta, Sistemas Complexos & Infraestrutura</h2>
+                        <p class="text-xs text-slate-400 font-mono mt-1">
+                            Tese: "O que acontece depois que você clica, compra, liga ou aperta." // Estética Denis Villeneuve 35mm
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold text-sodium font-mono">18 Vídeos</span>
+                        <div class="text-xs text-slate-500 font-mono">30 Envios Totais (12 Shorts)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dissecção das Métricas Reais Extraídas -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- O que Funcionou vs O que Falhou -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted space-y-4">
+                    <h3 class="text-sm font-bold text-white font-mono flex items-center gap-2">
+                        <i data-lucide="trending-up" class="w-4 h-4 text-mint"></i> DISPARIDADES CRÍTICAS DE CONTEÚDO (DADOS AO VIVO)
+                    </h3>
+                    <div class="space-y-3 text-xs">
+                        <!-- Top Performers -->
+                        <div class="p-3 rounded-lg bg-deepsteel border border-mint/30">
+                            <div class="text-mint font-bold font-mono mb-1">VENCEDORES DE AUDIÊNCIA (POR QUE FUNCIONARAM?):</div>
+                            <ul class="space-y-1.5 text-slate-300">
+                                <li>• <strong>Short Mergulhadores de Santos:</strong> <span class="text-mint font-bold">1.413 views</span> (Curiosidade visceral: mergulho sem bolhas, narcotráfico em cascos).</li>
+                                <li>• <strong>Short Esconderijo Submarino:</strong> <span class="text-mint font-bold">1.223 views</span> (Mistério palpável, o que o sonar não vê).</li>
+                                <li>• <strong>Short Apagão Nacional:</strong> <span class="text-mint font-bold">1.111 views</span> (Choque temporal: 600 milissegundos sacrificando o país).</li>
+                                <li>• <strong>Longo Pix Bacen:</strong> <span class="text-mint font-bold">108 views</span> (Tocou na vida financeira de 150M de brasileiros).</li>
+                                <li>• <strong>Longo Gasolina Adulterada:</strong> <span class="text-mint font-bold">84 views</span> (Tocou no bolso diário e na fraude nos postos).</li>
+                            </ul>
+                        </div>
+
+                        <!-- Underperformers -->
+                        <div class="p-3 rounded-lg bg-deepsteel border border-coral/30">
+                            <div class="text-coral font-bold font-mono mb-1">VÍDEOS COM QUASE ZERO ATENÇÃO (POR QUE TRAVARAM?):</div>
+                            <ul class="space-y-1.5 text-slate-300">
+                                <li>• <strong>Remédio Nuclear de 110 min:</strong> <span class="text-coral font-bold">0 views</span> (Assunto parece aula de radiologia de hospital).</li>
+                                <li>• <strong>Diário Oficial das 3 da Madrugada:</strong> <span class="text-coral font-bold">2 views</span> (Muito burocrático e distante da dor real).</li>
+                                <li>• <strong>A Máquina de 60 Hz da Tomada:</strong> <span class="text-coral font-bold">13 views</span> (Abstrato, parece aula de engenharia elétrica do Senai).</li>
+                                <li>• <strong>Pedágio Free Flow:</strong> <span class="text-coral font-bold">5 views</span> (Promessa fraca na embalagem, apesar de ter 3,4M multados).</li>
+                                <li>• <strong>Drones agrícolas de soja:</strong> <span class="text-coral font-bold">24 views</span> (Público de agronegócio não é o mesmo do Pix urbano).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auditoria de Embalagem & Identidade -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted space-y-4">
+                    <h3 class="text-sm font-bold text-white font-mono flex items-center gap-2">
+                        <i data-lucide="eye" class="w-4 h-4 text-sodium"></i> ANÁLISE DOS 6 PILARES (CHIEF AUDIT)
+                    </h3>
+                    
+                    <div class="space-y-2.5 text-xs">
+                        <div class="p-2.5 rounded bg-deepsteel">
+                            <span class="text-sodium font-bold font-mono">1. IDEIA:</span>
+                            <p class="text-slate-300 mt-1">
+                                O conceito de dissecar a infraestrutura física oculta é <strong>nível A+</strong> (comparável ao canal neo internacional). O erro está em misturar infraestrutura de utilidade cotidiana com física quântica e agronegócio no mesmo feed.
+                            </p>
+                        </div>
+
+                        <div class="p-2.5 rounded bg-deepsteel">
+                            <span class="text-sodium font-bold font-mono">2. IDENTIDADE:</span>
+                            <p class="text-slate-300 mt-1">
+                                A estética Denis Villeneuve 35mm é cinematográfica, mas corre o risco de ficar escura e monótona em telas de smartphones se o contraste de iluminação e os gráficos Remotion não forem vibrantes.
+                            </p>
+                        </div>
+
+                        <div class="p-2.5 rounded bg-deepsteel">
+                            <span class="text-sodium font-bold font-mono">3. TÍTULOS & THUMBS:</span>
+                            <p class="text-slate-300 mt-1">
+                                Títulos como <em>"O Outro Lado da Tomada"</em> falham porque não prometem um <strong>resultado ou consequência dramática</strong>. A regra de Schwartz diz: o título não pode apenas batizar o tema; ele tem que vender o perigo ou a quebra de modelo mental.
+                            </p>
+                        </div>
+
+                        <div class="p-2.5 rounded bg-deepsteel">
+                            <span class="text-sodium font-bold font-mono">4. SHORTS:</span>
+                            <p class="text-slate-300 mt-1">
+                                Os shorts com narrativa de <em>crime / submundo / perigo real</em> (Mergulhadores a 14 metros, Chip bluetooth de posto) explodiram para 1.4k views instantaneamente. Esse é o indicador definitivo de qual é o <strong>desejo dominante do mercado</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela Comparativa de Títulos: Atual vs Otimizado Chief -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <h3 class="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+                    <i data-lucide="refresh-cw" class="w-4 h-4 text-telemetry"></i> REENGENHARIA DE EMBALAGEM // O OUTRO LADO (FÓRMULA SCHWARTZ)
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs font-mono">
+                        <thead class="bg-deepsteel text-slate-400 uppercase border-b border-borderMuted">
+                            <tr>
+                                <th class="p-3">Título Atual Postado</th>
+                                <th class="p-3">Resultado Atual</th>
+                                <th class="p-3">Falha Detectada</th>
+                                <th class="p-3 text-mint">Título Reescrito (P²PT Chief)</th>
+                                <th class="p-3">Mecanismo Psicológico</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-borderMuted text-slate-300">
+                            <tr>
+                                <td class="p-3 text-slate-400">A Corrida dos 110 Minutos: O Remédio Nuclear Que Morre Antes de Chegar ao Hospital</td>
+                                <td class="p-3 text-coral">0 views</td>
+                                <td class="p-3">Parece documentário médico técnico sem perigo direto.</td>
+                                <td class="p-3 font-bold text-mint">Este Remédio Morre em 110 Minutos — A Corrida Contra o Relógio de um Acelerador Nuclear</td>
+                                <td class="p-3 text-slate-400">DeadLine opressivo + Objeto com antimatéria que se autodestrói.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 text-slate-400">O OUTRO LADO DA TOMADA: A MÁQUINA DE 60 HZ QUE NÃO PODE PARAR</td>
+                                <td class="p-3 text-coral">13 views</td>
+                                <td class="p-3">Conceito abstrato; 60 Hz não significa nada para o leigo.</td>
+                                <td class="p-3 font-bold text-mint">Se a Tomada Cair para 59,5 Hz por 3 Segundos, o Brasil Apaga — A Física do Colapso</td>
+                                <td class="p-3 text-slate-400">Limite físico milimétrico + Ameaça de escuridão total imediata.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 text-slate-400">A Armadilha do Pedágio Sem Cancela: Por Que 3,4 Milhões Foram Multados?</td>
+                                <td class="p-3 text-coral">5 views</td>
+                                <td class="p-3">Pergunta retórica fria; parece notícia de telejornal.</td>
+                                <td class="p-3 font-bold text-mint">O Sensor Invisível nos Pórticos: Por Que 3,4 Milhões de Motoristas Caíram na Multa do Free Flow?</td>
+                                <td class="p-3 text-slate-400">Vulnerabilidade cotidiana + Injustiça institucional + Medo de multa oculta.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 text-slate-400">O Outro Lado das 3 da Madrugada: A Máquina que Muda as Leis do País Enquanto Você Dorme</td>
+                                <td class="p-3 text-coral">2 views</td>
+                                <td class="p-3">Metáfora distante; o espectador não sente a perda no bolso.</td>
+                                <td class="p-3 font-bold text-mint">Às 03h00 da Manhã, Este Servidor Altera Seus Impostos — Por Dentro da Imprensa Nacional</td>
+                                <td class="p-3 text-slate-400">Ato clandestino institucional + Perda financeira invisível.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: AUDITORIA HIDDEN SYSTEMS LAB -->
+        <!-- ========================================== -->
+        <section id="tab-hsl" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-telemetry">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="badge-cyan text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                            CANAL 02 // @HiddenSystemslabss
+                        </div>
+                        <h2 class="text-xl font-bold text-white">Hidden Systems Lab // Global Deep Engineering & Megastructures</h2>
+                        <p class="text-xs text-slate-400 font-mono mt-1">
+                            Mercado Internacional (EUA, Europa) // Audiência: Systems Thinkers & Industrial Nerds
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold text-telemetry font-mono">29 Vídeos</span>
+                        <div class="text-xs text-slate-500 font-mono">158 Inscritos // 10 Shorts</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagnóstico de Falhas Graves -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Erro Crítico 1 -->
+                <div class="bg-surface p-5 rounded-xl border border-coral/40">
+                    <div class="text-coral font-bold font-mono text-xs mb-2 flex items-center gap-1.5">
+                        <i data-lucide="copy" class="w-4 h-4"></i> ERRO FATAL: DUPLICAÇÃO DE UPLOADS
+                    </div>
+                    <h3 class="text-white font-bold text-sm mb-2">Canibalização e Perda de Confiança Algorítmica</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Detectamos múltiplos vídeos idênticos repostados em intervalos de poucos dias:
+                    </p>
+                    <ul class="text-xs text-slate-300 mt-2 space-y-1 font-mono">
+                        <li>• <em>Airport Fuel Grids:</em> Postado há 1 dia e há 10 dias.</li>
+                        <li>• <em>Skyscrapers Water:</em> Postado há 9 dias e há 3 semanas.</li>
+                        <li>• <em>AI Liquid Cooling:</em> Postado duas vezes há 3 semanas.</li>
+                    </ul>
+                    <p class="text-xs text-coral mt-3">
+                        <strong>Chief Alert:</strong> O algoritmo do YouTube detecta footprints de hashes de vídeo idênticos e pune o alcance de canais que fazem uploads duplicados por considerar spam.
+                    </p>
+                </div>
+
+                <!-- Erro Crítico 2 -->
+                <div class="bg-surface p-5 rounded-xl border border-coral/40">
+                    <div class="text-coral font-bold font-mono text-xs mb-2 flex items-center gap-1.5">
+                        <i data-lucide="hash" class="w-4 h-4"></i> ERRO GRAVE: SHORTS COM SÓ HASHTAGS
+                    </div>
+                    <h3 class="text-white font-bold text-sm mb-2">Títulos Inexistentes nos Shorts (0 Views)</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Os shorts recentes do HSL foram publicados com títulos absurdos:
+                    </p>
+                    <div class="bg-deepsteel p-2 rounded text-[11px] font-mono text-slate-300 mt-2 border border-borderMuted">
+                        #Shorts #FluidDynamics #RocketEngine #Engineering #Science #Aerospace #HiddenSystemsLab
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        O algoritmo de Shorts precisa de <strong>intenção semântica</strong> no título e o usuário do feed precisa ler uma frase de choque em 0.5s. Sem título com gancho, a taxa de <em>Swipe Away</em> é de 90%, resultando em 0 views.
+                    </p>
+                </div>
+
+                <!-- Erro Crítico 3 -->
+                <div class="bg-surface p-5 rounded-xl border border-acid/40">
+                    <div class="text-acid font-bold font-mono text-xs mb-2 flex items-center gap-1.5">
+                        <i data-lucide="at-sign" class="w-4 h-4"></i> IDENTIDADE DIGITAL: HANDLE COM "SS"
+                    </div>
+                    <h3 class="text-white font-bold text-sm mb-2">@HiddenSystemslabss</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        O sufixo "labss" com duplo 's' transmite amadorismo para a audiência dos EUA e sugere um canal espelho ou cópia. No mercado americano altamente sofisticado, autoridade e precisão institucional são requisitos para reter engenheiros e sistemas thinkers.
+                    </p>
+                    <p class="text-xs text-mint mt-3">
+                        <strong>Solução:</strong> Mudar para <code>@HiddenSystemsLabOfficial</code> ou <code>@HiddenSystemsHQ</code> se <code>@HiddenSystemsLab</code> estiver tomado.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Comparativo dos Sucessos do HSL -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <h3 class="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+                    <i data-lucide="award" class="w-4 h-4 text-telemetry"></i> A FÓRMULA DOS DOIS VENCEDORES DO HSL (O QUE REPETIR?)
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-lg bg-deepsteel border border-telemetry/30">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-telemetry font-bold text-xs font-mono">EP.01: JET FUEL SYSTEM</span>
+                            <span class="badge-cyan text-xs font-mono px-2 py-0.5 rounded">680 VIEWS</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm">How Jet Fuel Reaches an Aircraft Without Stopping the Airport</h4>
+                        <p class="text-xs text-slate-300 mt-2">
+                            <strong>Por que venceu:</strong> Contraste polar perfeito: Um aeroporto movimentado acima da terra vs. uma rede de 150 PSI sob pressão operando embaixo sem interrupção. O título contém <em>"Without Stopping"</em> (desejo de continuidade sem fricção).
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-lg bg-deepsteel border border-telemetry/30">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-acid font-bold text-xs font-mono">EP.02: BLAST FURNACE</span>
+                            <span class="badge-acid text-xs font-mono px-2 py-0.5 rounded">566 VIEWS</span>
+                        </div>
+                        <h4 class="text-white font-bold text-sm">THE 20-YEAR FLAME: WHY A BLAST FURNACE CAN NEVER BE SHUT DOWN</h4>
+                        <p class="text-xs text-slate-300 mt-2">
+                            <strong>Por que venceu:</strong> Irreversibilidade física absoluta. A frase <em>"CAN NEVER BE SHUT DOWN"</em> cria um loop cognitivo imediato: <em>"O que acontece se desligar? Explode? Solidifica?"</em> A mente humana não consegue ignorar esse paradoxo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: AUDITORIA CANAL BRECHA -->
+        <!-- ========================================== -->
+        <section id="tab-brecha" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-coral">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <div class="badge-coral text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                            CANAL 03 // @brechadocs
+                        </div>
+                        <h2 class="text-xl font-bold text-white">Brecha // Documentário de Defesa Cotidiana & Engenharia de Fraudes</h2>
+                        <p class="text-xs text-slate-400 font-mono mt-1">
+                            Assinatura: "Toda fraude começa por uma brecha." // Público: 25-55 anos (Suporte técnico da família)
+                        </p>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-2xl font-bold text-coral font-mono">1.120 Inscritos</span>
+                        <div class="text-xs text-slate-500 font-mono">6 Vídeos Longos // 10 Shorts</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- O Grande Mistério do Brecha -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-8 h-8 rounded bg-coral/20 border border-coral text-coral flex items-center justify-center font-bold">!</div>
+                    <div>
+                        <h3 class="text-base font-bold text-white">O Paradoxo dos 1.120 Inscritos vs. 3 a 11 Visualizações</h3>
+                        <p class="text-xs text-slate-400 font-mono">DIAGNÓSTICO DA ANOMALIA ESTATÍSTICA DO CANAL BRECHA</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-slate-300">
+                    <div class="space-y-3">
+                        <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                            <strong class="text-coral font-mono">O EFEITO "AUDIÊNCIA FANTASMA" (CHIEF RULE #2):</strong>
+                            <p class="mt-1 leading-relaxed">
+                                Quando você tem 1.120 inscritos, o YouTube publica a notificação e a impressão do vídeo novo na Home desses 1.120 usuários. Se apenas <strong>3 a 10 pessoas clicam</strong>, a CTR entre inscritos é de míseros <strong>0.3%</strong>.
+                            </p>
+                            <p class="mt-2 text-slate-400">
+                                O algoritmo conclui imediatamente: <em>"Se nem os próprios inscritos do canal querem ver esse vídeo, ele não presta para ser recomendado a estranhos."</em> Resultado: A distribuição externa é abortada na primeira hora.
+                            </p>
+                        </div>
+
+                        <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                            <strong class="text-acid font-mono">DE ONDE VIERAM OS 1.120 INSCRITOS?</strong>
+                            <p class="mt-1 leading-relaxed">
+                                Esses inscritos provavelmente vieram de testes antigos de shorts virais, boosts artificiais, sub4sub ou outros nichos. Eles <strong>NÃO</strong> são espectadores qualificados de documentários longos de crimes financeiros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                            <strong class="text-mint font-mono">A PROVA NOS SHORTS DO BRECHA:</strong>
+                            <p class="mt-1 leading-relaxed">
+                                O Short <em>"COMO A I.A ROUBA SUA VOZ EM 3 SEGUNDOS"</em> bateu <strong>590 visualizações</strong> e o de Deepfake bateu <strong>251 views</strong>.
+                            </p>
+                            <p class="mt-2 leading-relaxed">
+                                Já a série recortada em 4 partes do <em>"Pix Errado"</em> (Parte 01: 17 views, Parte 02: 18 views, Parte 03: 19 views, Parte 04: 5 views) afundou. Por quê? Porque colocar <em>"Parte 1", "Parte 2", "Parte 3"</em> no título destrói a retenção; o usuário no feed não quer ver uma fatia sem começo nem fim.
+                            </p>
+                        </div>
+
+                        <div class="p-3 bg-deepsteel rounded-lg border border-borderMuted">
+                            <strong class="text-telemetry font-mono">O POTENCIAL COMERCIAL DO BRECHA:</strong>
+                            <p class="mt-1 leading-relaxed">
+                                O Brecha é, entre os três, o canal com maior potencial de monetização direta e visualizações em massa no Brasil. Golpes bancários geram R$ 2,5 bilhões de prejuízo ao ano. A dor é visceral. O canal só precisa de <strong>higienização de embalagem e reconstrução da taxa de clique</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reengenharia de Títulos do Brecha -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <h3 class="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-mint"></i> CORREÇÃO DE EMBALAGEM // SAINDO DO SENSACIONALISMO PARA O FORENSE PREMIUM
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs font-mono">
+                        <thead class="bg-deepsteel text-slate-400 uppercase border-b border-borderMuted">
+                            <tr>
+                                <th class="p-3">Título Atual</th>
+                                <th class="p-3">Problema de Copy</th>
+                                <th class="p-3 text-mint">Título Otimizado Forense (Chief)</th>
+                                <th class="p-3">Trigger Psicológico</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-borderMuted text-slate-300">
+                            <tr>
+                                <td class="p-3 text-slate-400">PARA ONDE VAI O SEU DINHEIRO? COMO A QUADRILHA SOME COM R$ 5.000 ANTES DO MED AGIR</td>
+                                <td class="p-3 text-coral">ALL CAPS excessivo, parece telejornal Cidade Alerta. Afasta o público qualificado.</td>
+                                <td class="p-3 font-bold text-mint">A Rota dos 180 Segundos: Como o Golpe do Pix Zera R$ 5.000 Antes do MED Acordar</td>
+                                <td class="p-3 text-slate-400">Cronômetro forense preciso + Falha do sistema do Banco Central.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 text-slate-400">PIX ERRADO: O GOLPE DA DEVOLUÇÃO (POR QUE DEVOLVER PODE FAZER VOCÊ PERDER DUAS VEZES)</td>
+                                <td class="p-3 text-coral">Título longo com parênteses didáticos que diminuem o clique mobile.</td>
+                                <td class="p-3 font-bold text-mint">Caiu um Pix Errado na Sua Conta? Devolver Esse Dinheiro Vai Te Fazer Pagar Duas Vezes</td>
+                                <td class="p-3 text-slate-400">Violação de expectativa moral (o espectador acha que ser honesto é seguro).</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 text-slate-400">O ÁUDIO DE 4 SEGUNDOS QUE ENGANOU UMA FAMÍLIA (clonagem de voz ) - VEJA COMO SE PROTEGER</td>
+                                <td class="p-3 text-coral">Texto entre parênteses amador e "veja como se proteger" é frase batida de cartilha.</td>
+                                <td class="p-3 font-bold text-mint">Eles Gravaram 4 Segundos da Voz da Filha Dela. O Resgate Foi Pago em 15 Minutos.</td>
+                                <td class="p-3 text-slate-400">Cena dramática + Pânico familiar de sequestro virtual por IA.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: MATRIZ DE HIPÓTESES (MÉTODO X + Y) -->
+        <!-- ========================================== -->
+        <section id="tab-metodo-cientifico" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-acid">
+                <div class="badge-acid text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                    MÉTODO CIENTÍFICO CHIEF // X + Y APLICADO
+                </div>
+                <h2 class="text-xl font-bold text-white">Matriz Experimental de Causas, Hipóteses e Testes Rápidos</h2>
+                <p class="text-xs text-slate-300 font-mono mt-1">
+                    "Trate cada vídeo como uma hipótese: Se eu fizer X, então Y deverá acontecer porque Z." // Testes de R$ 0 em 48-72h.
+                </p>
+            </div>
+
+            <!-- As 5 Hipóteses Fundamentais -->
+            <div class="space-y-4">
+                
+                <!-- H1: Dispersão de Tema -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted hover:border-sodium transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-borderMuted pb-3 mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-6 h-6 rounded bg-sodium/20 text-sodium font-mono font-bold flex items-center justify-center text-xs">H1</span>
+                            <h3 class="font-bold text-white text-sm">HIPÓTESE 1: A Fragmentação Temática Impede o Algoritmo de Criar Espectadores Recorrentes</h3>
+                        </div>
+                        <span class="badge-sodium text-[11px] font-mono px-2 py-0.5 rounded">CAUSA: CONTEÚDOS ALEATÓRIOS</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-slate-400 font-mono font-bold">FORMULAÇÃO FORMAL:</span>
+                            <p class="text-slate-300 mt-1">
+                                <em>"Se eu concentrar os próximos 4 episódios do canal em um único desejo dominante (Fraudes e Gargalos Financeiros no Brasil), o número de espectadores recorrentes aumentará porque o público semente terá interesse garantido no próximo vídeo."</em>
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-acid font-mono font-bold">TESTE MAIS BARATO & RÁPIDO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Publicar uma série em sequência de 3 vídeos fechados no O Outro Lado sobre o ecossistema do dinheiro invisível (Ex: 1. A Rota do Pix Roubado; 2. O Chip da Bomba de Gasolina; 3. O Golpe da Maquininha Falsa).
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-telemetry font-mono font-bold">MÉTRICA DE AVALIAÇÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                YouTube Studio → Aba Público → Métrica: <strong>Espectadores Recorrentes (Returning Viewers)</strong> e % de visualizações sugeridas entre esses 3 vídeos.
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-mint font-mono font-bold">CRITÉRIO DE DECISÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Se Espectadores Recorrentes crescerem > 20%, eliminar sumariamente temas de física teórica e agronegócio e consolidar o nicho em <em>Sistemas Críticos & Crime Logístico</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- H2: Embalagem Fraca -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted hover:border-telemetry transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-borderMuted pb-3 mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-6 h-6 rounded bg-telemetry/20 text-telemetry font-mono font-bold flex items-center justify-center text-xs">H2</span>
+                            <h3 class="font-bold text-white text-sm">HIPÓTESE 2: O Gargalo de Visualizações é Taxa de Clique (CTR) em Impressões de Browse</h3>
+                        </div>
+                        <span class="badge-cyan text-[11px] font-mono px-2 py-0.5 rounded">CAUSA: TÍTULOS E THUMBS GENÉRICOS</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-slate-400 font-mono font-bold">FORMULAÇÃO FORMAL:</span>
+                            <p class="text-slate-300 mt-1">
+                                <em>"Se eu trocar os títulos e thumbnails dos 5 vídeos menos assistidos por variações com 'Contraste Causal + Perda Iminente', a CTR subirá de <2% para >6% porque o espectador identificará um risco imediato em 1 segundo."</em>
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-acid font-mono font-bold">TESTE MAIS BARATO & RÁPIDO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Teste A/B gratuito no YouTube Studio (ou troca manual): Alterar título e thumbnail de 3 vídeos existentes (Pedágio sem Cancela, Tomada de 60 Hz, Remédio Nuclear) sem reeditar os vídeos. Custo: R$ 0.
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-telemetry font-mono font-bold">MÉTRICA DE AVALIAÇÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                CTR nas 48 horas seguintes após a alteração + Número de impressões geradas na aba Navegação (Browse Features).
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-mint font-mono font-bold">CRITÉRIO DE DECISÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Se a CTR subir acima de 5%, o problema era puramente de embalagem. Se a CTR continuar baixa com impressões altas, o tema não tem apelo de massa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- H3: Shorts Desconectados -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted hover:border-acid transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-borderMuted pb-3 mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-6 h-6 rounded bg-acid/20 text-acid font-mono font-bold flex items-center justify-center text-xs">H3</span>
+                            <h3 class="font-bold text-white text-sm">HIPÓTESE 3: Shorts com Gancho Forense e Link Vinculado Convertem Tráfego para o Vídeo Longo</h3>
+                        </div>
+                        <span class="badge-acid text-[11px] font-mono px-2 py-0.5 rounded">CAUSA: POSTAGEM TARDIA & DESALINHADA DE SHORTS</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-slate-400 font-mono font-bold">FORMULAÇÃO FORMAL:</span>
+                            <p class="text-slate-300 mt-1">
+                                <em>"Se cada Short terminar com um loop aberto e o botão oficial de 'Vídeo Relacionado' apontando para o documentário master, entre 2% e 5% dos espectadores do Short clicarão para assistir ao vídeo longo."</em>
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-acid font-mono font-bold">TESTE MAIS BARATO & RÁPIDO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Vincular nos Shorts de alto tráfego já existentes (Mergulhadores de Santos - 1.4k views e Apagão Nacional - 1.1k views) o link nativo do YouTube Studio para o documentário completo correspondente.
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-telemetry font-mono font-bold">MÉTRICA DE AVALIAÇÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                YouTube Analytics do vídeo longo → Origem do tráfego → <strong>"Shorts feed / Vídeo relacionado"</strong>.
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-mint font-mono font-bold">CRITÉRIO DE DECISÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Se gerar mais de 30 visualizações no vídeo longo a partir do Short, institucionalizar o fluxo em 100% dos próximos lançamentos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- H4: Abertura e Retenção nos Primeiros 30s -->
+                <div class="bg-surface rounded-xl p-5 border border-borderMuted hover:border-mint transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-borderMuted pb-3 mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-6 h-6 rounded bg-mint/20 text-mint font-mono font-bold flex items-center justify-center text-xs">H4</span>
+                            <h3 class="font-bold text-white text-sm">HIPÓTESE 4: O Abandono Inicial Ocorre por Abertura Conceitual em Vez de Prova Imediata</h3>
+                        </div>
+                        <span class="badge-mint text-[11px] font-mono px-2 py-0.5 rounded">CAUSA: RETENÇÃO INICIAL FRACA</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-slate-400 font-mono font-bold">FORMULAÇÃO FORMAL:</span>
+                            <p class="text-slate-300 mt-1">
+                                <em>"Se o vídeo entregar a revelação do resultado ou o paradoxo físico nos primeiros 10 segundos (em vez de vinheta ou introdução expositiva), a retenção aos 30 segundos subirá para >70%."</em>
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-acid font-mono font-bold">TESTE MAIS BARATO & RÁPIDO:</span>
+                            <p class="text-slate-300 mt-1">
+                                No próximo episódio renderizado no Remotion, aplicar a fórmula Cold Open do Chief: Cena de Choque (0-5s) → Paradoxo Forense (5-15s) → Pergunta Aberta (15-25s). Zero créditos iniciais.
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-telemetry font-mono font-bold">MÉTRICA DE AVALIAÇÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Gráfico de Retenção Absoluta no YouTube Studio: Curva na marca de 0:30 (benchmarks oficiais do YouTube exigem > 65%).
+                            </p>
+                        </div>
+                        <div class="bg-deepsteel p-3 rounded">
+                            <span class="text-mint font-mono font-bold">CRITÉRIO DE DECISÃO:</span>
+                            <p class="text-slate-300 mt-1">
+                                Se a retenção de 30s superar 70%, o algoritmo expande as impressões automáticas na Home em até 5x na primeira semana.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 6: ENGENHARIA DE COPY & EMBALAGEM -->
+        <!-- ========================================== -->
+        <section id="tab-copy-packaging" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-sodium">
+                <div class="badge-sodium text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                    COPYWRITING DE RETENÇÃO FORENSE // EUGENE SCHWARTZ
+                </div>
+                <h2 class="text-xl font-bold text-white">Framework P²PT: Como Transformar Documentários Técnicos em Ímãs de Atenção</h2>
+                <p class="text-xs text-slate-300 font-mono mt-1">
+                    "Você não cria o desejo. Você canaliza o desejo pré-existente de proteção, dinheiro e curiosidade para o mecanismo do vídeo."
+                </p>
+            </div>
+
+            <!-- As 4 Camadas do P²PT -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="bg-surface p-5 rounded-xl border border-borderMuted">
+                    <span class="text-sodium font-mono font-bold text-sm block mb-1">P¹ - PÚBLICO</span>
+                    <h4 class="text-white font-bold text-sm">Quem tem a dor visceral?</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Não faça vídeos para "qualquer um interessado em tecnologia". Fale com o motorista com medo de gasolina adulterada, a pessoa que faz Pix todo dia, o profissional que teme perder suas contas.
+                    </p>
+                </div>
+
+                <div class="bg-surface p-5 rounded-xl border border-borderMuted">
+                    <span class="text-telemetry font-mono font-bold text-sm block mb-1">P² - PROBLEMA</span>
+                    <h4 class="text-white font-bold text-sm">O Custo Oculto Inaceitável</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        A dor não é abstrata: <em>"Você terminou o Pix... e em 180 segundos o dinheiro sumiu do radar do Banco Central."</em> Concretude e cena física geram reconhecimento imediato.
+                    </p>
+                </div>
+
+                <div class="bg-surface p-5 rounded-xl border border-borderMuted">
+                    <span class="text-acid font-mono font-bold text-sm block mb-1">P³ - PROMESSA</span>
+                    <h4 class="text-white font-bold text-sm">O Mecanismo Novo</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Schwartz ensina: Promessas desgastadas morrem. Introduza o <strong>mecanismo oculto</strong>: <em>"O chip com bluetooth que comanda a bomba de combustível à distância sem romper o lacre do Inmetro."</em>
+                    </p>
+                </div>
+
+                <div class="bg-surface p-5 rounded-xl border border-borderMuted">
+                    <span class="text-mint font-mono font-bold text-sm block mb-1">T - TENSÃO</span>
+                    <h4 class="text-white font-bold text-sm">A Pergunta Não Respondida</h4>
+                    <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                        Nunca feche a resposta no título. Mantenha uma pergunta aberta até os últimos minutos: <em>"Como eles conseguiram extrair os dados se a biometria nunca foi aprovada?"</em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Calculadora Interativa de Ideias P = D x C x R x E -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-bold text-white font-mono flex items-center gap-2">
+                        <i data-lucide="calculator" class="w-4 h-4 text-sodium"></i> CALCULADORA DO CHIEF: ÍNDICE DE POTENCIAL DE VÍDEO (P = D × C × R × E)
+                    </h3>
+                    <span class="text-xs font-mono text-slate-400">PONTUAÇÃO DE 1 A 625 PONTOS</span>
+                </div>
+                <p class="text-xs text-slate-300 mb-4">
+                    Antes de autorizar a esteira autônoma a renderizar um roteiro, passe a ideia por essa fórmula matemática para vetar vídeos com potencial medíocre:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs font-mono">
+                    <div class="p-3 bg-deepsteel rounded border border-borderMuted">
+                        <label class="block text-slate-400 mb-1">D (Demanda de Busca/Interesse):</label>
+                        <select id="calc-d" onchange="calcIdeaScore()" class="w-full bg-surface border border-borderMuted rounded p-2 text-white">
+                            <option value="1">1 - Assunto acadêmico / nicho ínfimo</option>
+                            <option value="2">2 - Curiosidade passageira</option>
+                            <option value="3">3 - Interesse médio</option>
+                            <option value="4">4 - Tema em alta frequente</option>
+                            <option value="5" selected>5 - Dor massiva nacional / perigo direto</option>
+                        </select>
+                    </div>
+
+                    <div class="p-3 bg-deepsteel rounded border border-borderMuted">
+                        <label class="block text-slate-400 mb-1">C (Clareza da Promessa em 1s):</label>
+                        <select id="calc-c" onchange="calcIdeaScore()" class="w-full bg-surface border border-borderMuted rounded p-2 text-white">
+                            <option value="1">1 - Confuso / Abstrato</option>
+                            <option value="2">2 - Precisa de contexto para entender</option>
+                            <option value="3">3 - Razoavelmente compreensível</option>
+                            <option value="4" selected>4 - Claro e visual</option>
+                            <option value="5">5 - Instantâneo na mente em 0.5s</option>
+                        </select>
+                    </div>
+
+                    <div class="p-3 bg-deepsteel rounded border border-borderMuted">
+                        <label class="block text-slate-400 mb-1">R (Relevância / Consequência):</label>
+                        <select id="calc-r" onchange="calcIdeaScore()" class="w-full bg-surface border border-borderMuted rounded p-2 text-white">
+                            <option value="1">1 - Pouco afeta a vida do espectador</option>
+                            <option value="2">2 - Apenas entretenimento passivo</option>
+                            <option value="3">3 - Importante para um grupo</option>
+                            <option value="4">4 - Afeta o dia a dia diretamente</option>
+                            <option value="5" selected>5 - Perda de dinheiro, segurança ou liberdade</option>
+                        </select>
+                    </div>
+
+                    <div class="p-3 bg-deepsteel rounded border border-borderMuted">
+                        <label class="block text-slate-400 mb-1">E (Evidência / Prova Visual):</label>
+                        <select id="calc-e" onchange="calcIdeaScore()" class="w-full bg-surface border border-borderMuted rounded p-2 text-white">
+                            <option value="1">1 - Sem imagens reais / puramente conceitual</option>
+                            <option value="2">2 - Gráficos genéricos</option>
+                            <option value="3">3 - Ilustrações aceitáveis</option>
+                            <option value="4" selected>4 - Telemetria, laudos e cutaways 3D</option>
+                            <option value="5">5 - Prova documental irrefutável + Raio-X</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-4 rounded-lg bg-deepsteel border border-sodium/40 flex flex-col md:flex-row items-center justify-between gap-4 font-mono">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-slate-400">PONTUAÇÃO RESULTANTE:</span>
+                        <span id="score-result" class="text-2xl font-bold text-sodium">400</span>
+                        <span class="text-xs text-slate-500">/ 625 pontos</span>
+                    </div>
+                    <div id="score-verdict" class="text-xs text-mint font-bold px-3 py-1 rounded bg-mint/10 border border-mint/30">
+                        VEREDITO: APROVADO PARA PRODUÇÃO (ALTO POTENCIAL DE DESCOBERTA)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 7: PLANO DOS 50 VÍDEOS -->
+        <!-- ========================================== -->
+        <section id="tab-roadmap-50" class="tab-content space-y-6">
+            <div class="glass-panel rounded-xl p-6 border-l-4 border-l-mint">
+                <div class="badge-mint text-xs font-mono px-2.5 py-1 rounded inline-block mb-1">
+                    EXECUÇÃO ESTRATÉGICA // PLANO DE VALIDAÇÃO
+                </div>
+                <h2 class="text-xl font-bold text-white">Roadmap dos 50 Vídeos // Validação Estatística sem Queimar o Algoritmo</h2>
+                <p class="text-xs text-slate-300 font-mono mt-1">
+                    "Criar 50 vídeos aleatórios é loteria. Criar 5 ciclos de 10 hipóteses controladas é Engenharia de Sistemas."
+                </p>
+            </div>
+
+            <!-- O Ciclo de Produção Semanal 80/20 -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted space-y-4">
+                <h3 class="text-sm font-bold text-white font-mono flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4 text-mint"></i> CADÊNCIA ÓTIMA DE POSTAGEM PARA SAIR DO COLD START
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                    <div class="p-4 rounded-lg bg-deepsteel border border-borderMuted">
+                        <div class="text-sodium font-bold font-mono text-sm mb-2">FASE 1: CICLO DE REPOSICIONAMENTO (Vídeos 1 a 15)</div>
+                        <p class="text-slate-300 leading-relaxed">
+                            <strong>Ritmo:</strong> 2 Vídeos Longos por semana (máximo) + 4 Shorts vinculados.
+                        </p>
+                        <p class="text-slate-400 mt-2">
+                            <strong>Regra de Ouro:</strong> Pare de postar 1 vídeo por dia! O YouTube precisa de 72h para amostragem estatística de cada vídeo longo em canais sem inscritos ativos.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-lg bg-deepsteel border border-borderMuted">
+                        <div class="text-telemetry font-bold font-mono text-sm mb-2">FASE 2: CONSOLIDAÇÃO DE SÉRIES (Vídeos 16 a 35)</div>
+                        <p class="text-slate-300 leading-relaxed">
+                            <strong>Ritmo:</strong> Séries de 3 episódios sobre o mesmo tema vencedor.
+                        </p>
+                        <p class="text-slate-400 mt-2">
+                            Se um vídeo sobre "Golpe da Maquininha" performar acima da média, crie imediatamente: <em>"A Autópsia do Hardware"</em> e <em>"O Mercado Clandestino de Firmware"</em>.
+                        </p>
+                    </div>
+
+                    <div class="p-4 rounded-lg bg-deepsteel border border-borderMuted">
+                        <div class="text-acid font-bold font-mono text-sm mb-2">FASE 3: ESCALA E AUTOMAÇÃO PURA (Vídeos 36 a 50)</div>
+                        <p class="text-slate-300 leading-relaxed">
+                            <strong>Ritmo:</strong> Escalar apenas os formatos comprovados que atingiram CTR > 6% e AVD > 40%.
+                        </p>
+                        <p class="text-slate-400 mt-2">
+                            Congelar todos os temas que não geraram retenção inicial nos primeiros 35 vídeos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabela dos 10 Próximos Temas Blindados para Validação Imediata -->
+            <div class="bg-surface rounded-xl p-6 border border-borderMuted">
+                <h3 class="text-sm font-bold text-white font-mono mb-4 flex items-center gap-2">
+                    <i data-lucide="check-square" class="w-4 h-4 text-sodium"></i> GRADE DOS 10 PRÓXIMOS EPISÓDIOS SUGERIDOS (PONTUAÇÃO > 400)
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs font-mono">
+                        <thead class="bg-deepsteel text-slate-400 uppercase border-b border-borderMuted">
+                            <tr>
+                                <th class="p-3">#</th>
+                                <th class="p-3">Canal</th>
+                                <th class="p-3">Tema Específico</th>
+                                <th class="p-3">Título Pronto (Copy Schwartz)</th>
+                                <th class="p-3">Desejo Humano Dominante</th>
+                                <th class="p-3">Pontuação P²PT</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-borderMuted text-slate-300">
+                            <tr>
+                                <td class="p-3 font-bold text-white">01</td>
+                                <td class="p-3 text-sodium">O Outro Lado</td>
+                                <td class="p-3">Rastreadores de Carro Furtado</td>
+                                <td class="p-3 text-mint font-bold">O Jammer de R$ 50 Que Apaga o GPS do Seu Carro em 3 Segundos</td>
+                                <td class="p-3 text-slate-400">Proteção patrimonial + Falha do rastreador que a seguradora cobra</td>
+                                <td class="p-3 text-acid font-bold">500</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">02</td>
+                                <td class="p-3 text-coral">Brecha</td>
+                                <td class="p-3">Golpe da Falsa Central Telefônica</td>
+                                <td class="p-3 text-mint font-bold">Como Eles Colocam a URA do Seu Banco no Seu Telefone (Spoofing)</td>
+                                <td class="p-3 text-slate-400">Terror de atender ligação legítima e ter conta zerada</td>
+                                <td class="p-3 text-acid font-bold">500</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">03</td>
+                                <td class="p-3 text-telemetry">HSL</td>
+                                <td class="p-3">Black Start Electrical Grid</td>
+                                <td class="p-3 text-mint font-bold">How Engineers Restart a Dead Power Grid from Absolute Zero</td>
+                                <td class="p-3 text-slate-400">Fascínio por sobrevivência sistêmica ao apocalipse elétrico</td>
+                                <td class="p-3 text-acid font-bold">480</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">04</td>
+                                <td class="p-3 text-sodium">O Outro Lado</td>
+                                <td class="p-3">Balanças Rodoviárias & Excesso</td>
+                                <td class="p-3 text-mint font-bold">Os Truques Físicos dos Caminhões para Burlar a Balança a 80 km/h</td>
+                                <td class="p-3 text-slate-400">Curiosidade de estradas + Física mecânica de eixos e suspensão</td>
+                                <td class="p-3 text-acid font-bold">450</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">05</td>
+                                <td class="p-3 text-coral">Brecha</td>
+                                <td class="p-3">Golpe da Portabilidade de Chip</td>
+                                <td class="p-3 text-mint font-bold">SIM Swap: O Segundo Exato em Que o Sinal do Seu Celular Some Para Sempre</td>
+                                <td class="p-3 text-slate-400">Vulnerabilidade máxima: o momento em que a vítima fica muda</td>
+                                <td class="p-3 text-acid font-bold">500</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">06</td>
+                                <td class="p-3 text-telemetry">HSL</td>
+                                <td class="p-3">Water Hammer Shockwaves</td>
+                                <td class="p-3 text-mint font-bold">The 1,200 m/s Shockwave That Can Shatter Massive Hydroelectric Dams</td>
+                                <td class="p-3 text-slate-400">Destruição catastrófica contida por câmaras de ar subterrâneas</td>
+                                <td class="p-3 text-acid font-bold">460</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">07</td>
+                                <td class="p-3 text-sodium">O Outro Lado</td>
+                                <td class="p-3">Carga Roubada e Receptação</td>
+                                <td class="p-3 text-mint font-bold">O Galpão Invisível: A Rota das Cargas Desviadas Antes da Nota Fiscal Subir</td>
+                                <td class="p-3 text-slate-400">Logística clandestina + Fraude tributária no SEFAZ</td>
+                                <td class="p-3 text-acid font-bold">440</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">08</td>
+                                <td class="p-3 text-coral">Brecha</td>
+                                <td class="p-3">Maquininha com Wi-Fi Clandestino</td>
+                                <td class="p-3 text-mint font-bold">O "Chupa-Cabra" Moderno: Como Maquininhas Espelham o Teclado via Wi-Fi</td>
+                                <td class="p-3 text-slate-400">Medo de pagar uma conta comum em bar/restaurante</td>
+                                <td class="p-3 text-acid font-bold">500</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">09</td>
+                                <td class="p-3 text-telemetry">HSL</td>
+                                <td class="p-3">Data Center Backup Diesel</td>
+                                <td class="p-3 text-mint font-bold">Why AI Data Centers Store Millions of Gallons of Diesel Underground</td>
+                                <td class="p-3 text-slate-400">Fascínio por infraestrutura oculta de gigantes da tecnologia</td>
+                                <td class="p-3 text-acid font-bold">450</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-bold text-white">10</td>
+                                <td class="p-3 text-sodium">O Outro Lado</td>
+                                <td class="p-3">Cabos de Fibra Óptica Cortados</td>
+                                <td class="p-3 text-mint font-bold">O Rompimento que Cortou 4 Estados: Como a Internet Encontra Outra Rota em 40 ms</td>
+                                <td class="p-3 text-slate-400">Redundância distribuída de sobrevivência a sabotagens</td>
+                                <td class="p-3 text-acid font-bold">450</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Resumo das 7 Ações Imediatas -->
+            <div class="bg-surface rounded-xl p-6 border-l-4 border-l-mint space-y-3">
+                <h3 class="text-sm font-bold text-white font-mono flex items-center gap-2">
+                    <i data-lucide="zap" class="w-4 h-4 text-mint"></i> PLANO DE AÇÃO IMEDIATA (PRÓXIMAS 72 HORAS - R$ 0 DE CUSTO)
+                </h3>
+                <ol class="list-decimal list-inside text-xs text-slate-300 space-y-2 leading-relaxed">
+                    <li><strong class="text-white">Corrigir os Títulos dos Shorts do HSL:</strong> Renomear imediatamente os Shorts que têm apenas hashtags (#Shorts #RocketLaunch...) inserindo títulos com gancho forte em inglês.</li>
+                    <li><strong class="text-white">Conectar os Vídeos Relacionados nos Shorts:</strong> Vincular os Shorts de 1.4k e 1.2k views do O Outro Lado ao documentário master de Santos e do Apagão.</li>
+                    <li><strong class="text-white">Parar de Repostar Vídeos Idênticos no HSL:</strong> Excluir as versões duplicadas recentes (Airport fuel e Skyscrapers water) para limpar o sinal de spam perante o algoritmo.</li>
+                    <li><strong class="text-white">Higienizar os Títulos do Canal Brecha:</strong> Retirar o ALL CAPS e reescrever os títulos com a fórmula dramática forense (A Rota dos 180 Segundos).</li>
+                    <li><strong class="text-white">Reduzir a Frequência para 2 Longos/Semana:</strong> Dar espaço para o YouTube testar e encontrar o público sem soterrar vídeos recém-nascidos.</li>
+                    <li><strong class="text-white">Vincular os Shorts no Momento do Upload do Longo:</strong> Postar o Short Parte 1 no mesmo minuto em que o vídeo longo entrar como público.</li>
+                    <li><strong class="text-white">Medir Retenção aos 30 Segundos:</strong> Analisar a curva do gráfico de retenção em cada vídeo postado e ajustar a introdução dos próximos scripts no pipeline de IA.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-borderMuted bg-deepsteel py-6 px-6 mt-12 text-center text-xs font-mono text-slate-500">
+        <p>DOSSIÊ GERADO PELO SISTEMA ANTIGRAVITY QUANT LEAD // BASEADO NO VAULT CHIEF YOUTUBE & PSICOLOGIA COPY</p>
+        <p class="mt-1 text-slate-600">ISOLAMENTO TOTAL SUPABASE HFT QUANT // ZERO CRUZAMENTO DE DADOS</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Lucide Icons initialization
+        lucide.createIcons();
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            // Remove active from all tabs and buttons
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+            // Activate chosen tab
+            const target = document.getElementById(tabId);
+            if (target) {
+                target.classList.add('active');
+            }
+
+            // Find matching button
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes(tabId)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Re-run lucide icons in newly active tab
+            lucide.createIcons();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Interactive Idea Calculator
+        function calcIdeaScore() {
+            const d = parseInt(document.getElementById('calc-d').value) || 1;
+            const c = parseInt(document.getElementById('calc-c').value) || 1;
+            const r = parseInt(document.getElementById('calc-r').value) || 1;
+            const e = parseInt(document.getElementById('calc-e').value) || 1;
+
+            const score = d * c * r * e;
+            const scoreEl = document.getElementById('score-result');
+            const verdictEl = document.getElementById('score-verdict');
+
+            scoreEl.innerText = score;
+
+            if (score >= 400) {
+                verdictEl.className = "text-xs text-mint font-bold px-3 py-1 rounded bg-mint/10 border border-mint/30";
+                verdictEl.innerText = "VEREDITO: APROVADO PARA PRODUÇÃO (ALTO POTENCIAL DE DESCOBERTA)";
+                scoreEl.className = "text-2xl font-bold text-mint";
+            } else if (score >= 200) {
+                verdictEl.className = "text-xs text-acid font-bold px-3 py-1 rounded bg-acid/10 border border-acid/30";
+                verdictEl.innerText = "VEREDITO: AJUSTAR EMBALAGEM / FALTA PROVA OU CLAREZA";
+                scoreEl.className = "text-2xl font-bold text-acid";
+            } else {
+                verdictEl.className = "text-xs text-coral font-bold px-3 py-1 rounded bg-coral/10 border border-coral/30";
+                verdictEl.innerText = "VEREDITO: REPROVADO (TEMA ACADÊMICO / RISCO DE TRAVAR EM 0 VIEWS)";
+                scoreEl.className = "text-2xl font-bold text-coral";
+            }
+        }
+    </script>
+</body>
+</html>

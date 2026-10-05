@@ -1,0 +1,343 @@
+{
+  "channel_slug": "brecha",
+  "channel_name": "Brecha",
+  "handle": "@brechadocs",
+  "niche": "Dissecação Forense e Engenharia Sombria do Cotidiano",
+  "identity_v2": {
+    "aesthetic_archetype": "Cinematic Investigative Noir (Mesa de Evidências Física)",
+    "visual_signature": "A FISSURA — Rachadura física, papel rasgado, madeira quebrada ou superfície separada com corte vermelho (#EF2B1D) separando o objeto cotidiano da máquina oculta.",
+    "sound_signature": "CRACK — Estalo seco de ruptura física sincronizado com a aparição da fissura + drone grave contínuo, manuseio de papel, clique mecânico.",
+    "palette": {
+      "obsidian_black": "#0A0A0A",
+      "charcoal": "#171717",
+      "paper_bone_white": "#E9E4DA",
+      "brecha_red": "#EF2B1D",
+      "warm_wood_tungsten": "Matéria física real (madeira escura, papel velho, xerox, vidro, metal sob luz lateral dura de tungstênio)"
+    },
+    "typography": {
+      "headlines": ["Bebas Neue", "Anton", "Archivo Black", "Oswald Heavy", "Arial Condensed Bold"],
+      "secondary": ["Inter", "Arial"],
+      "mono_restricted": ["JetBrains Mono", "Consolas"],
+      "mono_rule": "Fonte mono restrita exclusivamente a timestamps, números, documentos e identificadores técnicos. Proibido usar mono como protagonista."
+    },
+    "three_worlds_structure": [
+      "01 — MUNDO REAL: Café, celular, rua, loja, casa, banco, maquininha (fotografia 35mm/50mm documental com luz lateral dura).",
+      "02 — EVIDÊNCIA: Extrato, laudo, print, documento em papel #E9E4DA, foto 3x4, marca-texto, timestamps sobre mesa de madeira escura.",
+      "03 — SISTEMA: Diagramas editoriais simples mostrando A → B → C sobre superfície escura (estritamente proibido HUD sci-fi, neon ou estética Matrix)."
+    ],
+    "thumbnail_formula_v2": {
+      "equation": "OBJETO COTIDIANO (Hero Object 45-65%) + FISSURA VERMELHA (#EF2B1D) + CONSEQUÊNCIA (2 a 4 palavras)",
+      "composition": "Divisão 55/45 ou 60/40 (Objeto dominante de um lado, consequência do outro, Fissura atravessando a transição)",
+      "cognitive_split": "Thumbnail = Consequência | Título = Mecanismo (Zero repetição de palavras entre capa e título)"
+    }
+  },
+  "neuromarketing_and_blackhat_vectors": {
+    "zeigarnik_title_triggers": {
+      "forbidden_words_in_title": ["golpe", "roubo", "fraude", "quadrilha", "cuidado", "alerta"],
+      "rationale": "Evitar filtro Harmful & Dangerous Policies (Yellow Icon e supressão algorítmica na Home) e eliminar tom de boletim de ocorrência em ALL CAPS.",
+      "formulas": [
+        "Guilhotina Temporal (Tempo -> Consequência): 'Os 180 Segundos Antes de R$ 5.000 Sumirem'",
+        "Inversão de Escala (Micro -> Macro): 'O Chip de R$ 15 Que Pode Levar Sua Identidade'",
+        "Custo Assimétrico (Objeto Normal -> Sistema Oculto): 'O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta'",
+        "Paradoxo de Segurança: 'Por Que Senha e Biometria Não Impedem Este Ataque'"
+      ]
+    },
+    "ericksonian_cold_open_0_15s": "Dado/Situação Improvável -> Consequência Visceral -> Corte Seco (CRACK) -> Revelação do Mecanismo. Zero introduções orgânicas ou saudações.",
+    "algorithmic_exploits": {
+      "vector_1_semantic_poisoning_srt": "Upload obrigatório de arquivo .SRT próprio com locução exata + clusters semânticos de alto CPM ('banco central', 'segurança bancária', 'engenharia financeira', 'investigações corporativas', 'proteção patrimonial') nos blocos silenciosos finais.",
+      "vector_2_infinite_loop_shorts": "Topologia em Laço Perfeito: A última frase do Short é uma meia-sentença aberta que se completa sintaticamente no segundo 0.0s da primeira frase + drone grave em frequência contínua.",
+      "vector_3_session_hijacking": "Guilhotina de Atenção nos últimos 15-20s abrindo loop direto para a próxima investigação + Tela Final #0A0A0A com apenas 1 único vídeo sugerido.",
+      "vector_4_comment_trap": "Polarização Límbica Artificial: 1 micro-isca técnica controlada por episódio para mobilizar analistas e especialistas a debaterem nos comentários nas primeiras 24h.",
+      "vector_5_limbic_peaks": "Pattern Interrupt a cada 7-10 segundos (~240 frames): pulso óptico de +10% de exposição positiva nos brancos por 3 frames + estalo seco acústico (CRACK / clique mecânico)."
+    }
+  },
+  "target_audience": {
+    "geo": "Brasil",
+    "age_range": "18-44 anos",
+    "profile": "Espectadores de documentários investigativos, tecnologia, finanças e engenharia reversa que buscam entender a anatomia invisível de falhas sistêmicas cotidianas."
+  },
+  "governance": {
+    "policy_version": "BRECHA_TOPIC_GREENLIGHT_V2",
+    "agents": {
+      "scout": {
+        "id": "topic-scout",
+        "role": "TopicScoutAgent",
+        "source_file": "agents/strategy/editorial-agents.ts",
+        "description": "Recebe o TopicBrief e formula candidatos a pauta sob o prisma de Dissecação Forense e Engenharia Sombria do Cotidiano."
+      },
+      "greenlight": {
+        "id": "topic-greenlight",
+        "role": "TopicGreenlightAgent",
+        "source_file": "agents/strategy/editorial-agents.ts",
+        "description": "Aplica a política oficial BRECHA_TOPIC_GREENLIGHT_V2, validando o Paradoxo de Zeigarnik, os 3 Mundos e emitindo o veredito decisório."
+      }
+    },
+    "decision_statuses": [
+      "GREENLIT",
+      "HUMAN_REQUIRED",
+      "NEEDS_RESEARCH",
+      "BLOCKED"
+    ],
+    "mathematical_formula": {
+      "criteria_object": "DecisionCriteria = { coreQuestion, originalAngle, evidence, risk, budgetFit, payoff }",
+      "score_weights_and_thresholds": {
+        "evidenceAvailability": {
+          "description": "Há laudos reais da PF, DEIC, resoluções do Bacen/Anatel ou extratos auditáveis para a mesa de evidências?",
+          "min_threshold": 0.50,
+          "fail_action": "NEEDS_RESEARCH"
+        },
+        "confidence": {
+          "description": "Grau de certeza factual e técnica sobre a arquitetura da falha.",
+          "min_threshold": 0.70,
+          "fail_action": "HUMAN_REQUIRED"
+        },
+        "topOfFunnelPotential": {
+          "description": "O Hero Object físico é usado por mais de 90% dos brasileiros semanalmente?",
+          "scale": "0.0 a 1.0"
+        },
+        "editorialRisk": {
+          "description": "Cumprimento da LGPD, ausência de termos bloqueados pelo filtro Harmful & Dangerous no título e tom estritamente documental.",
+          "weight_formula": "1 - editorialRisk"
+        },
+        "productionComplexity": {
+          "description": "Adequação para representação nos 3 Mundos (Mundo Real, Evidência em Papel #E9E4DA, Sistema A->B->C).",
+          "weight_formula": "1 - productionComplexity"
+        },
+        "blockingErrors": {
+          "description": "Ausência de fontes primárias, uso de ALL CAPS policial ou estética sci-fi/cyberpunk.",
+          "max_allowed": 0,
+          "fail_action": "BLOCKED"
+        }
+      }
+    },
+    "inviolable_filters": [
+      {
+        "id": "objeto_topo_funil",
+        "question": "É um Hero Object físico e tangível que o brasileiro toca todo dia (celular, chip SIM, placa de QR Code, cartão, comprovante)?",
+        "mandatory": true
+      },
+      {
+        "id": "maquina_oculta",
+        "question": "Existe uma engrenagem invisível ao público geral (painéis internos de telecom, roteamento SPI, reciclagem de linha da Anatel)?",
+        "mandatory": true
+      },
+      {
+        "id": "gargalo_ponto_brecha",
+        "question": "Existe um ponto exato de ruptura que possa ser cortado pela Fissura Vermelha (#EF2B1D) no 'Momento da Brecha'?",
+        "mandatory": true
+      },
+      {
+        "id": "escala_realidade_brasileira",
+        "question": "Ocorre na infraestrutura real brasileira (Bacen, Anatel, FEBRABAN, DEIC) com documentos físicos representáveis em #E9E4DA?",
+        "mandatory": true
+      },
+      {
+        "id": "veredito_defesa_ativa",
+        "question": "O espectador sai com a sensação 'Nunca mais vou olhar para esse objeto do mesmo jeito' e é fisgado pelo Sequestro de Sessão nos últimos 15s?",
+        "mandatory": true
+      }
+    ]
+  },
+  "causal_progression_chain": [
+    {
+      "episode_id": "EP01",
+      "vector": "A ruptura no hardware físico",
+      "mechanism": "Maquininha de cartão adulterada com chip e transmissão paralela",
+      "everyday_object": "Maquininha POS de balcão",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP02",
+      "vector": "A janela de 8 minutos com tela destravada",
+      "mechanism": "Invasão de contas bancárias em 8 minutos após subtração de celular desbloqueado",
+      "everyday_object": "Smartphone na rua / transporte público",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP03",
+      "vector": "A falsificação de origem telefônica",
+      "mechanism": "Spoofing de BINA da central bancária via protocolo VoIP/SS7",
+      "everyday_object": "Chamada recebida com o 0800 do banco gravado no verso do cartão",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP04",
+      "vector": "A clonagem biométrica sonora em 4 segundos",
+      "mechanism": "Síntese de voz por IA a partir de 4 segundos de áudio público",
+      "everyday_object": "Mensagem de voz no WhatsApp",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP05",
+      "vector": "A triangulação transacional de estorno",
+      "mechanism": "Transferência cruzada e uso do MED para forçar débito duplo",
+      "everyday_object": "Chave Pix e comprovante de devolução",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP06",
+      "vector": "A pulverização em cascata",
+      "mechanism": "Contas de passagem em camadas para esvaziar o saldo antes do bloqueio cautelar",
+      "everyday_object": "Extrato bancário e protocolo MED",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP07",
+      "vector": "Os 180 segundos antes do bloqueio sistêmico",
+      "mechanism": "Assimetria entre os 180 segundos de automação no SPI e os 45 minutos de reação humana",
+      "everyday_object": "Smartphone e comprovante Pix de R$ 5.000",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP08",
+      "vector": "O sequestro silencioso de linha na operadora",
+      "mechanism": "Migração remota de código IMSI para chip virgem sem contato físico com o aparelho",
+      "everyday_object": "Chip nano-SIM e aviso 'Sem Serviço' na barra de status",
+      "status": "PUBLISHED"
+    },
+    {
+      "episode_id": "EP09",
+      "vector": "A adulteração analógica da superfície óptica",
+      "mechanism": "Adesivo de vinil fosco de 5 cm sobreposto ao QR Code original em balcão movimentado",
+      "everyday_object": "Placa de acrílico com QR Code sobre balcão de madeira escura",
+      "status": "PUBLISHED"
+    }
+  ],
+  "causal_vacuum_for_next_episode": {
+    "core_dilemma": "Como um chip pré-pago lacrado de R$ 15 comprado legalmente em uma farmácia já é ativado contendo acesso ao WhatsApp, bancos e histórico íntimo de outra pessoa?",
+    "resolved_by_episode": "EP_010"
+  },
+  "current_approved_episode": {
+    "episode_id": "EP_010",
+    "decision": "GREENLIT",
+    "title_master": "O Erro Ao Trocar de Número Que Entrega Seu Pix Para a Próxima Pessoa",
+    "title_alternatives": [
+      "Como Desvincular Sua Vida Bancária de um Chip Antes de Jogá-lo Fora",
+      "O Protocolo Que Ninguém Faz Antes de Trocar de Número"
+    ],
+    "thumb_spec": {
+      "text": "APAGUE ANTES",
+      "text_alternatives": ["SUAS CHAVES VÃO JUNTO", "O RISCO DOS 180 DIAS"],
+      "hero_object": "Embalagem de chip pré-pago sobre mesa de madeira escura rasgada pela fissura vermelha (#EF2B1D)."
+    },
+    "candidate_score": {
+      "evidenceAvailability": 0.95,
+      "confidence": 0.98,
+      "topOfFunnelPotential": 1.0,
+      "editorialRisk": 0.02,
+      "productionComplexity": 0.15,
+      "blockingErrors": 0
+    },
+    "filter_validation": {
+      "objeto_topo_funil": "A placa de acrílico com QR Code sob luz quente de balcão de café, padaria ou estacionamento.",
+      "maquina_oculta": "Geração de payload EMVCo estático vinculado a contas de passagem com nome fantasia idêntico ao estabelecimento real.",
+      "gargalo_ponto_brecha": "O segundo exato em que o cliente olha apenas o valor na tela e o funcionário olha apenas a tela de 'comprovante enviado' de longe, sem conferir o CNPJ destinatário.",
+      "escala_realidade_brasileira": "Inquéritos de adulteração física em centros comerciais brasileiros e regras de exibição de dados do recebedor no SPI/Bacen.",
+      "veredito_defesa_ativa": "Conferência obrigatória do nome/CNPJ no visor antes do PIN, exigência de QR Code dinâmico emitido na tela da maquininha POS e validação no extrato do lojista."
+    },
+    "anatomy": {
+      "everyday_object": "Embalagem lacrada de chip pré-pago de R$ 15 comprado em farmácia",
+      "hidden_machine": "O ciclo regulatório de reciclagem de 180 dias da Anatel que reinsere linhas inativas no mercado com metadados bancários e aplicativos atrelados",
+      "breach_point": "O momento em que o usuário descarta o chip sem desvincular chaves Pix, WhatsApp e bancos do número antigo",
+      "symptom": "O novo comprador ativa o chip lacrado e herda sessões bancárias, WhatsApp e chaves Pix do antigo dono sem saber",
+      "active_defense": [
+        "1. Acessar o Registrato do Banco Central (registrato.bcb.gov.br) e listar todas as chaves e contas ligadas ao CPF e ao número antigo.",
+        "2. Desvincular manualmente o WhatsApp com verificação em duas etapas (PIN de 6 dígitos) ANTES de retirar o chip.",
+        "3. Cancelar a LINHA na operadora (não apenas o plano) para zerar o vínculo na base MSISDN da Anatel.",
+        "4. Remover chaves Pix celular de todos os bancos e corretoras diretamente no app de cada instituição."
+      ]
+    }
+  },
+  "adaptation_protocol": {
+    "rule_of_autonomy": "O agente NÃO deve copiar 100% do briefing de forma mecânica. A estrutura armazenada é uma base de rigor; o agente tem autorização e o dever de adaptar ganchos, metáforas ou nuances seguindo o Briefing Oficial de Identidade V2.",
+    "anti_noise_mandates": {
+      "zero_fragmentation": "PROIBIÇÃO TOTAL de fragmentar Shorts em partes ('Parte 1', 'Parte 2'). Todo Short DEVE usar a Topologia em Laço Perfeito (Infinite Loop).",
+      "no_all_caps": "PROIBIÇÃO TOTAL de títulos com ALL CAPS gritado ou termos bloqueados ('golpe', 'roubo', 'quadrilha'). Usar Title Case investigativo com Efeito Zeigarnik.",
+      "no_scifi_hud": "PROIBIÇÃO TOTAL de ciano (#00E5FF), amarelo ácido, HUDs futuristas ou Matrix. Usar exclusivamente Obsidian (#0A0A0A), Charcoal (#171717), Paper Bone White (#E9E4DA), Brecha Red (#EF2B1D) e texturas físicas."
+    },
+    "when_to_adapt": [
+      "Se a mineração de comentários revelar uma dúvida técnica que possa servir como Armadilha de Comentários (Vetor 4).",
+      "Se surgir um novo documento pericial ou resolução da Anatel/Bacen para compor o Mundo 02 (Evidência).",
+      "Se o Cold Open (0-15s) precisar de corte mais seco para sustentar a Abertura Eriksoniana."
+    ],
+    "boundaries_of_adaptation": [
+      "Os 5 Filtros Invioláveis DEVEM continuar com resposta SIM.",
+      "A separação cognitiva (Thumbnail = Consequência em 2-4 palavras | Título = Mecanismo) é inegociável.",
+      "Todo episódio deve gerar obrigatoriamente o arquivo .SRT com Envenenamento Semântico (Vetor 1)."
+    ]
+  },
+  "candidate_backlog": [
+    {
+      "episode_id": "EP07",
+      "status": "PUBLISHED",
+      "topic": "Os 180 Segundos Antes de R$ 5.000 Sumirem",
+      "thumb_text": "TARDE DEMAIS",
+      "everyday_object": "O comprovante Pix de R$ 5.000 na tela do celular",
+      "unit": "180 segundos de pulverização automatizada",
+      "d": 5, "c": 5, "r": 5, "e": 5,
+      "benefit": 10, "cost": 3, "risk": 1,
+      "thesis": "Por que o protocolo de bloqueio falha diante da velocidade de 180 segundos de pulverização em contas de passagem.",
+      "hook": "Às 14h12, R$ 5.000 entraram nesta conta. Às 14h15, o dinheiro já estava dividido entre quatro destinos. Quando o sistema tentou bloquear a primeira transferência, praticamente não havia mais nada para bloquear. Esses três minutos são o verdadeiro centro desta história."
+    },
+    {
+      "episode_id": "EP08",
+      "status": "PUBLISHED",
+      "topic": "Quando Seu Número de Telefone Ganha Outro Dono",
+      "thumb_text": "SEU NÚMERO, OUTRO DONO",
+      "everyday_object": "Chip SIM sobre mesa de madeira escura e barra 'Sem Serviço'",
+      "unit": "1 código IMSI migrado remotamente",
+      "d": 5, "c": 5, "r": 5, "e": 5,
+      "benefit": 10, "cost": 3, "risk": 1,
+      "thesis": "Como acessos internos de telecomunicações permitem transferir uma linha ativa para um chip virgem em 120 segundos.",
+      "hook": "O aparelho continua na sua mão. Ninguém tocou nele. Nenhum link foi aberto. Mas às 14h02, a barra de sinal cai para 'Sem Serviço' — e a sua vida digital acaba de mudar de endereço."
+    },
+    {
+      "episode_id": "EP09",
+      "status": "PUBLISHED",
+      "topic": "O Adesivo de 5 cm Que Pode Mandar Seu Pix Para Outra Conta",
+      "thumb_text": "PIX DESVIADO",
+      "everyday_object": "A placa de acrílico com QR Code no balcão do comércio",
+      "unit": "1 adesivo impresso de 5 cm sobreposto ao código original",
+      "d": 5, "c": 5, "r": 5, "e": 5,
+      "benefit": 10, "cost": 2, "risk": 1,
+      "thesis": "A engenharia física de sobrepor um adesivo fosco de 5 cm em balcões movimentados para redirecionar pagamentos instantâneos sem disparar alertas.",
+      "hook": "O cliente aponta a câmera. O valor na tela está certo. O comprovante aparece em dois segundos. Mas o dinheiro que acabou de sair deste celular atravessou três estados e caiu na conta de alguém que nunca pisou nesta loja."
+    },
+    {
+      "episode_id": "EP10",
+      "status": "PUBLISHED",
+      "topic": "O Chip Lacrado de Farmácia Que Já Vem Com a Vida Bancária de Outra Pessoa",
+      "thumb_text": "SEU NÚMERO VOLTOU",
+      "everyday_object": "Embalagem de chip pré-pago recém-comprado sobre mesa de madeira",
+      "unit": "1 ciclo de reciclagem de 180 dias da Anatel",
+      "d": 5, "c": 5, "r": 5, "e": 4,
+      "benefit": 9, "cost": 3, "risk": 1,
+      "thesis": "Quando uma linha fica 180 dias sem recarga, a operadora a recoloca à venda — e se o antigo dono não desvincular suas chaves, o próximo comprador herda bancos, WhatsApp e Pix.",
+      "hook": "Este chip custou quinze reais e saiu lacrado de uma farmácia há dez minutos. Mas assim que ele captou sinal na rede, três bancos reconheceram este número como porta de entrada para outra pessoa. O erro não foi de quem comprou. Foi de quem não saiu direito."
+    },
+    {
+      "episode_id": "EP11",
+      "status": "PUBLISHED",
+      "topic": "O Áudio de 4 Segundos Que Fez Uma Família Acreditar Numa Voz Falsa",
+      "thumb_text": "A VOZ ERA FALSA",
+      "everyday_object": "Celular sobre mesa escura exibindo onda sonora de mensagem de voz com fissura vermelha",
+      "unit": "4 segundos de frequência vocal",
+      "d": 5, "c": 5, "r": 5, "e": 5,
+      "benefit": 9, "cost": 3, "risk": 1,
+      "thesis": "Como quatro segundos de um áudio comum são decompostos em espectrogramas para sintetizar um pedido de socorro com o mesmo timbre, respiração e sotaque de um familiar.",
+      "hook": "Ouça estes quatro segundos de áudio. A respiração, o timbre e a pressa na voz são idênticos aos da pessoa que você conhece há vinte anos. Mas a pessoa dona desta voz nunca gravou esta mensagem."
+    },
+    {
+      "episode_id": "EP12",
+      "status": "GREENLIT",
+      "topic": "Por Que Senha e Biometria Não Impedem Este Ataque Após as 20h",
+      "thumb_text": "TRAVA BURLADA",
+      "everyday_object": "Relógio marcando 20h01 ao lado de um comprovante rasgado pela fissura vermelha",
+      "unit": "8 micro-transferências de R$ 999 em janela noturna",
+      "d": 5, "c": 5, "r": 5, "e": 4,
+      "benefit": 9, "cost": 3, "risk": 1,
+      "thesis": "Como a arquitetura de limites noturnos é contornada pelo fracionamento automatizado e liquidação via contas PJ intermediárias.",
+      "hook": "O relógio marca vinte horas e um minuto. Pela regra do sistema, nada acima de mil reais deveria sair desta conta até o amanhecer. Às vinte horas e quatro minutos, oito mil reais já haviam cruzado a porta."
+    }
+  ]
+}

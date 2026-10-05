@@ -1,0 +1,96 @@
+{
+  "squad": "Squad HSL Global",
+  "episode_id": "HSL_EPISODE_027",
+  "canal": "hidden_systems_lab",
+  "data_emissao": "2026-09-28 23:42",
+  "prazo_entrega": "2026-10-05",
+  "prioridade": "P0",
+  "metrica_alvo": "Average View Duration > 50% and > 1.000 views in first 72h.",
+  "tema": "How Engineers Restart a Dead Power Grid from Absolute Zero (Black Start)",
+  "unidade_investigada": "0.0 Megawatts (Zero Electrical Reference)",
+  "tese_central": "Modern civilization depends on electrical inertia; restarting a continental system without grid voltage requires bootstrapping physics from diesel crankshafts to gigawatt dams.",
+  "publico_alvo": "Senior systems engineers, backend architects, electrical engineers, industrial enthusiasts (USA & Europe).",
+  "desejo_dominante": "Understanding how complex distributed systems recover from catastrophic total failure states (disaster recovery at continental scale).",
+  "angulo_editorial": "The physics of synchronous frequency: why energizing a dead transmission line requires absorbing massive capacitive reactive power without tripping generators.",
+  "promessa_principal": "Reveal the exact sequence of 12 mechanical operations that bring a dark continent back to 50/60.00 Hz.",
+  "linguagem_espontanea_do_publico": {
+    "visceral_quotes_for_hook": [
+      "The entire continent was 10 seconds away from a cascading total blackout.",
+      "When high pressure water hits a closed valve at 1,000 m/s, steel pipes shatter like thin glass.",
+      "They had 4 redundant diesel generators and every single one failed to spin up simultaneously."
+    ],
+    "unresolved_competitor_doubts": [
+      "Why can't you just flip a giant circuit breaker to turn an entire country's power back on?",
+      "What actually happens to the frequency when a 500MW generator suddenly trips off the grid?",
+      "How do subsea cables survive thousands of tons of hydrostatic pressure without leaking?"
+    ],
+    "popular_myths_to_debunk": [
+      "Believing renewable grids can self-restart without synchronous thermal or hydro inertia.",
+      "Thinking modern skyscrapers are held rigid rather than designed to sway several meters in typhoons."
+    ],
+    "search_queries_in_autocomplete": []
+  },
+  "estrutura_narrativa_4_atos": [
+    {
+      "ato": 1,
+      "nome": "O Choque / A Fenda",
+      "tempo": "0:00 - 2:00",
+      "objetivo": "Entregar a promessa nos primeiros 15s com a citação visceral e mostrar a vulnerabilidade real."
+    },
+    {
+      "ato": 2,
+      "nome": "O Mecanismo Invisível",
+      "tempo": "2:00 - 5:00",
+      "objetivo": "Desmascarar o mito popular e demonstrar a física/engenharia da falha."
+    },
+    {
+      "ato": 3,
+      "nome": "A Dissecação Forense",
+      "tempo": "5:00 - 8:00",
+      "objetivo": "Responder à dúvida que nenhum concorrente explicou com provas concretas."
+    },
+    {
+      "ato": 4,
+      "nome": "A Consequência & Defesa",
+      "tempo": "8:00 - 10:30",
+      "objetivo": "Apresentar a solução definitiva e acionar o CTA para o próximo vídeo da playlist."
+    }
+  ],
+  "ecossistema_descoberta": {
+    "longo_para_busca": "How How Engineers Restart a Dead Power Grid from Absolute Zero (Black Start) Actually Works: Extreme Engineering Behind the System",
+    "longo_para_home": "The 400 Millisecond Shockwave That Could Collapse How Engineers Restart a Dead Power Grid from Absolute Zero (Black Start)",
+    "short_1_descoberta": {
+      "titulo": "O Segundo Exato em Que How Engineers Restart a Dead Power  Quase Colapsou",
+      "gancho_0_2s": "Colisão Mental: Resultado visual chocante ou falha física em close-up.",
+      "ponte_video_relacionado": "Vincular no Studio ao Documentário Longo"
+    },
+    "short_2_problema": "A Peça Invisível Que Pode Parar How Engineers Restart a Dead P",
+    "playlist_percurso": "Dossiê do Colapso: Os Segundos Que Quase Pararam o Brasil",
+    "enquete_comunidade_48h": "Ao investigar os sistemas de How Engineers Restart a Dead P, o que mais te surpreende?",
+    "copy_redes_externas": "Dissecamos o relatório forense sobre How Engineers Restart a Dead Power Grid from Absolute Zero (Black Start). A conclusão é contra-intuitiva: a vulnerabilidade não estava em uma tempestade ou ataque externo, mas em uma fração microscópica que ninguém vigiava. Documentamos a telemetria e o laudo completo."
+  },
+  "referencias_documentais": [
+    "NERC Reliability Standard EOP-005-3 - System Restoration from Blackstart Resources",
+    "IEEE Power & Energy Magazine - The Black Start Dilemma in Inverter-Dominated Grids",
+    "ENTSO-E Blackout & Restoration Guidelines"
+  ],
+  "riscos_e_mitigacao": "Becoming too dry/academic. Balance mathematical equations with dramatic industrial visuals (giant turbine halls, high voltage switchyards).",
+  "entregaveis_obrigatorios": [
+    "Master Episode 1080p 30fps (9 to 13 minutes) normalized to -16 LUFS",
+    "3 Standalone Shorts 9:16 (Each containing a 45s self-contained paradox)",
+    "3 A/B/C 4K Thumbnail Packages (Hero Object + Vector HUD telemetry)",
+    "Clean .packaging.json with search-optimized title variants"
+  ],
+  "diretrizes_estrategicas": {
+    "o_que_priorizar_na_abertura": "0:00 - 0:15: Total continental silence. A substation with zero volts. Paradoxo: To start a turbine, you need electricity. To generate electricity, you need a turbine. How do you break the loop?",
+    "o_que_nao_fazer": [
+      "DO NOT publish Shorts titled with just hashtags (#Shorts #Engineering). Every Short MUST have a 40-character paradox hook.",
+      "DO NOT use fictional cyberpunk interfaces. Use only engineering telemetry and CAD/X-Ray orthographic diagrams.",
+      "DO NOT re-upload duplicate video files under any circumstance."
+    ],
+    "o_que_evitar": [
+      "Avoid cartoonish 3D figures or generic stock video of people turning lights on in houses.",
+      "Avoid speeding up narration; maintain Chris's cold, surgical, 146 wpm delivery."
+    ]
+  }
+}

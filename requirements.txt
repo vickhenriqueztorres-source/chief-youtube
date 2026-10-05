@@ -1,0 +1,13 @@
+# Hermes Chief - Dependencies
+# Core is pure Python standard library (sqlite3, json, urllib, argparse, math, etc.)
+# Optional enhancements for live scraping / visualization / telegram bots:
+
+# Optional HTTP library (fallback exists using urllib.request)
+requests>=2.31.0
+
+# Optional YouTube Data API client
+google-api-python-client>=2.100.0
+
+# Optional Web framework for custom dashboards
+fastapi>=0.100.0
+uvicorn>=0.23.0

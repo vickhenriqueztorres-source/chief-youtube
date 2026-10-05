@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large Media & Screen Recordings
+gravacoes_iqoption/
+rag_cinematic_editing/data/audio/
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Local caches & Virtual Environments
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+
+# Local SQLite transient files
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+
+# Secrets & Environment
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,985 @@
+{
+  "video_id": "T-akUfaSuiA",
+  "metadata": {
+    "creator": "Gus Avancini",
+    "title": "Color Grading no CapCut - COR de FILME",
+    "views": "199k",
+    "focus": "Curvas de tom, saturação seletiva, contraste cinematográfico, Teal & Orange e LUTs."
+  },
+  "duration": 668.3631875,
+  "language": "pt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 4.5,
+      "duration": 4.5,
+      "text": "Fala a galerinha em uma coração, todo certo para aí, um dos grandes fatores que"
+    },
+    {
+      "start": 4.5,
+      "end": 9.5,
+      "duration": 5.0,
+      "text": "diferenciam o vídeo-avador do vídeo profissional é a colorização, o famoso ColorGraiding."
+    },
+    {
+      "start": 9.5,
+      "end": 13.700000000000001,
+      "duration": 4.200000000000001,
+      "text": "Hoje eu vou te ensinar como transformar o visual do teu vídeo em Luke de cinema utilizando"
+    },
+    {
+      "start": 13.700000000000001,
+      "end": 18.5,
+      "duration": 4.799999999999999,
+      "text": "o capicate para a PC. Você vai aprender como criar uma colorização cinematográfica de"
+    },
+    {
+      "start": 18.5,
+      "end": 23.0,
+      "duration": 4.5,
+      "text": "forma simples e o melhor, utilizando a versão totalmente gratuita."
+    },
+    {
+      "start": 23.0,
+      "end": 31.0,
+      "duration": 8.0,
+      "text": "Mas antes de tudo, já deixa aquele like bonita, um que me ajuda muito no te custa nada"
+    },
+    {
+      "start": 31.0,
+      "end": 38.0,
+      "duration": 7.0,
+      "text": "e não esquece de se inscrever no canal para dar uma moral para nós."
+    },
+    {
+      "start": 38.0,
+      "end": 41.3,
+      "duration": 3.299999999999997,
+      "text": "Primeiramente um lossário básico bem rapidinho para quem é iniciante e talvez não conheçam"
+    },
+    {
+      "start": 41.3,
+      "end": 44.0,
+      "duration": 2.700000000000003,
+      "text": "alguns dos termos que eu vou utilizar durante a explicação."
+    },
+    {
+      "start": 44.0,
+      "end": 50.0,
+      "duration": 6.0,
+      "text": "Corressão de Core, o Color Correction é uma coisa e colorização, o ColorGraiding é outra."
+    },
+    {
+      "start": 50.0,
+      "end": 54.5,
+      "duration": 4.5,
+      "text": "Curressão de Core é ajustar a exposição, contraste e saturação da cena no nível"
+    },
+    {
+      "start": 54.5,
+      "end": 59.5,
+      "duration": 5.0,
+      "text": "satisfatório de acordo com a linguagem escolhida para o vídeo. Já a colorização é o ajuste"
+    },
+    {
+      "start": 59.5,
+      "end": 64.0,
+      "duration": 4.5,
+      "text": "individual de cada core que traz uma identidade única para esse mesmo vídeo."
+    },
+    {
+      "start": 64.0,
+      "end": 68.0,
+      "duration": 4.0,
+      "text": "E também temos os famosos let's, que abre viação de Luke Aptable."
+    },
+    {
+      "start": 68.0,
+      "end": 73.0,
+      "duration": 5.0,
+      "text": "Esses são arquivos pré-configurados com uma determinada exposição e paleta de core."
+    },
+    {
+      "start": 73.0,
+      "end": 76.0,
+      "duration": 3.0,
+      "text": "Eles funcionam mais ou menos como os filtros do Instagram."
+    },
+    {
+      "start": 76.0,
+      "end": 82.0,
+      "duration": 6.0,
+      "text": "O primeiro passo deste tutorial é para quem filme a Cooper Field e Core Log."
+    },
+    {
+      "start": 82.0,
+      "end": 87.0,
+      "duration": 5.0,
+      "text": "Log que é a breviação de logarítimo é um perfil de Core disponível em câmeras mais modernas,"
+    },
+    {
+      "start": 87.0,
+      "end": 90.0,
+      "duration": 3.0,
+      "text": "drones da DJI e do iPhone 15 e para cima."
+    },
+    {
+      "start": 90.0,
+      "end": 95.0,
+      "duration": 5.0,
+      "text": "O vídeo gravado em log tem esse resultado mais lavado, sem contraste e combate a saturação."
+    },
+    {
+      "start": 95.0,
+      "end": 99.0,
+      "duration": 4.0,
+      "text": "Isso porque ele preservo máximo de informações da sombras e dos highlights."
+    },
+    {
+      "start": 99.0,
+      "end": 105.0,
+      "duration": 6.0,
+      "text": "E como o arquivo retentou das essas informações é possível desenvolver uma colorização mais avançada depois"
+    },
+    {
+      "start": 105.0,
+      "end": 107.0,
+      "duration": 2.0,
+      "text": "sem quebrar qualidade da imagem final."
+    },
+    {
+      "start": 107.0,
+      "end": 113.0,
+      "duration": 6.0,
+      "text": "Agora se você filme a Cooper Field de Core Padrão Reck 719 e ter vídeo já tem contraste de saturação"
+    },
+    {
+      "start": 113.0,
+      "end": 116.0,
+      "duration": 3.0,
+      "text": "você pode pular o primeiro passo deste tutorial."
+    },
+    {
+      "start": 116.0,
+      "end": 122.0,
+      "duration": 6.0,
+      "text": "O quepca de ataberta aqui na minha tela e o separar algumas cenas Cooper Field de Core Log para a gente trabalhar neste tutorial."
+    },
+    {
+      "start": 122.0,
+      "end": 126.0,
+      "duration": 4.0,
+      "text": "O primeiro passo é trazer o contraste à saturação para esse vídeo todo lavado."
+    },
+    {
+      "start": 126.0,
+      "end": 131.0,
+      "duration": 5.0,
+      "text": "A forma mais simples é baixar o lete de conversão no site da fabricante da sua câmera."
+    },
+    {
+      "start": 131.0,
+      "end": 138.0,
+      "duration": 7.0,
+      "text": "Como todos esses tem que explorar um gravado em este log 3, eu baixei esse lete de conversão gratuito no próprio site da Sony."
+    },
+    {
+      "start": 138.0,
+      "end": 142.0,
+      "duration": 4.0,
+      "text": "Aí para importar esse arquivo no quepca de vêm em ajustes,"
+    },
+    {
+      "start": 142.0,
+      "end": 147.0,
+      "duration": 5.0,
+      "text": "clico na aba de Let's, depois clico a importar e seleciona o arquivo que eu baixei."
+    },
+    {
+      "start": 147.0,
+      "end": 155.0,
+      "duration": 8.0,
+      "text": "Agora é só rasta esse perfil para timeline e as cores e contraste da minha cena já voltam para forma original que foi filmado."
+    },
+    {
+      "start": 155.0,
+      "end": 162.0,
+      "duration": 7.0,
+      "text": "Se você não tem um lete de conversão, é possível ajustar o contraste à saturação manomente."
+    },
+    {
+      "start": 162.0,
+      "end": 169.0,
+      "duration": 7.0,
+      "text": "Para fazer isso, o primeiro vêm aqui em display, clica nesses 3 pontos em color orcilos copo seleciona mostrar."
+    },
+    {
+      "start": 169.0,
+      "end": 173.0,
+      "duration": 4.0,
+      "text": "Essa ferramenta é uma suguia para fazer um ajuste perfeito da exposição."
+    },
+    {
+      "start": 173.0,
+      "end": 182.0,
+      "duration": 9.0,
+      "text": "De forma bem simples e resumida, seu gráfico tiver todo para cima significa que você perdeu as informações das partes mais claras e o highlight está instorando."
+    },
+    {
+      "start": 182.0,
+      "end": 188.0,
+      "duration": 6.0,
+      "text": "E se tiver tudo para baixo é porque perdeu as informações das partes mais escuras e a sombra está toda preta."
+    },
+    {
+      "start": 188.0,
+      "end": 194.0,
+      "duration": 6.0,
+      "text": "Eu te recomendo ajustar a exposição de uma forma que não fique nem muito para cima, nem muito para baixo."
+    },
+    {
+      "start": 194.0,
+      "end": 197.0,
+      "duration": 3.0,
+      "text": "Agora, para fazer essa correção, bora criar uma curva de luminação."
+    },
+    {
+      "start": 197.0,
+      "end": 203.0,
+      "duration": 6.0,
+      "text": "Para isso, seleciona no teu vídeo, vêm na aba de ajustes e aqui em cima temos a ferramenta de curvas."
+    },
+    {
+      "start": 203.0,
+      "end": 207.0,
+      "duration": 4.0,
+      "text": "Para trabalhar a exposição, a gente vai utilizar esse primeiro gráfico de luma."
+    },
+    {
+      "start": 207.0,
+      "end": 211.0,
+      "duration": 4.0,
+      "text": "Eu vou criar um ponto bem aqui nessa parte de baixo clicando nessa linha."
+    },
+    {
+      "start": 211.0,
+      "end": 214.0,
+      "duration": 3.0,
+      "text": "Esse ponto aqui representa as partes mais escuras da cena."
+    },
+    {
+      "start": 214.0,
+      "end": 218.0,
+      "duration": 4.0,
+      "text": "Depois eu crio outro ponto aqui em cima, que são as partes mais claras."
+    },
+    {
+      "start": 218.0,
+      "end": 224.0,
+      "duration": 6.0,
+      "text": "Agora, para trazer mais contraste, brilho para esse vídeo, a gente vai criar uma curva meio que no formato de S."
+    },
+    {
+      "start": 224.0,
+      "end": 228.0,
+      "duration": 4.0,
+      "text": "Repare o comece gráfico dos cilos copo muda, conforme ao ter o formato da curva."
+    },
+    {
+      "start": 228.0,
+      "end": 234.0,
+      "duration": 6.0,
+      "text": "Você vai justar a curva até a cena chegar num contraste legal, porém sempre mantendo os cilos copo e balanceado."
+    },
+    {
+      "start": 234.0,
+      "end": 240.0,
+      "duration": 6.0,
+      "text": "Apesar de parecer um processo fácil, cada cena que você gravou ter uma exposição e uma iluminação diferente,"
+    },
+    {
+      "start": 240.0,
+      "end": 243.0,
+      "duration": 3.0,
+      "text": "e nem sempre a mesma curva vai funcionar para todas as cenas."
+    },
+    {
+      "start": 243.0,
+      "end": 248.0,
+      "duration": 5.0,
+      "text": "Dependendo do local gravado, iluminação pode variar bastante e também ter a questão do gosto pessoal."
+    },
+    {
+      "start": 248.0,
+      "end": 251.0,
+      "duration": 3.0,
+      "text": "Pode ser que você preferia mais contraste ou mais saturação."
+    },
+    {
+      "start": 251.0,
+      "end": 256.0,
+      "duration": 5.0,
+      "text": "Por isso, que a gente precisa justar cada cena individualmente para chegar na exposição perfeita."
+    },
+    {
+      "start": 256.0,
+      "end": 261.0,
+      "duration": 5.0,
+      "text": "A minha recomendação é iniciar com uma curvinhesse e a partir daí você ajusta como preferir."
+    },
+    {
+      "start": 261.0,
+      "end": 265.0,
+      "duration": 4.0,
+      "text": "Eu sei que todo mundo quer uma fórmula mágica tipo ajusta assim e fechou."
+    },
+    {
+      "start": 265.0,
+      "end": 271.0,
+      "duration": 6.0,
+      "text": "Porém, você só vai aprender como fazer correção de cor repetindo esse processo várias vezes até que se torne natural."
+    },
+    {
+      "start": 271.0,
+      "end": 278.0,
+      "duration": 7.0,
+      "text": "Como eu falei isso daqui não é uma sensresata e a melhor forma de conseguir um bom resultado é praticando muito e repetindo esse processo várias e várias vezes."
+    },
+    {
+      "start": 278.0,
+      "end": 282.0,
+      "duration": 4.0,
+      "text": "Agora que o contraste está correto, é hora de ajustar a saturação."
+    },
+    {
+      "start": 282.0,
+      "end": 287.0,
+      "duration": 5.0,
+      "text": "Eu volto o praba de Basic e aqui aumenta a saturação do vídeo ajustando esse slide."
+    },
+    {
+      "start": 287.0,
+      "end": 293.0,
+      "duration": 6.0,
+      "text": "Para finalizar essa parte, dependendo da tua iluminação, talvez seja necessária ajustar um pouco do balanço de branco."
+    },
+    {
+      "start": 293.0,
+      "end": 296.0,
+      "duration": 3.0,
+      "text": "Porque às vezes a imagem está muito quente ou está muito fria."
+    },
+    {
+      "start": 296.0,
+      "end": 300.0,
+      "duration": 4.0,
+      "text": "A correção de cor já está pronta e agora é a parte da colonização."
+    },
+    {
+      "start": 300.0,
+      "end": 305.0,
+      "duration": 5.0,
+      "text": "Se você filmar com o perfil de cor padrão, reaque 719 é a partir daqui que você começa."
+    },
+    {
+      "start": 305.0,
+      "end": 312.0,
+      "duration": 7.0,
+      "text": "Existem algumas formas bem simples para criar a colonização no Cap Cut."
+    },
+    {
+      "start": 312.0,
+      "end": 317.0,
+      "duration": 5.0,
+      "text": "Se você clica na arba de filtra aqui em cima, tem vários pressets de cor para você escolher."
+    },
+    {
+      "start": 317.0,
+      "end": 322.0,
+      "duration": 5.0,
+      "text": "Na versão gratuita nem todos estão disponíveis, mas tem várias opções bem legais para você testar."
+    },
+    {
+      "start": 322.0,
+      "end": 326.0,
+      "duration": 4.0,
+      "text": "Para aplicar um filtro no meu vídeo, eu clico nela e arrasto para tá milagem."
+    },
+    {
+      "start": 326.0,
+      "end": 330.0,
+      "duration": 4.0,
+      "text": "Inclusive, você pode ajustar a intensidade dele aqui do lado."
+    },
+    {
+      "start": 330.0,
+      "end": 335.0,
+      "duration": 5.0,
+      "text": "Mas o pulo do gato é o seguinte, o filtro não precisa ser exatamente o loque final do vídeo,"
+    },
+    {
+      "start": 335.0,
+      "end": 338.0,
+      "duration": 3.0,
+      "text": "porque aqui que a colonização de verdade começa."
+    },
+    {
+      "start": 338.0,
+      "end": 343.0,
+      "duration": 5.0,
+      "text": "Todos os ajustes que a gente fez lá no começo podem ser modificados para chegar no resultado desejado."
+    },
+    {
+      "start": 343.0,
+      "end": 347.0,
+      "duration": 4.0,
+      "text": "Então agora vou te mostrar algumas ferramentas do Cap Cut, não preciso utilizar todas,"
+    },
+    {
+      "start": 347.0,
+      "end": 351.0,
+      "duration": 4.0,
+      "text": "mas testa cada uma delas para ver que tipo de resultado traz no seu vídeo."
+    },
+    {
+      "start": 351.0,
+      "end": 355.0,
+      "duration": 4.0,
+      "text": "Na Abba de Basics, você pode alterar a temperatura de cor desse filtro,"
+    },
+    {
+      "start": 355.0,
+      "end": 362.0,
+      "duration": 7.0,
+      "text": "e através desses líderes, a gente consegue aumentar o contraste, clarear sombras, além de ajustar o brilho essa aturação."
+    },
+    {
+      "start": 366.0,
+      "end": 370.0,
+      "duration": 4.0,
+      "text": "É realmente bem interessante para modificar os cores, é o AgACL."
+    },
+    {
+      "start": 370.0,
+      "end": 374.0,
+      "duration": 4.0,
+      "text": "Para acessar o AgACL, clica no vídeo e vem nessa aba aqui em cima."
+    },
+    {
+      "start": 374.0,
+      "end": 378.0,
+      "duration": 4.0,
+      "text": "Nesse painel aqui, a gente consegue ajustar cada cor individualmente."
+    },
+    {
+      "start": 378.0,
+      "end": 383.0,
+      "duration": 5.0,
+      "text": "Eu posso mudar o tom, a aturação e a luminosidade de cada uma delas."
+    },
+    {
+      "start": 383.0,
+      "end": 386.0,
+      "duration": 3.0,
+      "text": "Por exemplo, digamos que você quer um tom de azul mais exverdiado."
+    },
+    {
+      "start": 386.0,
+      "end": 391.0,
+      "duration": 5.0,
+      "text": "Primeiro clica na bolinha do azul e agora é só ajustar o slider até chegar no tom desejado."
+    },
+    {
+      "start": 391.0,
+      "end": 396.0,
+      "duration": 5.0,
+      "text": "Essa ferramenta é bem interessante porque ela te permite customizar o filtro escolhido."
+    },
+    {
+      "start": 396.0,
+      "end": 402.0,
+      "duration": 6.0,
+      "text": "Ou nessa outra cena, por exemplo, o que eu consigo deixar os verdes mais amarelados utilizando o mesmo filtro."
+    },
+    {
+      "start": 402.0,
+      "end": 406.0,
+      "duration": 4.0,
+      "text": "Para isso, vem na bolinha do verde e ajusta o slider até chegar no tom mais quente."
+    },
+    {
+      "start": 406.0,
+      "end": 409.0,
+      "duration": 3.0,
+      "text": "E também os tom poucos dos amarelos e vou lá."
+    },
+    {
+      "start": 409.0,
+      "end": 415.0,
+      "duration": 6.0,
+      "text": "Minha única dica com o AgACL é o seguinte, toma cuidado para nos agerar muito nesses ajustes e na saturação."
+    },
+    {
+      "start": 415.0,
+      "end": 420.0,
+      "duration": 5.0,
+      "text": "O que torna a correção de cor agradável é o equilíbrio entre a criatividade e a naturalidade."
+    },
+    {
+      "start": 420.0,
+      "end": 426.0,
+      "duration": 6.0,
+      "text": "Seguindo, bora falar mais sobre as curvas de cores, clica no vídeo e vem nessa aba de curvas aqui em cima."
+    },
+    {
+      "start": 426.0,
+      "end": 429.0,
+      "duration": 3.0,
+      "text": "Lembra que lá no começo a gente ajustar essa curva de luminação?"
+    },
+    {
+      "start": 429.0,
+      "end": 434.0,
+      "duration": 5.0,
+      "text": "Então, por aqui, também possiva ajustar as curvas de cada cor é regime individualmente."
+    },
+    {
+      "start": 434.0,
+      "end": 438.0,
+      "duration": 4.0,
+      "text": "Por exemplo, digamos que eu quero sombras do meu vídeo mais azuladas."
+    },
+    {
+      "start": 438.0,
+      "end": 439.0,
+      "duration": 1.0,
+      "text": "Como que eu faço isso?"
+    },
+    {
+      "start": 439.0,
+      "end": 442.0,
+      "duration": 3.0,
+      "text": "Primeiro, eu queria 3 pontos marcando a curva do azul."
+    },
+    {
+      "start": 442.0,
+      "end": 446.0,
+      "duration": 4.0,
+      "text": "Agora, para alterar somente as sombras, eu vou arrastar esse primeiro no aqui embaixo,"
+    },
+    {
+      "start": 446.0,
+      "end": 448.0,
+      "duration": 2.0,
+      "text": "ao como já mudou aspecto do vídeo."
+    },
+    {
+      "start": 448.0,
+      "end": 452.0,
+      "duration": 4.0,
+      "text": "Ou pode ser que eu quero os tomos médios mais quentes para isso vem na curva do vermelho,"
+    },
+    {
+      "start": 452.0,
+      "end": 456.0,
+      "duration": 4.0,
+      "text": "marcos 3 pontos no gráfico e arrasto um pouco esse do meio."
+    },
+    {
+      "start": 456.0,
+      "end": 459.0,
+      "duration": 3.0,
+      "text": "Olha como os tomos médios ficam bem mais abermelados."
+    },
+    {
+      "start": 459.0,
+      "end": 462.0,
+      "duration": 3.0,
+      "text": "Aqui é interessante você testar essa perraimenta no seu vídeo"
+    },
+    {
+      "start": 462.0,
+      "end": 466.0,
+      "duration": 4.0,
+      "text": "para entender melhor que tipo de resultado cada ajuste vai trazer para imagem final."
+    },
+    {
+      "start": 466.0,
+      "end": 471.0,
+      "duration": 5.0,
+      "text": "A minha recomendação seguinte, se você vai trabalhar com curvas de cores, tomo um pouco de cuidado."
+    },
+    {
+      "start": 471.0,
+      "end": 474.0,
+      "duration": 3.0,
+      "text": "Porque as vezes um ajuste mínimo acaba feita no várias áreas do vídeo"
+    },
+    {
+      "start": 474.0,
+      "end": 477.0,
+      "duration": 3.0,
+      "text": "e pode gerar um resultado estranho depois."
+    },
+    {
+      "start": 481.0,
+      "end": 484.0,
+      "duration": 3.0,
+      "text": "Agora, uma das formas mais populares para fazer o ColorGraiding,"
+    },
+    {
+      "start": 484.0,
+      "end": 489.0,
+      "duration": 5.0,
+      "text": "através dos famosos Let's, que são percets de cor que ajuda a transformar o look do seu vídeo em filme."
+    },
+    {
+      "start": 489.0,
+      "end": 493.0,
+      "duration": 4.0,
+      "text": "Por exemplo, sabe todo o ajuste de cores que a gente fez na mão até agora,"
+    },
+    {
+      "start": 493.0,
+      "end": 497.0,
+      "duration": 4.0,
+      "text": "basicamente o Let's faz isso de forma de gamos que automática."
+    },
+    {
+      "start": 497.0,
+      "end": 501.0,
+      "duration": 4.0,
+      "text": "E eu falei de gamos porque não existe um Let's perfeito que você aplica no vídeo e fechou."
+    },
+    {
+      "start": 501.0,
+      "end": 505.0,
+      "duration": 4.0,
+      "text": "Todos eles precisam se ajustados depois de acordo com a exposição de cada cena"
+    },
+    {
+      "start": 505.0,
+      "end": 507.0,
+      "duration": 2.0,
+      "text": "e com gosto pessoal de cada um."
+    },
+    {
+      "start": 507.0,
+      "end": 510.0,
+      "duration": 3.0,
+      "text": "Para começar, como que eu carrego um arquivo de Let's no meu vídeo."
+    },
+    {
+      "start": 510.0,
+      "end": 513.0,
+      "duration": 3.0,
+      "text": "Na mesma forma que a gente fez com o perfil de conversão logo."
+    },
+    {
+      "start": 513.0,
+      "end": 517.0,
+      "duration": 4.0,
+      "text": "Vem na aba de ajustes, clique em Let's, para importar seus Let's,"
+    },
+    {
+      "start": 517.0,
+      "end": 521.0,
+      "duration": 4.0,
+      "text": "clicar no botão de importar e seleciona os arquivos que você baixou."
+    },
+    {
+      "start": 523.0,
+      "end": 525.0,
+      "duration": 2.0,
+      "text": "Existem um milhão de Let's, pela internet,"
+    },
+    {
+      "start": 525.0,
+      "end": 529.0,
+      "duration": 4.0,
+      "text": "eu mesmo já postei dois vídeos disponibilizando vários deles de graça."
+    },
+    {
+      "start": 529.0,
+      "end": 531.0,
+      "duration": 2.0,
+      "text": "Vou deixar o link na descrição para quem quiser baixar depois."
+    },
+    {
+      "start": 531.0,
+      "end": 534.0,
+      "duration": 3.0,
+      "text": "Agora, se nenhum desses percets gratuitos te agradar,"
+    },
+    {
+      "start": 534.0,
+      "end": 537.0,
+      "duration": 3.0,
+      "text": "você pode comprar um pé que de Let's personalizado do seu vídeo,"
+    },
+    {
+      "start": 537.0,
+      "end": 539.0,
+      "duration": 2.0,
+      "text": "mas quer favorito por exemplo."
+    },
+    {
+      "start": 539.0,
+      "end": 542.0,
+      "duration": 3.0,
+      "text": "A maioria deles disponibiliza algum produto desse tipo,"
+    },
+    {
+      "start": 542.0,
+      "end": 546.0,
+      "duration": 4.0,
+      "text": "os EVS que você fala, eu preparei o pacote de Let's Cinema com 10 Let's"
+    },
+    {
+      "start": 546.0,
+      "end": 549.0,
+      "duration": 3.0,
+      "text": "profissionais para transformar o seu vídeo em filme."
+    },
+    {
+      "start": 549.0,
+      "end": 552.0,
+      "duration": 3.0,
+      "text": "Deixe-me pacote além dos percets, tem um tutorial completa ensinando"
+    },
+    {
+      "start": 552.0,
+      "end": 556.0,
+      "duration": 4.0,
+      "text": "como utilizar os arquivos no primeiro e no quipe cut, além de uma pasta bom"
+    },
+    {
+      "start": 556.0,
+      "end": 557.0,
+      "duration": 1.0,
+      "text": "e especial."
+    },
+    {
+      "start": 557.0,
+      "end": 560.0,
+      "duration": 3.0,
+      "text": "Se você quiser mais informações, o link está na descrição."
+    },
+    {
+      "start": 560.0,
+      "end": 563.0,
+      "duration": 3.0,
+      "text": "E para deixar vocês mais estigados, eu vou explicar os Let's,"
+    },
+    {
+      "start": 563.0,
+      "end": 565.0,
+      "duration": 2.0,
+      "text": "utilizando o pé que é Cinema Pro."
+    },
+    {
+      "start": 565.0,
+      "end": 568.0,
+      "duration": 3.0,
+      "text": "Deixe-me primeiro exemplo, bora utilizar o preset 8."
+    },
+    {
+      "start": 568.0,
+      "end": 571.0,
+      "duration": 3.0,
+      "text": "Você vai clicar no Let's e arrastar para Taimeline."
+    },
+    {
+      "start": 571.0,
+      "end": 572.0,
+      "duration": 1.0,
+      "text": "Não tem segredo."
+    },
+    {
+      "start": 572.0,
+      "end": 575.0,
+      "duration": 3.0,
+      "text": "Agora, a presta atenção na diferença de cor desse vídeo sem nenhum ajuste"
+    },
+    {
+      "start": 575.0,
+      "end": 577.0,
+      "duration": 2.0,
+      "text": "e com o Let's Applicado."
+    },
+    {
+      "start": 577.0,
+      "end": 580.0,
+      "duration": 3.0,
+      "text": "A sombra estão em escuras aqui embaixo, mas já dá uma boa diferença."
+    },
+    {
+      "start": 580.0,
+      "end": 584.0,
+      "duration": 4.0,
+      "text": "Porém, eu falei, mesmo com Let's, a gente precisa fazer alguns ajustes"
+    },
+    {
+      "start": 584.0,
+      "end": 586.0,
+      "duration": 2.0,
+      "text": "para chegar no resultado ideal."
+    },
+    {
+      "start": 586.0,
+      "end": 589.0,
+      "duration": 3.0,
+      "text": "Aqui eu vou trabalhar mais uma vez com a curva de iluminação."
+    },
+    {
+      "start": 589.0,
+      "end": 592.0,
+      "duration": 3.0,
+      "text": "Eu crie uma curvinha é se igual a gente fez no início do tutorial"
+    },
+    {
+      "start": 592.0,
+      "end": 595.0,
+      "duration": 3.0,
+      "text": "e ajuste um pouco até clarear sombras e diminui os highlights."
+    },
+    {
+      "start": 595.0,
+      "end": 599.0,
+      "duration": 4.0,
+      "text": "Olha a diferença da cena com o Let's, e sem o Let's Applicado."
+    },
+    {
+      "start": 599.0,
+      "end": 602.0,
+      "duration": 3.0,
+      "text": "Bora testar um outro preset com uma outra cena."
+    },
+    {
+      "start": 602.0,
+      "end": 605.0,
+      "duration": 3.0,
+      "text": "Primeiro arrasto o vídeo para Taimeline e é do sono Let's de conversão"
+    },
+    {
+      "start": 605.0,
+      "end": 607.0,
+      "duration": 2.0,
+      "text": "para esse Log 3."
+    },
+    {
+      "start": 607.0,
+      "end": 610.0,
+      "duration": 3.0,
+      "text": "Agora, eu vou arrastar para Taimeline o preset 3 do pacote."
+    },
+    {
+      "start": 610.0,
+      "end": 613.0,
+      "duration": 3.0,
+      "text": "Como vocês podem ver a Coriados já ficaram bem mais interessantes,"
+    },
+    {
+      "start": 613.0,
+      "end": 616.0,
+      "duration": 3.0,
+      "text": "porém, a sombra também ficaram mais escuras."
+    },
+    {
+      "start": 616.0,
+      "end": 619.0,
+      "duration": 3.0,
+      "text": "Bora voltar para curva de iluminação para corrigir isso."
+    },
+    {
+      "start": 619.0,
+      "end": 623.0,
+      "duration": 4.0,
+      "text": "Mais uma vez, eu crie uma curvinha, e ajusta até chegar na melhor exposição."
+    },
+    {
+      "start": 623.0,
+      "end": 627.0,
+      "duration": 4.0,
+      "text": "Saca só a diferença da cena com Let e sem o Let."
+    },
+    {
+      "start": 627.0,
+      "end": 630.0,
+      "duration": 3.0,
+      "text": "Eu fiz essa demonstração utilizando meu pegue de presets,"
+    },
+    {
+      "start": 630.0,
+      "end": 634.0,
+      "duration": 4.0,
+      "text": "mas esse processo funciona com qualquer outro let que você baixar."
+    },
+    {
+      "start": 634.0,
+      "end": 636.0,
+      "duration": 2.0,
+      "text": "Bom, galera, chegamos ao final desse vídeo,"
+    },
+    {
+      "start": 636.0,
+      "end": 639.0,
+      "duration": 3.0,
+      "text": "e eu espero que você tenha aprendido um pouco sobre correção de cor,"
+    },
+    {
+      "start": 639.0,
+      "end": 641.0,
+      "duration": 2.0,
+      "text": "e colorização do que a pica de para PC."
+    },
+    {
+      "start": 641.0,
+      "end": 644.0,
+      "duration": 3.0,
+      "text": "Filma e Log vai te ajudar, é claro que vai."
+    },
+    {
+      "start": 644.0,
+      "end": 647.0,
+      "duration": 3.0,
+      "text": "Let's personalizar os melhores estética da cena."
+    },
+    {
+      "start": 647.0,
+      "end": 648.0,
+      "duration": 1.0,
+      "text": "Geralmente sim."
+    },
+    {
+      "start": 648.0,
+      "end": 651.0,
+      "duration": 3.0,
+      "text": "Porém, você só vai alcançar aquela cor cinematográfica"
+    },
+    {
+      "start": 651.0,
+      "end": 655.0,
+      "duration": 4.0,
+      "text": "praticando muito e repetindo esse processo várias e várias vezes até que se torne natural."
+    },
+    {
+      "start": 655.0,
+      "end": 658.0,
+      "duration": 3.0,
+      "text": "Se você gostou do conteúdo desse vídeo, deixe aquele like,"
+    },
+    {
+      "start": 658.0,
+      "end": 661.0,
+      "duration": 3.0,
+      "text": "bonitão que me ajuda muito e esquece de se inscrever no canal."
+    },
+    {
+      "start": 661.0,
+      "end": 663.0,
+      "duration": 2.0,
+      "text": "E é isso aí, falou, valeu."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "hermes-chief-youtube": {
+      "command": "python",
+      "args": [
+        "d:/CHIEF YOUTUBE/src/mcp/youtube_analytics_mcp.py"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
